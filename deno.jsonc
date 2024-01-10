@@ -1,0 +1,18 @@
+{
+  "imports": {
+    "hono": "npm:hono",
+    "zod": "npm:zod",
+    "@hono/zod-openapi": "npm:@hono/zod-openapi",
+    //serveStatic, prettyJSON, cors, etag
+    "hono/serveStatic": "https://deno.land/x/hono@v3.12.1/middleware.ts",
+    "hono/cors": "npm:hono/cors",
+    "hono/etag": "npm:hono/etag",
+    "hono/prettyJSON": "npm:hono/pretty-json",
+    "@scalar/hono-api-reference": "npm:@scalar/hono-api-reference",
+    "negotiator": "https://deno.land/x/negotiator@1.0.1/mod.ts"
+  },
+  "tasks": {
+    "dev": "deno run -A --watch src/index.ts",
+    "update": "deno run --allow-read=./ --allow-net --allow-write=./ https://deno.land/x/deno_outdated@0.2.5/cli.ts"
+  }
+}

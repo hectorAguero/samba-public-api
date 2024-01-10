@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "schoolId": "1",
+    "languageCode": "es",
+    "name": "Vila Isabel",
+    "description": "Estilo de samba que se toca durante los desfiles de carnaval",
+    "colors": ["Blanco", "Azul"],
+    "symbols": ["Coroa", "Clave de Sol", "Pandeiro", "Pena"]
+  }
+]
