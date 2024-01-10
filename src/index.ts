@@ -1,4 +1,4 @@
-import { serveStatic } from "hono/serveStatic"
+import { cache, serveStatic } from "hono/middleware"
 import { prettyJSON } from "hono/prettyJSON"
 import { cors } from "hono/cors"
 import { etag } from "hono/etag"
@@ -9,7 +9,14 @@ import schoolsApi from "./api/v1/schools/index.ts";
 
 const app = new OpenAPIHono();
 
-
+app.get(
+    '*',
+    cache({
+        cacheName: 'samba-cache',
+        cacheControl: 'max-age=3600',
+        wait: true,
+    })
+)
 app.use('/static/*', serveStatic({ root: '/assets' }));
 app.use('/favicon.ico', serveStatic({ path: '/assets/favicon.ico' }));
 // pretty json
