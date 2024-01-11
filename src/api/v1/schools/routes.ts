@@ -27,3 +27,37 @@ export const schoolsAllRoute = createRoute({
         ...GenericResponses
     }
 })
+
+export const schoolsByIdRoute = createRoute({
+    method: 'get',
+    path: '/{id}',
+    tags: ['schools'],
+    summary: 'Get school by id',
+    description: 'Get school by id',
+    query: {
+        language: {
+            type: 'string',
+            enum: supportedLanguages
+        }
+    },
+    params: {
+        id: {
+            type: 'number',
+            required: true
+        }
+    },
+    responses: {
+        200: {
+            description: 'School',
+            content: {
+                'application/json': {
+                    schema: schoolTranslatedSchema
+                }
+            }
+        },
+        404: {
+            description: 'School not found'
+        },
+        ...GenericResponses
+    }
+})
