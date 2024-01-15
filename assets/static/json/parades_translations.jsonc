@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "paradeId": 1,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "追放された男の苦難と、悪意を持って扱われ、最も神聖なものに守られなかった",
+    "carnavalescos": ["レアンドロ・ヴィエイラ"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 2,
+    "paradeId": 2,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "ローザ・マリア・エジプシアカ",
+    "carnavalescos": ["タルシジオ・ザノン"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 3,
+    "paradeId": 3,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "この祭りで、私は信仰を持っています！",
+    "carnavalescos": ["パウロ・バロス"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 4,
+    "paradeId": 4,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "勇敢な人々！独立二百年記念日に除外された人々の叫び",
+    "carnavalescos": ["アレクサンドレ・ロウザーダ", "アンドレ・ロドリゲス"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 5,
+    "paradeId": 5,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "バイーアが歌うアフリカ",
+    "carnavalescos": ["アニック・サーモン", "ギレルメ・エステヴァン"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 6,
+    "paradeId": 6,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "オー、ゼカ、パゴードはどこですか？裸足で歩いたり、馬車や電車に乗ってシェレンを探したりしています。あなたに会い、あなたを抱きしめ、飲み、打楽器を演奏するために！",
+    "carnavalescos": ["ガブリエル・ハダッド", "レオナルド・ボラ"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 7,
+    "paradeId": 7,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "赤い楽園の妄想",
+    "carnavalescos": ["エドソン・ペレイラ"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 8,
+    "paradeId": 8,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "黒い顔のモガンゲイロ",
+    "carnavalescos": [
+      "ローザ・マガリャンイス",
+      "ジョアン・ヴィトール・アラウージョ"
+    ],
+    "division": "特別グループ"
+  },
+  {
+    "id": 9,
+    "paradeId": 9,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "それは波が来る... 波が去る... 私はすべての聖人の湾になるでしょう、私の土地のサンバに映る",
+    "carnavalescos": ["ジャック・ヴァスコンセロス"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 10,
+    "paradeId": 10,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "無限から来る青",
+    "carnavalescos": ["レナト・ラゲ", "マルシア・ラゲ"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 11,
+    "paradeId": 11,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "私の天の土地、私の地の星々",
+    "carnavalescos": ["マーカス・フェレイラ"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 12,
+    "paradeId": 12,
+    "languageCode": "ja",
+    "carnivalName": "リオデジャネイロのカーニバル",
+    "enredo": "アルリンドの場所",
+    "carnavalescos": ["アレックス・デ・ソウザ"],
+    "division": "特別グループ"
+  },
+  {
+    "id": 13,
+    "paradeId": 1,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "The Trouble of the Man Who Was Excommunicated and Treated with Malice, Unprotected by the Holiest",
+    "carnavalescos": ["Leandro Vieira"],
+    "division": "Special Group"
+  },
+  {
+    "id": 14,
+    "paradeId": 2,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "Rosa Maria of Egypt",
+    "carnavalescos": ["Tarcísio Zanon"],
+    "division": "Special Group"
+  },
+  {
+    "id": 15,
+    "paradeId": 3,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "In this Party, I Carry Faith!",
+    "carnavalescos": ["Paulo Barros"],
+    "division": "Special Group"
+  },
+  {
+    "id": 16,
+    "paradeId": 4,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "Brave People! The Cry of the Excluded in the Bicentennial of Independence",
+    "carnavalescos": ["Alexandre Louzada", "André Rodrigues"],
+    "division": "Special Group"
+  },
+  {
+    "id": 17,
+    "paradeId": 5,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "The Africas that Bahia Sings",
+    "carnavalescos": ["Annik Salmon", "Guilherme Estevão"],
+    "division": "Special Group"
+  },
+  {
+    "id": 18,
+    "paradeId": 6,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "Hey Zeca, Where is the Pagode? I Walked Barefoot, Used Carriages and Trains, Searching for Xerém. To See You, To Embrace You, To Drink and Play Percussion!",
+    "carnavalescos": ["Gabriel Haddad", "Leonardo Bora"],
+    "division": "Special Group"
+  },
+  {
+    "id": 19,
+    "paradeId": 7,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "Delusions of a Red Paradise",
+    "carnavalescos": ["Edson Pereira"],
+    "division": "Special Group"
+  },
+  {
+    "id": 20,
+    "paradeId": 8,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "Black-faced Mogangueiro",
+    "carnavalescos": ["Rosa Magalhães", "João Vitor Araújo"],
+    "division": "Special Group"
+  },
+  {
+    "id": 21,
+    "paradeId": 9,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "It's a Wave that Comes... It's a Wave that Goes... I Shall be the Bay of All Saints Mirrored in the Samba of My Land",
+    "carnavalescos": ["Jack Vasconcelos"],
+    "division": "Special Group"
+  },
+  {
+    "id": 22,
+    "paradeId": 10,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "The Blue that Comes from Infinity",
+    "carnavalescos": ["Renato Lage", "Márcia Lage"],
+    "division": "Special Group"
+  },
+  {
+    "id": 23,
+    "paradeId": 11,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "Land of My Sky, Stars of My Ground",
+    "carnavalescos": ["Marcus Ferreira"],
+    "division": "Special Group"
+  },
+  {
+    "id": 24,
+    "paradeId": 12,
+    "languageCode": "en",
+    "carnivalName": "Carnival of Rio de Janeiro",
+    "enredo": "Places of Arlindo",
+    "carnavalescos": ["Alex de Souza"],
+    "division": "Special Group"
+  },
+  {
+    "id": 25,
+    "paradeId": 1,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "La Dificultad del Hombre que Fue Excomulgado y Tratado con Malicia, Sin Protección de lo Más Sagrado",
+    "carnavalescos": ["Leandro Vieira"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 26,
+    "paradeId": 2,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "Rosa María de Egipto",
+    "carnavalescos": ["Tarcísio Zanon"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 27,
+    "paradeId": 3,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "¡En esta Fiesta, Yo Llevo Fe!",
+    "carnavalescos": ["Paulo Barros"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 28,
+    "paradeId": 4,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "¡Gente Valiente! El Grito de los Excluidos en el Bicentenario de la Independencia",
+    "carnavalescos": ["Alexandre Louzada", "André Rodrigues"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 29,
+    "paradeId": 5,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "Las Áfricas que Canta Bahía",
+    "carnavalescos": ["Annik Salmon", "Guilherme Estevão"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 30,
+    "paradeId": 6,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "¡Eh Zeca, Dónde Está el Pagode? Caminé Descalzo, Usé Carrozas y Trenes, Buscando Xerém. ¡Para Verte, Abrazarte, Beber y Tocar Percusión!",
+    "carnavalescos": ["Gabriel Haddad", "Leonardo Bora"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 31,
+    "paradeId": 7,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "Delirios de un Paraíso Rojo",
+    "carnavalescos": ["Edson Pereira"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 32,
+    "paradeId": 8,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "Mogangueiro de Cara Negra",
+    "carnavalescos": ["Rosa Magalhães", "João Vitor Araújo"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 33,
+    "paradeId": 9,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "Es la Ola que Viene... Es la Ola que Va... Seré la Bahía de Todos los Santos Reflejada en el Samba de Mi Tierra",
+    "carnavalescos": ["Jack Vasconcelos"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 34,
+    "paradeId": 10,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "El Azul que Viene del Infinito",
+    "carnavalescos": ["Renato Lage", "Márcia Lage"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 35,
+    "paradeId": 11,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "Tierra de Mi Cielo, Estrellas de Mi Suelo",
+    "carnavalescos": ["Marcus Ferreira"],
+    "division": "Grupo Especial"
+  },
+  {
+    "id": 36,
+    "paradeId": 12,
+    "carnivalName": "Carnaval de Río de Janeiro",
+    "enredo": "Lugares de Arlindo",
+    "carnavalescos": ["Alex de Souza"],
+    "division": "Grupo Especial"
+  }
+]

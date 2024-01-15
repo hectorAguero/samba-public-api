@@ -21,8 +21,12 @@ export const schoolTranslationSchema = z.object({
     id: z.number().openapi({ default: 1 }),
     schoolId: z.number().openapi({ default: 1 }),
     languageCode: z.string().openapi({ default: 'pt' }),
+    name: z.string().openapi({ default: 'Unidos de Vila Isabel' }),
+    godmotherSchool: z.string().openapi({ default: 'Portela' }),
     colors: z.array(z.string()).openapi({ default: ['Branco', 'Azul'] }),
     symbols: z.array(z.string()).openapi({ default: ['Coroa', 'Clave de Sol', 'Pandeiro', 'Pena'] }),
+    league: z.string().openapi({ default: 'LIESA' }),
+    currentDivison: z.string().openapi({ default: 'Grupo Especial' }),
 }).openapi('SchoolTranslation');
 
 

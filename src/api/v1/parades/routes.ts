@@ -1,14 +1,14 @@
 import { createRoute, z } from "@hono/zod-openapi";
 import { GenericResponses } from "../generic_responses.ts";
-import { schoolTranslatedSchema } from "./schemas.ts";
+import { paradeTranslatedSchema } from "./schemas.ts";
 import { languages } from "../supported_languages.ts";
 
-export const schoolsAllRoute = createRoute({
+export const paradesAllRoute = createRoute({
     method: 'get',
     path: '/',
-    tags: ['schools'],
-    summary: 'Get all schools',
-    description: 'Get all schools',
+    tags: ['Parades'],
+    summary: 'Get all Parades',
+    description: 'Get all Parades',
     request: {
         query: z.object({
             language: languages.default(languages.Values.en).optional().openapi({ example: 'en' }),
@@ -16,10 +16,10 @@ export const schoolsAllRoute = createRoute({
     },
     responses: {
         200: {
-            description: 'List of schools',
+            description: 'List of Parades',
             content: {
                 'application/json': {
-                    schema: schoolTranslatedSchema.array()
+                    schema: paradeTranslatedSchema.array()
                 }
             }
         },
@@ -27,12 +27,12 @@ export const schoolsAllRoute = createRoute({
     }
 })
 
-export const schoolsByIdRoute = createRoute({
+export const paradesByIdRoute = createRoute({
     method: 'get',
     path: '/{id}',
-    tags: ['schools'],
-    summary: 'Get school by id',
-    description: 'Get school by id',
+    tags: ['Parades'],
+    summary: 'Get Parade by id',
+    description: 'Get Parade by id',
     request: {
         params: z.object({
             id: z.coerce.number().int().min(1).openapi({ example: 1 })
@@ -43,15 +43,15 @@ export const schoolsByIdRoute = createRoute({
     },
     responses: {
         200: {
-            description: 'School',
+            description: 'Parade',
             content: {
                 'application/json': {
-                    schema: schoolTranslatedSchema
+                    schema: paradeTranslatedSchema
                 }
             }
         },
         404: {
-            description: 'School not found'
+            description: 'Parade not found'
         },
         ...GenericResponses
     }
