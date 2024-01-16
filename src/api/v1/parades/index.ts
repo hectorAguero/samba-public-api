@@ -10,13 +10,13 @@ const paradesApi = new OpenAPIHono();
 // Set the `/posts` as a base path in the document.
 paradesApi.openapi(paradesAllRoute,
     async (c) => {
-        let { language } = c.req.query();
+        let { language, ...params } = c.req.query();
         if (language == null || language == undefined) {
             const negotiator = new Negotiator(c.req.raw.headers)
             language = negotiator.language([...languageValues])
         }
         language = language != null && languageValues.includes(language) ? language : 'en'
-        const parades = await getParades(language);
+        const parades = await getParades({ ...params, language: language as "en" | "es" | "ja" | "pt" | undefined });
         return c.json(parades);
     },
 );
@@ -24,13 +24,14 @@ paradesApi.openapi(paradesAllRoute,
 paradesApi.openapi(paradesByIdRoute,
     async (c) => {
         const id = parseInt(c.req.param('id'));
+
         let { language } = c.req.query();
         if (language == null || language == undefined) {
             const negotiator = new Negotiator(c.req.raw.headers)
             language = negotiator.language([...languageValues])
         }
         language = language != null && languageValues.includes(language) ? language : 'en'
-        const parade = await getParadeById(id, language);
+        const parade = await getParadeById({ id, language: language as "en" | "es" | "ja" | "pt" | undefined });
         if (!parade) {
             console.log('Parade not found');
             return c.json({ error: 'Parade not found' }, 404);

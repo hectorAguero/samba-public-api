@@ -1,6 +1,6 @@
 import { createRoute, z } from "@hono/zod-openapi";
 import { GenericResponses } from "../generic_responses.ts";
-import { paradeTranslatedSchema } from "./schemas.ts";
+import { paradeGetAllSchema, paradeTranslatedSchema } from "./schemas.ts";
 import { languages } from "../supported_languages.ts";
 
 export const paradesAllRoute = createRoute({
@@ -10,9 +10,7 @@ export const paradesAllRoute = createRoute({
     summary: 'Get all Parades',
     description: 'Get all Parades',
     request: {
-        query: z.object({
-            language: languages.default(languages.Values.en).optional().openapi({ example: 'en' }),
-        })
+        query: paradeGetAllSchema
     },
     responses: {
         200: {
