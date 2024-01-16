@@ -129,23 +129,23 @@
     "id": 12,
     "languageCode": "es",
     "schoolId": 12,
-    "name": "Unidos do Porto da Pedra",
-    "godmotherSchool": "União da Ilha",
-    "colors": ["Rojo", "Blanco"],
-    "symbols": ["Tigre"],
-    "league": "LIESA",
-    "currentDivision": "Grupo Especial"
-  },
-  {
-    "id": 13,
-    "languageCode": "es",
-    "schoolId": 13,
     "name": "Império Serrano",
     "godmotherSchool": "",
     "colors": ["Verde", "Blanco"],
     "symbols": ["Corona"],
     "league": "LIERJ",
     "currentDivision": "Serie Oro"
+  },
+  {
+    "id": 13,
+    "languageCode": "es",
+    "schoolId": 13,
+    "name": "Unidos do Porto da Pedra",
+    "godmotherSchool": "União da Ilha",
+    "colors": ["Rojo", "Blanco"],
+    "symbols": ["Tigre"],
+    "league": "LIESA",
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 14,
@@ -453,7 +453,7 @@
   {
     "id": 41,
     "languageCode": "en",
-    "schoolId": 12,
+    "schoolId": 13,
     "name": "Unidos do Porto da Pedra",
     "godmotherSchool": "União da Ilha",
     "colors": ["Red", "White"],
@@ -464,7 +464,7 @@
   {
     "id": 42,
     "languageCode": "en",
-    "schoolId": 13,
+    "schoolId": 12,
     "name": "Império Serrano",
     "godmotherSchool": "",
     "colors": ["Green", "White"],

@@ -10,13 +10,13 @@ const schoolsApi = new OpenAPIHono();
 // Set the `/posts` as a base path in the document.
 schoolsApi.openapi(schoolsAllRoute,
     async (c) => {
-        let { language } = c.req.query();
+        let { language, ...query } = c.req.query();
         if (language == null || language == undefined) {
             const negotiator = new Negotiator(c.req.raw.headers)
             language = negotiator.language([...languageValues])
         }
         language = language != null && languageValues.includes(language) ? language : 'en'
-        const schools = await getSchools(language);
+        const schools = await getSchools({ language, ...query });
         return c.json(schools);
     },
 );

@@ -44,6 +44,21 @@ export const schoolTranslatedSchema = z.object({
     league: z.string().openapi({ default: 'LIESA' }),
 }).openapi('SchoolTranslated');
 
+
+export const schoolSelectAllSchema = z.object({
+    sort: z.string().openapi({ default: 'id' }),
+    sortOrder: z.enum(['asc', 'desc']).openapi({ default: 'asc' }),
+    page: z.coerce.number().int().positive().openapi({ default: 1 }),
+    pageSize: z.coerce.number().int().positive().default(1).openapi({ default: 10 }),
+    filter: z.string().transform((filter) => filter.split(';').map(filter => {
+        const [key, value] = filter.split('=');
+        return { key, value };
+    })),
+    language: z.string().openapi({ default: 'pt' }),
+}).partial().openapi('SchoolSelectAll');
+
+
 export type School = z.infer<typeof schoolSchema>;
 export type SchoolTranslation = z.infer<typeof schoolTranslationSchema>;
 export type SchoolTranslated = z.infer<typeof schoolTranslatedSchema>;
+export type SchoolSelectAll = z.infer<typeof schoolSelectAllSchema>;

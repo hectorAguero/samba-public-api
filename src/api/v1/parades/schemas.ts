@@ -1,6 +1,6 @@
 import { z } from "@hono/zod-openapi";
-import { ZodTypeAny } from "zod";
 import { languages } from "../supported_languages.ts";
+import { zArrayFromString } from "../zod_utils.ts";
 
 
 
@@ -42,19 +42,6 @@ export const paradeTranslatedSchema = paradeSchema.omit({}).extend({
     originalEnredo: paradeTranslationSchema.shape.enredo,
     originalDivision: paradeTranslationSchema.shape.division,
 }).openapi('ParadeTranslated');
-
-
-const zArrayFromString = <T extends ZodTypeAny>(schema: T) => {
-    return z.preprocess((obj) => {
-        if (Array.isArray(obj)) {
-            return obj;
-        } else if (typeof obj === "string") {
-            return obj.split(",");
-        } else {
-            return [];
-        }
-    }, z.array(schema));
-};
 
 export const paradeGetAllSchema = z.object({
     championParade: z.coerce.number().int().min(0).max(1).openapi({ example: 1 }),
