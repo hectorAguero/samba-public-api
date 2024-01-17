@@ -7,8 +7,8 @@ export const paradesAllRoute = createRoute({
     method: 'get',
     path: '/',
     tags: ['Parades'],
-    summary: 'Get all Parades',
-    description: 'Get all Parades',
+    summary: 'Get all parades',
+    description: 'Get all parades with translated fields',
     request: {
         query: paradeGetAllSchema
     },
@@ -30,11 +30,9 @@ export const paradesByIdRoute = createRoute({
     path: '/{id}',
     tags: ['Parades'],
     summary: 'Get Parade by id',
-    description: 'Get Parade by id',
+    description: 'Get Parade by id with translated fields',
     request: {
-        params: z.object({
-            id: z.coerce.number().int().min(1).openapi({ example: 1 })
-        }),
+        params: paradeTranslatedSchema.pick({ id: true }),
         query: z.object({
             language: languages.default(languages.Values.en).optional().openapi({ example: 'en' }),
         })

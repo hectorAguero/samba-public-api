@@ -1,28 +1,4 @@
-import { ParadeByIdSelect, Parade, ParadeAllSelect, ParadeTranslated, ParadeTranslation, paradeSelectKeys, paradeTranslatedSchema } from './schemas.ts';
-
-
-export const getParadeById = async (
-    { id, language }: ParadeByIdSelect
-): Promise<ParadeTranslated | null> => {
-    console.log(id);
-    const paradeFile = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/parades.jsonc`);
-    const paradesTranslations = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/parades_translations.jsonc`);
-    const paradeList: Parade[] = JSON.parse(paradeFile);
-    const paradeTranslationList: ParadeTranslation[] = JSON.parse(paradesTranslations).filter((parade: ParadeTranslation) => parade.languageCode === language);
-    const parade = paradeList.find((parade: Parade) => parade.id === id);
-    if (!parade) return null;
-    const { enredo: originalEnredo, division: originalDivision, carnivalName: originalCarnivalName, ...paradeWithoutTranslation } = parade;
-    const paradeTranslation = paradeTranslationList.find((paradeTranslation: ParadeTranslation) => paradeTranslation.paradeId == parade!.id)!;
-    const { languageCode: _languageCode, paradeId: _paradeId, id: _id, ...translation } = paradeTranslation!;
-    return paradeTranslatedSchema.parse({
-        originalCarnivalName,
-        originalEnredo,
-        originalDivision,
-        ...paradeWithoutTranslation,
-        ...translation,
-    });
-
-};
+import { Parade, ParadeAllSelect, ParadeTranslated, ParadeTranslation, paradeSelectKeys, paradeTranslatedSchema } from './schemas.ts';
 
 export const getParades = async (
     { language, sort, sortOrder, ...params }: ParadeAllSelect,
@@ -83,3 +59,28 @@ const sortDataList = (dataList: ParadeTranslated[], sort: string, sortOrder: str
     }
     return dataList;
 }
+
+
+export const getParadeById = async (
+    id: number,
+    language: string,
+): Promise<ParadeTranslated | null> => {
+    console.log(id);
+    const paradeFile = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/parades.jsonc`);
+    const paradesTranslations = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/parades_translations.jsonc`);
+    const paradeList: Parade[] = JSON.parse(paradeFile);
+    const paradeTranslationList: ParadeTranslation[] = JSON.parse(paradesTranslations).filter((parade: ParadeTranslation) => parade.languageCode === language);
+    const parade = paradeList.find((parade: Parade) => parade.id === id);
+    if (!parade) return null;
+    const { enredo: originalEnredo, division: originalDivision, carnivalName: originalCarnivalName, ...paradeWithoutTranslation } = parade;
+    const paradeTranslation = paradeTranslationList.find((paradeTranslation: ParadeTranslation) => paradeTranslation.paradeId == parade!.id)!;
+    const { languageCode: _languageCode, paradeId: _paradeId, id: _id, ...translation } = paradeTranslation!;
+    return paradeTranslatedSchema.parse({
+        originalCarnivalName,
+        originalEnredo,
+        originalDivision,
+        ...paradeWithoutTranslation,
+        ...translation,
+    });
+
+};

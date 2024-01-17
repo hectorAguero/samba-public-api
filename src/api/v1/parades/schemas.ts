@@ -1,10 +1,8 @@
 import { z } from "@hono/zod-openapi";
 import { languages } from "../supported_languages.ts";
-import { zArrayFromString } from "../zod_utils.ts";
+import { zFilterObject } from "../zod_utils.ts";
 
-
-
-export const paradeSchema = z.object({
+const paradeSchema = z.object({
     id: z.coerce.number().int().openapi({ default: 1 }),
     schoolId: z.coerce.number().openapi({ default: 1 }),
     carnivalName: z.string().openapi({ default: 'Carnaval do Rio de Janeiro' }),
@@ -25,7 +23,7 @@ export const paradeSchema = z.object({
     points: z.coerce.number().openapi({ default: 269.8 }),
 }).openapi('Parade');
 
-export const paradeTranslationSchema = paradeSchema.pick({
+const paradeTranslationSchema = paradeSchema.pick({
     id: true,
     schoolId: true,
     carnivalName: true,
@@ -44,21 +42,16 @@ export const paradeTranslatedSchema = paradeSchema.omit({}).extend({
 }).openapi('ParadeTranslated');
 
 export const paradeGetAllSchema = z.object({
-    championParade: z.coerce.number().int().min(0).max(1).openapi({ example: 1 }),
     language: languages.openapi({ default: 'pt' }),
-    components: zArrayFromString(z.coerce.number()).openapi({ example: [1000, 2000] }),
+    filter: zFilterObject.openapi({ default: [{ key: 'components', value: '3000,3100' }, { key: 'league', value: 'liesa' }] }),
     sort: z.enum(paradeSchema.keyof().options).openapi({ example: 'id' }),
     sortOrder: z.enum(['asc', 'desc']).openapi({ example: 'asc' }),
+    page: z.coerce.number().int().positive().openapi({ default: 1 }),
+    pageSize: z.coerce.number().int().positive().default(1).openapi({ default: 10 }),
 }).partial().openapi('ParadeAllSelect');
-
-export const paradeGetByIdSchema = paradeSchema.pick({ id: true })
-    .extend({ language: paradeGetAllSchema.shape.language })
-    .openapi('ParadeByIdSelect');
-
 
 export type Parade = z.infer<typeof paradeSchema>;
 export type ParadeTranslation = z.infer<typeof paradeTranslationSchema>;
 export type ParadeTranslated = z.infer<typeof paradeTranslatedSchema>;
 export type ParadeAllSelect = z.infer<typeof paradeGetAllSchema>;
-export type ParadeByIdSelect = z.infer<typeof paradeGetByIdSchema>;
-export const paradeSelectKeys = paradeGetAllSchema.keyof().Values;
+export const paradeSelectKeys = paradeTranslatedSchema.keyof().Values;

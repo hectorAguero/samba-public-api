@@ -1,9 +1,9 @@
-import { School, SchoolSelectAll, SchoolTranslated, SchoolTranslation } from './schemas.ts';
+import { School, SchoolAllSelect, SchoolTranslated, SchoolTranslation } from './schemas.ts';
 
 
 
 export const getSchools = async (
-    { language, sort, sortOrder, ...query }: SchoolSelectAll,
+    { language, sort, sortOrder, ...query }: SchoolAllSelect,
 ): Promise<SchoolTranslated[]> => {
     const schoolFile = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/schools.jsonc`);
     const schoolTranslation = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/schools_translations.jsonc`);

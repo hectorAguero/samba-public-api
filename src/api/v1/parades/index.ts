@@ -24,14 +24,13 @@ paradesApi.openapi(paradesAllRoute,
 paradesApi.openapi(paradesByIdRoute,
     async (c) => {
         const id = parseInt(c.req.param('id'));
-
         let { language } = c.req.query();
         if (language == null || language == undefined) {
             const negotiator = new Negotiator(c.req.raw.headers)
             language = negotiator.language([...languageValues])
         }
         language = language != null && languageValues.includes(language) ? language : 'en'
-        const parade = await getParadeById({ id, language: language as "en" | "es" | "ja" | "pt" | undefined });
+        const parade = await getParadeById(id, language);
         if (!parade) {
             console.log('Parade not found');
             return c.json({ error: 'Parade not found' }, 404);

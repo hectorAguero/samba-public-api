@@ -1,6 +1,7 @@
 import { z } from "@hono/zod-openapi";
+import { zFilterObject } from '../zod_utils.ts';
 
-export const schoolSchema = z.object({
+const schoolSchema = z.object({
     id: z.number().openapi({ default: 1 }),
     shortName: z.string().openapi({ default: 'Vila Isabel' }),
     name: z.string().openapi({ default: 'Unidos de Vila Isabel' }),
@@ -17,7 +18,7 @@ export const schoolSchema = z.object({
 
 }).openapi('School');
 
-export const schoolTranslationSchema = z.object({
+const schoolTranslationSchema = z.object({
     id: z.number().openapi({ default: 1 }),
     schoolId: z.number().openapi({ default: 1 }),
     languageCode: z.string().openapi({ default: 'pt' }),
@@ -45,15 +46,12 @@ export const schoolTranslatedSchema = z.object({
 }).openapi('SchoolTranslated');
 
 
-export const schoolSelectAllSchema = z.object({
+export const schoolGetAllQuerySchema = z.object({
+    filter: zFilterObject.openapi({ default: [{ key: 'components', value: '3000,3100' }, { key: 'league', value: 'liesa' }] }),
     sort: z.string().openapi({ default: 'id' }),
     sortOrder: z.enum(['asc', 'desc']).openapi({ default: 'asc' }),
     page: z.coerce.number().int().positive().openapi({ default: 1 }),
     pageSize: z.coerce.number().int().positive().default(1).openapi({ default: 10 }),
-    filter: z.string().transform((filter) => filter.split(';').map(filter => {
-        const [key, value] = filter.split('=');
-        return { key, value };
-    })),
     language: z.string().openapi({ default: 'pt' }),
 }).partial().openapi('SchoolSelectAll');
 
@@ -61,4 +59,4 @@ export const schoolSelectAllSchema = z.object({
 export type School = z.infer<typeof schoolSchema>;
 export type SchoolTranslation = z.infer<typeof schoolTranslationSchema>;
 export type SchoolTranslated = z.infer<typeof schoolTranslatedSchema>;
-export type SchoolSelectAll = z.infer<typeof schoolSelectAllSchema>;
+export type SchoolAllSelect = z.infer<typeof schoolGetAllQuerySchema>;
