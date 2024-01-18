@@ -1,6 +1,5 @@
 import { z } from "@hono/zod-openapi";
 import { languages } from "../supported_languages.ts";
-import { zFilterObject } from "../zod_utils.ts";
 
 const paradeSchema = z.object({
     id: z.coerce.number().int().openapi({ default: 1 }),
@@ -43,7 +42,11 @@ export const paradeTranslatedSchema = paradeSchema.omit({}).extend({
 
 export const paradeGetAllSchema = z.object({
     language: languages.openapi({ default: 'pt' }),
-    filter: zFilterObject.openapi({ default: [{ key: 'components', value: '3000,3100' }, { key: 'league', value: 'liesa' }] }),
+    filter: z.string().refine((f) => f.split(';')
+        .map(filter => (([key, value]) => ({ key, value }))(filter.split('=')))
+        .every(({ key }) => Object.keys(paradeTranslatedSchema.shape).includes(key)),
+        { message: "Key not found to filter." })
+        .transform((f) => f.split(';').map(filter => (([key, value]) => ({ key, value }))(filter.split('=')))).openapi({ default: [{ key: 'components', value: '3000,3100' }, { key: 'league', value: 'liesa' }] }),
     sort: z.enum(paradeSchema.keyof().options).openapi({ example: 'id' }),
     sortOrder: z.enum(['asc', 'desc']).openapi({ example: 'asc' }),
     page: z.coerce.number().int().positive().openapi({ default: 1 }),

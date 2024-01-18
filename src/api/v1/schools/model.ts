@@ -18,8 +18,9 @@ export const getSchools = async (
         };
     });
 
-    if (sort !== undefined) {
-        if (sortOrder === undefined) sortOrder = 'asc';
+    if (sort !== undefined || sortOrder !== undefined) {
+        sort ??= 'id';
+        sortOrder ??= 'asc';
         data = data.sort((a: SchoolTranslated, b: SchoolTranslated) => {
             if (sortOrder === 'asc') return a[sort as keyof SchoolTranslated] > b[sort as keyof SchoolTranslated] ? 1 : -1;
             return a[sort as keyof SchoolTranslated] < b[sort as keyof SchoolTranslated] ? 1 : -1;
@@ -35,8 +36,25 @@ export const getSchools = async (
             return { key, value };
         });
         for (const { key, value } of filter) {
-            data = data.filter((school: SchoolTranslated) => school[key as keyof SchoolTranslated].toString().toLocaleUpperCase().includes(value.toLocaleUpperCase()));
-        }
+            const lookUpValue = value.trim().toLocaleUpperCase();
+            data = data.filter((school: SchoolTranslated) => {
+                const schoolValue = school[key as keyof SchoolTranslated];
+                if (Array.isArray(schoolValue)) {
+                    const array = schoolValue as string[];
+                    return lookUpValue.split(',').every((lookUpItem) => {
+                        lookUpItem = lookUpItem.trim();
+                        return array.some((item) => item.toLocaleUpperCase().includes(lookUpItem));
+                    });
+                }
+                if (typeof schoolValue === 'string') {
+                    return (schoolValue as string).toLocaleUpperCase().includes(lookUpValue);
+                }
+                if (typeof schoolValue === 'number') {
+                    return schoolValue === Number(value);
+                }
+                return false;
+            });
+        };
     }
 
     return data;

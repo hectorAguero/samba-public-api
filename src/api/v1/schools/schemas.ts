@@ -1,5 +1,4 @@
 import { z } from "@hono/zod-openapi";
-import { zFilterObject } from '../zod_utils.ts';
 
 const schoolSchema = z.object({
     id: z.number().openapi({ default: 1 }),
@@ -47,7 +46,12 @@ export const schoolTranslatedSchema = z.object({
 
 
 export const schoolGetAllQuerySchema = z.object({
-    filter: zFilterObject.openapi({ default: [{ key: 'components', value: '3000,3100' }, { key: 'league', value: 'liesa' }] }),
+    filter: z.string().refine((f) => f.split(';')
+        .map(filter => (([key, value]) => ({ key, value }))(filter.split('=')))
+        .every(({ key }) => Object.keys(schoolTranslatedSchema.shape).includes(key)),
+        { message: "Key not found to filter." })
+        .transform((f) => f.split(';').map(filter => (([key, value]) => ({ key, value }))(filter.split('='))))
+        .openapi({ default: [{ key: 'colors', value: 'blue,branco' }, { key: 'league', value: 'liesa' }] }),
     sort: z.string().openapi({ default: 'id' }),
     sortOrder: z.enum(['asc', 'desc']).openapi({ default: 'asc' }),
     page: z.coerce.number().int().positive().openapi({ default: 1 }),
