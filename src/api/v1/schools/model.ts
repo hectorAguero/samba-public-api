@@ -26,17 +26,14 @@ export const getSchools = async (
             return a[sort as keyof SchoolTranslated] < b[sort as keyof SchoolTranslated] ? 1 : -1;
         });
     }
-    if (query.page !== undefined) {
-        if (query.pageSize === undefined) query.pageSize = 10;
-        data = data.slice((query.page - 1) * query.pageSize, query.page * query.pageSize);
-    }
+
     if (query.filter !== undefined) {
         const filter = query.filter.toString().split(';').map((filter: string) => { // Explicitly specify the type of the parameter
             const [key, value] = filter.split('=');
             return { key, value };
         });
         for (const { key, value } of filter) {
-            const lookUpValue = value.trim().toLocaleUpperCase();
+            const lookUpValue = value?.trim().toLocaleUpperCase();
             data = data.filter((school: SchoolTranslated) => {
                 const schoolValue = school[key as keyof SchoolTranslated];
                 if (Array.isArray(schoolValue)) {
@@ -55,6 +52,10 @@ export const getSchools = async (
                 return false;
             });
         };
+    }
+    if (query.page !== undefined) {
+        if (query.pageSize === undefined) query.pageSize = 10;
+        data = data.slice((query.page - 1) * query.pageSize, query.page * query.pageSize);
     }
 
     return data;

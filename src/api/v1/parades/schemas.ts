@@ -10,8 +10,8 @@ const paradeSchema = z.object({
     division: z.string().openapi({ default: 'Grupo Especial' }),
     divisionNumber: z.coerce.number().int().openapi({ default: 1 }),
     paradeYear: z.coerce.number().int().openapi({ default: 2023 }),
-    date: z.string().openapi({}),
-    championParade: z.string().nullable().openapi({}),
+    date: z.string().datetime().openapi({}),
+    championParade: z.string().datetime().nullable().openapi({}),
     components: z.coerce.number().int().openapi({ default: 3000 }),
     numberOfWings: z.coerce.number().int().openapi({ default: 24 }),
     numberOfFloats: z.coerce.number().int().openapi({ default: 5 }),
@@ -45,7 +45,7 @@ export const paradeGetAllSchema = z.object({
     filter: z.string().refine((f) => f.split(';')
         .map(filter => (([key, value]) => ({ key, value }))(filter.split('=')))
         .every(({ key }) => Object.keys(paradeTranslatedSchema.shape).includes(key)),
-        { message: "Key not found to filter." })
+        { message: 'Key not found in schema to filter' })
         .transform((f) => f.split(';').map(filter => (([key, value]) => ({ key, value }))(filter.split('=')))).openapi({ default: [{ key: 'components', value: '3000,3100' }, { key: 'league', value: 'liesa' }] }),
     sort: z.enum(paradeSchema.keyof().options).openapi({ example: 'id' }),
     sortOrder: z.enum(['asc', 'desc']).openapi({ example: 'asc' }),
