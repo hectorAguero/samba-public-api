@@ -3,26 +3,26 @@ import { School, SchoolAllSelect, SchoolTranslated, SchoolTranslation } from './
 
 
 export const getSchools = async (
-    { language, sort, sortOrder, ...query }: SchoolAllSelect,
+    { language, sort, sort_order, ...query }: SchoolAllSelect,
 ): Promise<SchoolTranslated[]> => {
     const schoolFile = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/schools.jsonc`);
     const schoolTranslation = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/schools_translations.jsonc`);
     const schoolList: School[] = JSON.parse(schoolFile);
-    const schoolTranslationList: SchoolTranslation[] = JSON.parse(schoolTranslation).filter((school: SchoolTranslation) => school.languageCode === language);
+    const schoolTranslationList: SchoolTranslation[] = JSON.parse(schoolTranslation).filter((school: SchoolTranslation) => school.language_code === language);
     let data = schoolList.map((school: School) => {
-        const schoolTranslation = schoolTranslationList.find((schoolTranslation: SchoolTranslation) => schoolTranslation.schoolId === school.id);
-        const { languageCode: _languageCode, schoolId: _schoolId, id: _id, ...translation } = schoolTranslation!;
+        const schoolTranslation = schoolTranslationList.find((schoolTranslation: SchoolTranslation) => schoolTranslation.school_id === school.id);
+        const { language_code: _language_code, school_id: _school_id, id: _id, ...translation } = schoolTranslation!;
         return {
             ...school,
             ...translation
         };
     });
 
-    if (sort !== undefined || sortOrder !== undefined) {
+    if (sort !== undefined || sort_order !== undefined) {
         sort ??= 'id';
-        sortOrder ??= 'asc';
+        sort_order ??= 'asc';
         data = data.sort((a: SchoolTranslated, b: SchoolTranslated) => {
-            if (sortOrder === 'asc') return a[sort as keyof SchoolTranslated] > b[sort as keyof SchoolTranslated] ? 1 : -1;
+            if (sort_order === 'asc') return a[sort as keyof SchoolTranslated] > b[sort as keyof SchoolTranslated] ? 1 : -1;
             return a[sort as keyof SchoolTranslated] < b[sort as keyof SchoolTranslated] ? 1 : -1;
         });
     }
@@ -55,8 +55,8 @@ export const getSchools = async (
         };
     }
     if (query.page !== undefined) {
-        if (query.pageSize === undefined) query.pageSize = 10;
-        data = data.slice((query.page - 1) * query.pageSize, query.page * query.pageSize);
+        if (query.page_size === undefined) query.page_size = 10;
+        data = data.slice((query.page - 1) * query.page_size, query.page * query.page_size);
     }
 
     return data;
@@ -66,14 +66,14 @@ export const getSchoolById = async (
     id: number,
     language: string,
 ): Promise<SchoolTranslated | null> => {
-    const schoolFile = await Deno.readTextFile(`${Deno.cwd()} / assets / static / json / schools.jsonc`);
-    const schoolsTranslations = await Deno.readTextFile(`${Deno.cwd()} / assets / static / json / schools_translations.jsonc`);
+    const schoolFile = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/schools.jsonc`);
+    const schoolsTranslations = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/schools_translations.jsonc`);
     const schoolList: School[] = JSON.parse(schoolFile);
-    const schoolTranslationList: SchoolTranslation[] = JSON.parse(schoolsTranslations).filter((school: SchoolTranslation) => school.languageCode === language);
+    const schoolTranslationList: SchoolTranslation[] = JSON.parse(schoolsTranslations).filter((school: SchoolTranslation) => school.language_code === language);
     const school = schoolList.find((school: School) => school.id === id);
     if (!school) return null;
-    const schoolTranslation = schoolTranslationList.find((schoolTranslation: SchoolTranslation) => schoolTranslation.schoolId == school!.id)!;
-    const { languageCode: _languageCode, schoolId: _schoolId, id: _id, ...translation } = schoolTranslation!;
+    const schoolTranslation = schoolTranslationList.find((schoolTranslation: SchoolTranslation) => schoolTranslation.school_id == school!.id)!;
+    const { language_code: _language_code, school_id: _school_id, id: _id, ...translation } = schoolTranslation!;
     return {
         ...school,
         ...translation,

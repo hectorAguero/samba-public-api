@@ -1,3 +1,4 @@
+import { getSchoolById } from "../schools/model.ts";
 import { Parade, ParadeAllSelect, ParadeTranslated, ParadeTranslation, paradeTranslatedSchema } from './schemas.ts';
 
 export const getParades = async (
@@ -7,13 +8,13 @@ export const getParades = async (
     const paradeTranslation = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/parades_translations.jsonc`);
     const paradeList: Parade[] = JSON.parse(paradeFile);
     const paradeTranslationList: ParadeTranslation[] = JSON.parse(paradeTranslation).
-        filter((parade: ParadeTranslation) => parade.languageCode === language);
+        filter((parade: ParadeTranslation) => parade.language_code === language);
     let dataList = paradeList.map((parade) => {
-        const { enredo: originalEnredo, division: originalDivision, carnivalName: originalCarnivalName, ...paradeWithoutTranslation } = parade;
+        const { enredo: originalEnredo, division: originalDivision, carnival_name: originalcarnival_name, ...paradeWithoutTranslation } = parade;
         const paradeTranslation = paradeTranslationList.find((paradeTranslation: ParadeTranslation) => paradeTranslation.paradeId === parade.id);
-        const { languageCode: _languageCode, paradeId: _paradeId, id: _id, ...translation } = paradeTranslation!;
+        const { language_code: _language_code, paradeId: _paradeId, id: _id, ...translation } = paradeTranslation!;
         return paradeTranslatedSchema.parse({
-            originalCarnivalName,
+            originalcarnival_name,
             originalEnredo,
             originalDivision,
             ...paradeWithoutTranslation,
@@ -24,16 +25,16 @@ export const getParades = async (
     if (query.filter !== undefined)
         dataList = filterDataList(dataList, query.filter.toString());
     //Sorting
-    if (query.sort !== undefined || query.sortOrder !== undefined) {
+    if (query.sort !== undefined || query.sort_order !== undefined) {
         query.sort ??= 'id';
-        query.sortOrder ??= 'asc';
-        dataList = sortDataList(dataList, query.sort, query.sortOrder);
+        query.sort_order ??= 'asc';
+        dataList = sortDataList(dataList, query.sort, query.sort_order);
     }
     //Pagination
-    if (query.page !== undefined || query.pageSize !== undefined) {
+    if (query.page !== undefined || query.page_size !== undefined) {
         query.page ??= 1;
-        query.pageSize ??= 10;
-        dataList = dataList.slice((query.page - 1) * query.pageSize, query.page * query.pageSize);
+        query.page_size ??= 10;
+        dataList = dataList.slice((query.page - 1) * query.page_size, query.page * query.page_size);
     }
     return dataList;
 
@@ -76,11 +77,11 @@ const filterDataList = (dataList: ParadeTranslated[], filters: string) => {
 }
 
 
-const sortDataList = (dataList: ParadeTranslated[], sort: string, sortOrder: string | undefined) => {
+const sortDataList = (dataList: ParadeTranslated[], sort: string, sort_order: string | undefined) => {
     //Sorting in wich the sort parameter is the key from the object to sort
     if (sort !== null && dataList.length > 0) {
         dataList = dataList.sort((a, b) => {
-            if (sortOrder !== 'undefined' && sortOrder === 'desc') return a[sort as keyof Parade]! < b[sort as keyof Parade]! ? 1 : -1;
+            if (sort_order !== 'undefined' && sort_order === 'desc') return a[sort as keyof Parade]! < b[sort as keyof Parade]! ? 1 : -1;
             else return a[sort as keyof Parade]! > b[sort as keyof Parade]! ? 1 : -1;
         });
     }
@@ -96,16 +97,18 @@ export const getParadeById = async (
     const paradeFile = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/parades.jsonc`);
     const paradesTranslations = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/parades_translations.jsonc`);
     const paradeList: Parade[] = JSON.parse(paradeFile);
-    const paradeTranslationList: ParadeTranslation[] = JSON.parse(paradesTranslations).filter((parade: ParadeTranslation) => parade.languageCode === language);
+    const paradeTranslationList: ParadeTranslation[] = JSON.parse(paradesTranslations).filter((parade: ParadeTranslation) => parade.language_code === language);
     const parade = paradeList.find((parade: Parade) => parade.id === id);
     if (!parade) return null;
-    const { enredo: originalEnredo, division: originalDivision, carnivalName: originalCarnivalName, ...paradeWithoutTranslation } = parade;
+    const { enredo: originalEnredo, division: originalDivision, carnival_name: originalcarnival_name, ...paradeWithoutTranslation } = parade;
     const paradeTranslation = paradeTranslationList.find((paradeTranslation: ParadeTranslation) => paradeTranslation.paradeId == parade!.id)!;
-    const { languageCode: _languageCode, paradeId: _paradeId, id: _id, ...translation } = paradeTranslation!;
+    const { language_code: _language_code, paradeId: _paradeId, id: _id, ...translation } = paradeTranslation!;
+    const school = await getSchoolById(parade.school_id, language);
     return paradeTranslatedSchema.parse({
-        originalCarnivalName,
+        originalcarnival_name,
         originalEnredo,
         originalDivision,
+        school: school,
         ...paradeWithoutTranslation,
         ...translation,
     });
