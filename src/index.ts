@@ -6,18 +6,12 @@ import { Context } from 'hono'
 import { OpenAPIHono } from '@hono/zod-openapi'
 import { apiReference } from "@scalar/hono-api-reference";
 import schoolsApi from "./api/v1/schools/index.ts";
+import paradesApi from "./api/v1/parades/index.ts";
 
 const app = new OpenAPIHono();
 
-// Still not working in Deno Deploy
-// app.get(
-//     '*',
-//     cache({
-//         cacheName: 'samba-cache',
-//         cacheControl: 'max-age=3600',
-//         wait: true,
-//     })
-// )
+//TODO(hectorAguero): Still not working in Deno Deploy 2023-01-15
+// app.get('*',cache({cacheName: 'samba-cache',cacheControl: 'max-age=3600',wait: true}))
 app.use('/static/*', serveStatic({ root: '/assets' }));
 app.use('/favicon.ico', serveStatic({ path: '/assets/favicon.ico' }));
 // pretty json
@@ -41,6 +35,7 @@ app.onError((err, c: Context) => {
 
 // Grouping, Nested Routes
 app.route('/schools', schoolsApi);
+app.route('/parades', paradesApi);
 // The OpenAPI documentation will be available at /doc
 app.doc('/openapi.json', {
     openapi: '3.1.0',
@@ -53,6 +48,10 @@ app.doc('/openapi.json', {
         {
             name: 'Schools',
             description: 'Schools API Endpoints',
+        },
+        {
+            name: 'Parades',
+            description: 'Parades API Endpoints',
         },
 
     ],

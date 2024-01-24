@@ -1,7 +1,6 @@
 import { createRoute } from "@hono/zod-openapi";
-import { supportedLanguages } from "../supported_languages.ts";
 import { GenericResponses } from "../generic_responses.ts";
-import { schoolTranslatedSchema } from "./schemas.ts";
+import { schoolGetAllQuerySchema, schoolTranslatedSchema } from "./schemas.ts";
 
 export const schoolsAllRoute = createRoute({
     method: 'get',
@@ -9,11 +8,8 @@ export const schoolsAllRoute = createRoute({
     tags: ['schools'],
     summary: 'Get all schools',
     description: 'Get all schools',
-    query: {
-        language: {
-            type: 'string',
-            enum: supportedLanguages
-        }
+    request: {
+        query: schoolGetAllQuerySchema
     },
     responses: {
         200: {
@@ -34,17 +30,9 @@ export const schoolsByIdRoute = createRoute({
     tags: ['schools'],
     summary: 'Get school by id',
     description: 'Get school by id',
-    query: {
-        language: {
-            type: 'string',
-            enum: supportedLanguages
-        }
-    },
-    params: {
-        id: {
-            type: 'number',
-            required: true
-        }
+    request: {
+        params: schoolTranslatedSchema.pick({ id: true }).openapi('School id'),
+        query: schoolGetAllQuerySchema.pick({ language: true }).partial()
     },
     responses: {
         200: {

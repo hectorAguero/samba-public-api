@@ -1,27 +1,27 @@
 import { OpenAPIHono } from "@hono/zod-openapi";
-import { schoolsAllRoute, schoolsByIdRoute } from './routes.ts';
-import { getSchools, getSchoolById } from './model.ts';
 import Negotiator from "negotiator";
 import { languageValues } from '../supported_languages.ts';
+import { paradesAllRoute, paradesByIdRoute } from "./routes.ts";
+import { getParadeById, getParades } from "./model.ts";
 
 
-const schoolsApi = new OpenAPIHono();
+const paradesApi = new OpenAPIHono();
 
 // Set the `/posts` as a base path in the document.
-schoolsApi.openapi(schoolsAllRoute,
+paradesApi.openapi(paradesAllRoute,
     async (c) => {
-        let { language, ...query } = c.req.query();
+        let { language, ...params } = c.req.query();
         if (language == null || language == undefined) {
             const negotiator = new Negotiator(c.req.raw.headers)
             language = negotiator.language([...languageValues])
         }
         language = language != null && languageValues.includes(language) ? language : 'en'
-        const schools = await getSchools({ language, ...query });
-        return c.json(schools);
+        const parades = await getParades({ ...params, language: language as "en" | "es" | "ja" | "pt" | undefined });
+        return c.json(parades);
     },
 );
 
-schoolsApi.openapi(schoolsByIdRoute,
+paradesApi.openapi(paradesByIdRoute,
     async (c) => {
         const id = parseInt(c.req.param('id'));
         let { language } = c.req.query();
@@ -30,12 +30,12 @@ schoolsApi.openapi(schoolsByIdRoute,
             language = negotiator.language([...languageValues])
         }
         language = language != null && languageValues.includes(language) ? language : 'en'
-        const school = await getSchoolById(id, language);
-        if (!school) {
-            console.log('School not found');
-            return c.json({ error: 'School not found' }, 404);
+        const parade = await getParadeById(id, language);
+        if (!parade) {
+            console.log('Parade not found');
+            return c.json({ error: 'Parade not found' }, 404);
         }
-        return c.json(school);
+        return c.json(parade);
     },
 );
-export default schoolsApi;
+export default paradesApi;
