@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Imperatriz Leopoldinense",
-    "imageUrl": "/static/images/schools/imperatriz.jpg",
+    "imageUrl": "/static/images/schools/imperatriz_leopoldinense.jpg",
     "foundationDate": "1959/3/6",
     "godmotherSchool": "Império Serrano",
     "colors": ["Verde", "Branco", "Ouro"],
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Unidos do Viradouro",
-    "imageUrl": "/static/images/schools/viradouro.jpg",
+    "imageUrl": "/static/images/schools/unidos_do_viradouro.jpg",
     "foundationDate": "1946/6/24",
     "godmotherSchool": "Portela",
     "colors": ["Vermelho", "Branco"],
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Unidos de Vila Isabel",
-    "imageUrl": "/static/images/schools/vila_isabel.jpg",
+    "imageUrl": "/static/images/schools/unidos_de_vila_isabel.jpg",
     "foundationDate": "1946/4/4",
     "godmotherSchool": "Portela",
     "colors": ["Branco", "Azul"],
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Beija-Flor de Nilópolis",
-    "imageUrl": "/static/images/schools/beija_flor.jpg",
+    "imageUrl": "/static/images/schools/beija_flor_de_nipolis.jpg",
     "foundationDate": "1948/12/25",
     "godmotherSchool": "Portela",
     "colors": ["Azul", "Branco"],
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Estação Primeira de Mangueira",
-    "imageUrl": "/static/images/schools/mangueira.jpg",
+    "imageUrl": "/static/images/schools/estacao_primera_de_mangueira.jpg",
     "foundationDate": "1928/4/28",
     "godmotherSchool": "",
     "colors": ["Verde", "Rosa"],
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Acadêmicos do Grande Rio",
-    "imageUrl": "/static/images/schools/grande_rio.jpg",
+    "imageUrl": "/static/images/schools/academicos_do_grande_rio.jpg",
     "foundationDate": "1988/9/22",
     "godmotherSchool": "Salgueiro",
     "colors": ["Verde", "Branco", "Vermelho"],
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Acadêmicos do Salgueiro",
-    "imageUrl": "/static/images/schools/salgueiro.jpg",
+    "imageUrl": "/static/images/schools/academicos_do_salgueiro.jpg",
     "foundationDate": "1953/3/5",
     "godmotherSchool": "Mangueira",
     "colors": ["Vermelho", "Branco"],
@@ -92,7 +92,7 @@
   {
     "id": 8,
     "name": "Paraíso do Tuiuti",
-    "imageUrl": "/static/images/schools/tuiuti.jpg",
+    "imageUrl": "/static/images/schools/paraiso_do_tuiuti.jpg",
     "foundationDate": "1952/4/5",
     "godmotherSchool": "Mangueira",
     "colors": ["Azul", "Amarelo"],
@@ -128,7 +128,7 @@
   {
     "id": 11,
     "name": "Mocidade Independente de Padre Miguel",
-    "imageUrl": "/static/images/schools/mocidade.jpg",
+    "imageUrl": "/static/images/schools/mocidade_independente_de_padre_miguel.jpg",
     "foundationDate": "1955/11/10",
     "godmotherSchool": "Império Serrano",
     "colors": ["Verde", "Branco"],
@@ -152,7 +152,7 @@
   {
     "id": 13,
     "name": "Unidos do Porto da Pedra",
-    "imageUrl": "/static/images/schools/porto_da_pedra.jpg",
+    "imageUrl": "/static/images/schools/unidos_do_porto_da_pedra.jpg",
     "foundationDate": "1978/3/8",
     "godmotherSchool": "União da Ilha",
     "colors": ["Vermelho", "Branco"],
@@ -213,7 +213,7 @@
   {
     "id": 18,
     "name": "União da Ilha do Governador",
-    "imageUrl": "/static/images/schools/uniao_da_ilha.jpg",
+    "imageUrl": "/static/images/schools/uniao_da_ilha_do_governador.jpg",
     "foundationDate": "1953/3/7",
     "godmotherSchool": "Portela",
     "colors": ["Azul", "Branco", "Vermelho"],

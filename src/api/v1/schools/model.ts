@@ -44,6 +44,7 @@ export const getSchools = async (
                     });
                 }
                 if (typeof schoolValue === 'string') {
+                    if (lookUpValue === "NULL") return schoolValue === null || schoolValue === '';
                     return (schoolValue as string).toLocaleUpperCase().includes(lookUpValue);
                 }
                 if (typeof schoolValue === 'number') {

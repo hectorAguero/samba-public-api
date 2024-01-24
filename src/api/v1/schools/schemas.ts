@@ -14,7 +14,6 @@ const schoolSchema = z.object({
     honoraryPresident: z.string().openapi({ default: 'Martinho da Vila' }),
     image_url: z.string().openapi({ default: "/static/images/schools/vila_isabel.jpg" }),
     league: z.string().openapi({ default: 'LIESA' }),
-
 }).openapi('School');
 
 const schoolTranslationSchema = z.object({
@@ -30,19 +29,7 @@ const schoolTranslationSchema = z.object({
 }).openapi('SchoolTranslation');
 
 
-export const schoolTranslatedSchema = z.object({
-    id: z.number().openapi({ default: 1 }),
-    shortName: z.string().openapi({ default: 'Vila Isabel' }),
-    name: z.string().openapi({ default: 'Unidos de Vila Isabel' }),
-    fullName: z.string().openapi({ default: 'Grêmio Recreativo Escola de Samba Unidos de Vila Isabel' }),
-    godmotherSchool: z.string().openapi({ default: 'Portela' }),
-    colors: z.array(z.string()).openapi({ default: ['Branco', 'Azul'] }),
-    symbols: z.array(z.string()).openapi({ default: ['Coroa', 'Clave de Sol', 'Pandeiro', 'Pena'] }),
-    location: z.string().openapi({ default: 'Vila Isabel' }),
-    president: z.string().openapi({ default: 'Luiz Guimarães' }),
-    honoraryPresident: z.string().openapi({ default: 'Martinho da Vila' }),
-    league: z.string().openapi({ default: 'LIESA' }),
-}).openapi('SchoolTranslated');
+export const schoolTranslatedSchema = schoolSchema.omit({}).openapi('SchoolTranslated');
 
 
 export const schoolGetAllQuerySchema = z.object({

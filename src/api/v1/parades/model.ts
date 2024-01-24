@@ -48,26 +48,27 @@ const filterDataList = (dataList: ParadeTranslated[], filters: string) => {
         const lookUpValue = value?.trim().toLocaleUpperCase();
         dataList = dataList.filter((parade: ParadeTranslated) => {
             const paradeValue = parade[key as keyof ParadeTranslated];
-
             if (Array.isArray(paradeValue)) {
                 const array = paradeValue as string[];
-                return lookUpValue.split(',').every((lookUpItem) => {
+                return lookUpValue?.split(',').every((lookUpItem) => {
                     lookUpItem = lookUpItem.trim();
                     return array.some((item) => item.toLocaleUpperCase().includes(lookUpItem));
                 });
             }
-            else if (typeof paradeValue === 'string') {
-                // if (key === 'date' || key === 'championParade')
-                //     return Date.parse(paradeValue).toLocaleString().includes(lookUpValue);
-                return (paradeValue as string).toLocaleUpperCase().includes(lookUpValue);
+            else if (typeof paradeValue === 'string' && typeof lookUpValue === 'string') {
+                return paradeValue.toLocaleUpperCase().includes(lookUpValue);
             }
-            else if (typeof paradeValue === 'number') {
+            else if (typeof paradeValue === 'number' && typeof lookUpValue === 'string') {
                 if (value.includes(',')) {
                     const [min, max] = value.split(',');
                     return paradeValue >= Number(min) && paradeValue <= Number(max);
                 }
                 return paradeValue === Number(value);
             }
+            else if (paradeValue === null || paradeValue === undefined) {
+                if (lookUpValue === 'NULL' || lookUpValue == '') return true
+            }
+
             return false;
         });
     };
