@@ -37,7 +37,7 @@ const paradeTranslationSchema = paradeSchema.pick({
 
 export const paradeTranslatedSchema = paradeSchema.omit({}).extend({
     originalcarnival_name: paradeTranslationSchema.shape.carnival_name,
-    school: schoolTranslatedSchema,
+    school: schoolTranslatedSchema.nullish(),
     originalEnredo: paradeTranslationSchema.shape.enredo,
     originalDivision: paradeTranslationSchema.shape.division,
 }).openapi('ParadeTranslated');
