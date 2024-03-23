@@ -1,75 +1,75 @@
 [
   {
     "id": 1,
-    "language_code": "es",
-    "school_id": 1,
+    "languageCode": "es",
+    "schoolId": 1,
     "name": "Imperatriz Leopoldinense",
-    "godmother_school": "Império Serrano",
+    "godmotherSchool": "Império Serrano",
     "colors": ["Verde", "Blanco", "Oro"],
     "symbols": ["Corona"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 2,
-    "language_code": "es",
-    "school_id": 2,
+    "languageCode": "es",
+    "schoolId": 2,
     "name": "Unidos do Viradouro",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Rojo", "Blanco"],
     "symbols": ["Corona", "Apretón de manos interracial"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 3,
-    "language_code": "es",
-    "school_id": 3,
+    "languageCode": "es",
+    "schoolId": 3,
     "name": "Unidos de Vila Isabel",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Blanco", "Azul"],
     "symbols": ["Corona", "Clave de Sol", "Pandereta", "Pluma"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 4,
-    "language_code": "es",
-    "school_id": 4,
+    "languageCode": "es",
+    "schoolId": 4,
     "name": "Beija-Flor de Nilópolis",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Azul", "Blanco"],
     "symbols": ["Colibrí"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 5,
-    "school_id": 5,
+    "schoolId": 5,
     "name": "Estação Primeira de Mangueira",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Verde", "Rosa"],
     "symbols": ["Tambor", "Surdo", "Corona", "Ramas de laurel"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 6,
-    "language_code": "es",
-    "school_id": 6,
+    "languageCode": "es",
+    "schoolId": 6,
     "name": "Acadêmicos do Grande Rio",
-    "godmother_school": "Salgueiro",
+    "godmotherSchool": "Salgueiro",
     "colors": ["Verde", "Blanco", "Rojo"],
     "symbols": ["Corona"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 7,
-    "language_code": "es",
-    "school_id": 7,
+    "languageCode": "es",
+    "schoolId": 7,
     "name": "Acadêmicos do Salgueiro",
-    "godmother_school": "Mangueira",
+    "godmotherSchool": "Mangueira",
     "colors": ["Rojo", "Blanco"],
     "symbols": [
       "Pandereta",
@@ -79,322 +79,322 @@
       "Baqueta"
     ],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 8,
-    "language_code": "es",
-    "school_id": 8,
+    "languageCode": "es",
+    "schoolId": 8,
     "name": "Paraíso do Tuiuti",
-    "godmother_school": "Mangueira",
+    "godmotherSchool": "Mangueira",
     "colors": ["Azul", "Amarillo"],
     "symbols": ["Corona", "Lira", "Ramas de laurel"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 9,
-    "language_code": "es",
-    "school_id": 9,
+    "languageCode": "es",
+    "schoolId": 9,
     "name": "Unidos da Tijuca",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Azul", "Amarillo"],
     "symbols": ["Pavo real"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 10,
-    "language_code": "es",
-    "school_id": 10,
+    "languageCode": "es",
+    "schoolId": 10,
     "name": "Portela",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Azul", "Blanco"],
     "symbols": ["Águila"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 11,
-    "language_code": "es",
-    "school_id": 11,
+    "languageCode": "es",
+    "schoolId": 11,
     "name": "Mocidade Independente de Padre Miguel",
-    "godmother_school": "Império Serrano",
+    "godmotherSchool": "Império Serrano",
     "colors": ["Verde", "Blanco"],
     "symbols": ["Estrella de cinco puntas"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 12,
-    "language_code": "es",
-    "school_id": 12,
+    "languageCode": "es",
+    "schoolId": 12,
     "name": "Império Serrano",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Verde", "Blanco"],
     "symbols": ["Corona"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 13,
-    "language_code": "es",
-    "school_id": 13,
+    "languageCode": "es",
+    "schoolId": 13,
     "name": "Unidos do Porto da Pedra",
-    "godmother_school": "União da Ilha",
+    "godmotherSchool": "União da Ilha",
     "colors": ["Rojo", "Blanco"],
     "symbols": ["Tigre"],
     "league": "LIESA",
-    "current_division": "Grupo Especial"
+    "currentDivision": "Grupo Especial"
   },
   {
     "id": 14,
-    "language_code": "es",
-    "school_id": 14,
+    "languageCode": "es",
+    "schoolId": 14,
     "name": "Unidos de Padre Miguel",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Rojo", "Blanco"],
     "symbols": "Toro rojo",
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 15,
-    "language_code": "es",
-    "school_id": 15,
+    "languageCode": "es",
+    "schoolId": 15,
     "name": "Inocentes de Belford Roxo",
-    "godmother_school": "Império Serrano",
+    "godmotherSchool": "Império Serrano",
     "colors": ["Rojo", "Azul", "Blanco"],
     "symbols": ["Águila", "Corazones"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 16,
-    "language_code": "es",
-    "school_id": 16,
+    "languageCode": "es",
+    "schoolId": 16,
     "name": "Imperio da Tijuca",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Verde", "Blanco"],
     "symbols": ["Corona"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 17,
-    "language_code": "es",
-    "school_id": 17,
+    "languageCode": "es",
+    "schoolId": 17,
     "name": "Acadêmicos de Niterói",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Azul", "Blanco"],
     "symbols": ["Lira"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 18,
-    "language_code": "es",
-    "school_id": 18,
+    "languageCode": "es",
+    "schoolId": 18,
     "name": "União da Ilha do Governador",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Azul", "Blanco", "Rojo"],
     "symbols": ["Lira", "Caballito de mar"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 19,
-    "language_code": "es",
-    "school_id": 19,
+    "languageCode": "es",
+    "schoolId": 19,
     "name": "São Clemente",
-    "godmother_school": "Unidos de Vila Isabel",
+    "godmotherSchool": "Unidos de Vila Isabel",
     "colors": ["Negro", "Amarillo"],
     "symbols": ["Pandereta", "Ensenada de Botafogo", "Pan de Azúcar"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 20,
-    "language_code": "es",
-    "school_id": 20,
+    "languageCode": "es",
+    "schoolId": 20,
     "name": "Estácio de Sá",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Rojo", "Blanco"],
     "symbols": ["León"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 21,
-    "language_code": "es",
-    "school_id": 21,
+    "languageCode": "es",
+    "schoolId": 21,
     "name": "Unidos de Bangu",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Rojo", "Blanco"],
     "symbols": ["Pandereta"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 22,
-    "language_code": "es",
-    "school_id": 22,
+    "languageCode": "es",
+    "schoolId": 22,
     "name": "Acadêmicos de Vigário Geral",
-    "godmother_school": "União da Ilha",
+    "godmotherSchool": "União da Ilha",
     "colors": ["Azul", "Rojo", "Blanco"],
     "symbols": ["Pájaro", "Corazón", "Apretón de manos interracial"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 23,
-    "language_code": "es",
-    "school_id": 23,
+    "languageCode": "es",
+    "schoolId": 23,
     "name": "Unidos da Ponte",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Azul Marino", "Índigo", "Blanco"],
     "symbols": ["Águila", "Puente", "Apretón de manos"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 24,
-    "language_code": "es",
-    "school_id": 24,
+    "languageCode": "es",
+    "schoolId": 24,
     "name": "Arranco do Engenho de Dentro",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Azul", "Blanco"],
     "symbols": ["Halcón"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 25,
-    "language_code": "es",
-    "school_id": 25,
+    "languageCode": "es",
+    "schoolId": 25,
     "name": "Em Cima da Hora",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Azul-Pavo", "Blanco"],
     "symbols": ["Lira", "Reloj"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 26,
-    "language_code": "es",
-    "school_id": 26,
+    "languageCode": "es",
+    "schoolId": 26,
     "name": "União de Maricá",
-    "godmother_school": "Unidos do Porto da Pedra",
+    "godmotherSchool": "Unidos do Porto da Pedra",
     "colors": ["Rojo", "Oro", "Blanco"],
     "symbols": ["Corona"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 27,
-    "language_code": "es",
-    "school_id": 27,
+    "languageCode": "es",
+    "schoolId": 27,
     "name": "União do Parque Acarí",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Amarillo", "Blanco", "Rosa"],
     "symbols": ["Corona", "Apretón de manos interracial"],
     "league": "LIERJ",
-    "current_division": "Serie Oro"
+    "currentDivision": "Serie Oro"
   },
   {
     "id": 28,
-    "language_code": "es",
-    "school_id": 28,
+    "languageCode": "es",
+    "schoolId": 28,
     "name": "Lins Imperial",
-    "godmother_school": "Mangueira, Portela y Salgueiro",
+    "godmotherSchool": "Mangueira, Portela y Salgueiro",
     "colors": ["Verde", "Rosa"],
     "symbols": ["Águila"],
     "league": "LIESB",
-    "current_division": "Serie Plata"
+    "currentDivision": "Serie Plata"
   },
   {
     "id": 29,
-    "language_code": "es",
-    "school_id": 29,
+    "languageCode": "es",
+    "schoolId": 29,
     "name": "União de Jacarepaguá",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Verde", "Blanco"],
     "symbols": ["Apretón de mano"],
     "league": "LIESB",
-    "current_division": "Serie Plata"
+    "currentDivision": "Serie Plata"
   },
   {
     "id": 30,
-    "language_code": "en",
-    "school_id": 1,
+    "languageCode": "en",
+    "schoolId": 1,
     "name": "Imperatriz Leopoldinense",
-    "godmother_school": "Império Serrano",
+    "godmotherSchool": "Império Serrano",
     "colors": ["Green", "White", "Gold"],
     "symbols": ["Crown"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 31,
-    "language_code": "en",
-    "school_id": 2,
+    "languageCode": "en",
+    "schoolId": 2,
     "name": "Unidos do Viradouro",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Red", "White"],
     "symbols": ["Crown", "Interracial Handshake"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 32,
-    "language_code": "en",
-    "school_id": 3,
+    "languageCode": "en",
+    "schoolId": 3,
     "name": "Unidos de Vila Isabel",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["White", "Blue"],
     "symbols": ["Crown", "Treble Clef", "Tambourine", "Feather"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 33,
-    "language_code": "en",
-    "school_id": 4,
+    "languageCode": "en",
+    "schoolId": 4,
     "name": "Beija-Flor de Nilópolis",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Blue", "White"],
     "symbols": ["Hummingbird"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 34,
-    "language_code": "en",
-    "school_id": 5,
+    "languageCode": "en",
+    "schoolId": 5,
     "name": "Estação Primeira de Mangueira",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Green", "Pink"],
     "symbols": ["Drum", "Bass Drum", "Crown", "Laurel Branches"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 35,
-    "language_code": "en",
-    "school_id": 6,
+    "languageCode": "en",
+    "schoolId": 6,
     "name": "Acadêmicos do Grande Rio",
-    "godmother_school": "Salgueiro",
+    "godmotherSchool": "Salgueiro",
     "colors": ["Green", "White", "Red"],
     "symbols": ["Crown"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 36,
-    "language_code": "en",
-    "school_id": 7,
+    "languageCode": "en",
+    "schoolId": 7,
     "name": "Acadêmicos do Salgueiro",
-    "godmother_school": "Mangueira",
+    "godmotherSchool": "Mangueira",
     "colors": ["Red", "White"],
     "symbols": [
       "Tambourine",
@@ -404,322 +404,322 @@
       "Drumstick"
     ],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 37,
-    "language_code": "en",
-    "school_id": 8,
+    "languageCode": "en",
+    "schoolId": 8,
     "name": "Paraíso do Tuiuti",
-    "godmother_school": "Mangueira",
+    "godmotherSchool": "Mangueira",
     "colors": ["Blue", "Yellow"],
     "symbols": ["Crown", "Lyre", "Laurel Branches"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 38,
-    "language_code": "en",
-    "school_id": 9,
+    "languageCode": "en",
+    "schoolId": 9,
     "name": "Unidos da Tijuca",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Blue", "Yellow"],
     "symbols": ["Peacock"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 39,
-    "language_code": "en",
-    "school_id": 10,
+    "languageCode": "en",
+    "schoolId": 10,
     "name": "Portela",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Blue", "White"],
     "symbols": ["Eagle"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 40,
-    "language_code": "en",
-    "school_id": 11,
+    "languageCode": "en",
+    "schoolId": 11,
     "name": "Mocidade Independente de Padre Miguel",
-    "godmother_school": "Império Serrano",
+    "godmotherSchool": "Império Serrano",
     "colors": ["Green", "White"],
     "symbols": ["Five-Pointed Star"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 41,
-    "language_code": "en",
-    "school_id": 13,
+    "languageCode": "en",
+    "schoolId": 13,
     "name": "Unidos do Porto da Pedra",
-    "godmother_school": "União da Ilha",
+    "godmotherSchool": "União da Ilha",
     "colors": ["Red", "White"],
     "symbols": ["Tiger"],
     "league": "LIESA",
-    "current_division": "Special Group"
+    "currentDivision": "Special Group"
   },
   {
     "id": 42,
-    "language_code": "en",
-    "school_id": 12,
+    "languageCode": "en",
+    "schoolId": 12,
     "name": "Império Serrano",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Green", "White"],
     "symbols": ["Crown"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 43,
-    "language_code": "en",
-    "school_id": 14,
+    "languageCode": "en",
+    "schoolId": 14,
     "name": "Unidos de Padre Miguel",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Red", "White"],
     "symbols": "Red Bull",
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 44,
-    "language_code": "en",
-    "school_id": 15,
+    "languageCode": "en",
+    "schoolId": 15,
     "name": "Inocentes de Belford Roxo",
-    "godmother_school": "Império Serrano",
+    "godmotherSchool": "Império Serrano",
     "colors": ["Red", "Blue", "White"],
     "symbols": ["Eagle", "Hearts"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 45,
-    "language_code": "en",
-    "school_id": 16,
+    "languageCode": "en",
+    "schoolId": 16,
     "name": "Imperio da Tijuca",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Green", "White"],
     "symbols": ["Crown"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 46,
-    "language_code": "en",
-    "school_id": 17,
+    "languageCode": "en",
+    "schoolId": 17,
     "name": "Acadêmicos de Niterói",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Blue", "White"],
     "symbols": ["Lyre"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 47,
-    "language_code": "en",
-    "school_id": 18,
+    "languageCode": "en",
+    "schoolId": 18,
     "name": "União da Ilha do Governador",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Blue", "White", "Red"],
     "symbols": ["Lyre", "Seahorse"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 48,
-    "language_code": "en",
-    "school_id": 19,
+    "languageCode": "en",
+    "schoolId": 19,
     "name": "São Clemente",
-    "godmother_school": "Unidos de Vila Isabel",
+    "godmotherSchool": "Unidos de Vila Isabel",
     "colors": ["Black", "Yellow"],
     "symbols": ["Tambourine", "Botafogo Cove", "Sugarloaf Mountain"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 49,
-    "language_code": "en",
-    "school_id": 20,
+    "languageCode": "en",
+    "schoolId": 20,
     "name": "Estácio de Sá",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Red", "White"],
     "symbols": ["Lion"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 50,
-    "language_code": "en",
-    "school_id": 21,
+    "languageCode": "en",
+    "schoolId": 21,
     "name": "Unidos de Bangu",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Red", "White"],
     "symbols": ["Tambourine"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 51,
-    "language_code": "en",
-    "school_id": 22,
+    "languageCode": "en",
+    "schoolId": 22,
     "name": "Acadêmicos de Vigário Geral",
-    "godmother_school": "União da Ilha",
+    "godmotherSchool": "União da Ilha",
     "colors": ["Blue", "Red", "White"],
     "symbols": ["Bird", "Heart", "Interracial Handshake"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 52,
-    "language_code": "en",
-    "school_id": 23,
+    "languageCode": "en",
+    "schoolId": 23,
     "name": "Unidos da Ponte",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Navy Blue", "Indigo", "White"],
     "symbols": ["Eagle", "Bridge", "Handshake"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 53,
-    "language_code": "en",
-    "school_id": 24,
+    "languageCode": "en",
+    "schoolId": 24,
     "name": "Arranco do Engenho de Dentro",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Blue", "White"],
     "symbols": ["Falcon"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 54,
-    "language_code": "en",
-    "school_id": 25,
+    "languageCode": "en",
+    "schoolId": 25,
     "name": "Em Cima da Hora",
-    "godmother_school": "Portela",
+    "godmotherSchool": "Portela",
     "colors": ["Peacock Blue", "White"],
     "symbols": ["Lyre", "Clock"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 55,
-    "language_code": "en",
-    "school_id": 26,
+    "languageCode": "en",
+    "schoolId": 26,
     "name": "União de Maricá",
-    "godmother_school": "Unidos do Porto da Pedra",
+    "godmotherSchool": "Unidos do Porto da Pedra",
     "colors": ["Red", "Gold", "White"],
     "symbols": ["Crown"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 56,
-    "language_code": "en",
-    "school_id": 27,
+    "languageCode": "en",
+    "schoolId": 27,
     "name": "União do Parque Acarí",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Yellow", "White", "Pink"],
     "symbols": ["Crown", "Interracial Handshake"],
     "league": "LIERJ",
-    "current_division": "Gold Series"
+    "currentDivision": "Gold Series"
   },
   {
     "id": 57,
-    "language_code": "en",
-    "school_id": 28,
+    "languageCode": "en",
+    "schoolId": 28,
     "name": "Lins Imperial",
-    "godmother_school": "Mangueira, Portela, and Salgueiro",
+    "godmotherSchool": "Mangueira, Portela, and Salgueiro",
     "colors": ["Green", "Pink"],
     "symbols": ["Eagle"],
     "league": "LIESB",
-    "current_division": "Silver Series"
+    "currentDivision": "Silver Series"
   },
   {
     "id": 58,
-    "language_code": "en",
-    "school_id": 29,
+    "languageCode": "en",
+    "schoolId": 29,
     "name": "União de Jacarepaguá",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["Green", "White"],
     "symbols": ["Handshake"],
     "league": "LIESB",
-    "current_division": "Silver Series"
+    "currentDivision": "Silver Series"
   },
   {
     "id": 59,
-    "language_code": "ja",
-    "school_id": 1,
+    "languageCode": "ja",
+    "schoolId": 1,
     "name": "インペラトリス・レオポルディネンセ",
-    "godmother_school": "インペリオ・セラーノ",
+    "godmotherSchool": "インペリオ・セラーノ",
     "colors": ["グリーン", "ホワイト", "ゴールド"],
     "symbols": ["クラウン"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 60,
-    "language_code": "ja",
-    "school_id": 2,
+    "languageCode": "ja",
+    "schoolId": 2,
     "name": "ウニドス・ド・ヴィラドゥーロ",
-    "godmother_school": "ポルテーラ",
+    "godmotherSchool": "ポルテーラ",
     "colors": ["レッド", "ホワイト"],
     "symbols": ["クラウン", "異人種間の握手"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 61,
-    "language_code": "ja",
-    "school_id": 3,
+    "languageCode": "ja",
+    "schoolId": 3,
     "name": "ウニドス・デ・ヴィラ・イザベル",
-    "godmother_school": "ポルテーラ",
+    "godmotherSchool": "ポルテーラ",
     "colors": ["ホワイト", "ブルー"],
     "symbols": ["クラウン", "トレブルクリフ", "タンバリン", "フェザー"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 62,
-    "language_code": "ja",
-    "school_id": 4,
+    "languageCode": "ja",
+    "schoolId": 4,
     "name": "ベイジャ・フロール・デ・ニロポリス",
-    "godmother_school": "ポルテーラ",
+    "godmotherSchool": "ポルテーラ",
     "colors": ["ブルー", "ホワイト"],
     "symbols": ["ハチドリ"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 63,
-    "language_code": "ja",
-    "school_id": 5,
+    "languageCode": "ja",
+    "schoolId": 5,
     "name": "エスタソン・プリメイラ・デ・マングエイラ",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["グリーン", "ピンク"],
     "symbols": ["ドラム", "バスドラム", "クラウン", "ローレルの枝"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 64,
-    "language_code": "ja",
-    "school_id": 6,
+    "languageCode": "ja",
+    "schoolId": 6,
     "name": "アカデミコス・ド・グランデ・リオ",
-    "godmother_school": "サルゲイロ",
+    "godmotherSchool": "サルゲイロ",
     "colors": ["グリーン", "ホワイト", "レッド"],
     "symbols": ["クラウン"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 65,
-    "language_code": "ja",
-    "school_id": 7,
+    "languageCode": "ja",
+    "schoolId": 7,
     "name": "アカデミコス・ド・サルゲイロ",
-    "godmother_school": "マングエイラ",
+    "godmotherSchool": "マングエイラ",
     "colors": ["レッド", "ホワイト"],
     "symbols": [
       "タンバリン",
@@ -729,249 +729,249 @@
       "ドラムスティック"
     ],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 66,
-    "language_code": "ja",
-    "school_id": 8,
+    "languageCode": "ja",
+    "schoolId": 8,
     "name": "パライソ・ド・トゥイウチ",
-    "godmother_school": "マングエイラ",
+    "godmotherSchool": "マングエイラ",
     "colors": ["ブルー", "イエロー"],
     "symbols": ["クラウン", "リラ", "ローレルの枝"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 67,
-    "language_code": "ja",
-    "school_id": 9,
+    "languageCode": "ja",
+    "schoolId": 9,
     "name": "ウニドス・ダ・ティジュカ",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["ブルー", "イエロー"],
     "symbols": ["クジャク"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 68,
-    "language_code": "ja",
-    "school_id": 10,
+    "languageCode": "ja",
+    "schoolId": 10,
     "name": "ポルテーラ",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["ブルー", "ホワイト"],
     "symbols": ["イーグル"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 69,
-    "language_code": "ja",
-    "school_id": 11,
+    "languageCode": "ja",
+    "schoolId": 11,
     "name": "モシダーデ・インデペンデンテ・デ・パドレ・ミゲル",
-    "godmother_school": "インペリオ・セラーノ",
+    "godmotherSchool": "インペリオ・セラーノ",
     "colors": ["グリーン", "ホワイト"],
     "symbols": ["五芒星"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 70,
-    "language_code": "ja",
-    "school_id": 12,
+    "languageCode": "ja",
+    "schoolId": 12,
     "name": "ウニドス・ド・ポルト・ダ・ペドラ",
-    "godmother_school": "ウニオン・ダ・イーリャ",
+    "godmotherSchool": "ウニオン・ダ・イーリャ",
     "colors": ["レッド", "ホワイト"],
     "symbols": ["タイガー"],
     "league": "LIESA",
-    "current_division": "スペシャル・グループ"
+    "currentDivision": "スペシャル・グループ"
   },
   {
     "id": 71,
-    "language_code": "ja",
-    "school_id": 13,
+    "languageCode": "ja",
+    "schoolId": 13,
     "name": "インペリオ・セラーノ",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["グリーン", "ホワイト"],
     "symbols": ["クラウン"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 72,
-    "language_code": "ja",
-    "school_id": 14,
+    "languageCode": "ja",
+    "schoolId": 14,
     "name": "ウニドス・デ・パドレ・ミゲル",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["レッド", "ホワイト"],
     "symbols": "レッド・ブル",
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 73,
-    "language_code": "ja",
-    "school_id": 15,
+    "languageCode": "ja",
+    "schoolId": 15,
     "name": "イノセンテス・デ・ベルフォード・ロクソ",
-    "godmother_school": "インペリオ・セラーノ",
+    "godmotherSchool": "インペリオ・セラーノ",
     "colors": ["レッド", "ブルー", "ホワイト"],
     "symbols": ["イーグル", "ハート"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 74,
-    "language_code": "ja",
-    "school_id": 16,
+    "languageCode": "ja",
+    "schoolId": 16,
     "name": "インペリオ・ダ・ティジュカ",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["グリーン", "ホワイト"],
     "symbols": ["クラウン"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 75,
-    "language_code": "ja",
-    "school_id": 17,
+    "languageCode": "ja",
+    "schoolId": 17,
     "name": "アカデミコス・デ・ニテロイ",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["ブルー", "ホワイト"],
     "symbols": ["リラ"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 76,
-    "language_code": "ja",
-    "school_id": 18,
+    "languageCode": "ja",
+    "schoolId": 18,
     "name": "ウニオン・ダ・イーリャ・ド・ゴヴェルナドール",
-    "godmother_school": "ポルテーラ",
+    "godmotherSchool": "ポルテーラ",
     "colors": ["ブルー", "ホワイト", "レッド"],
     "symbols": ["リラ", "シーホース"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 77,
-    "language_code": "ja",
-    "school_id": 19,
+    "languageCode": "ja",
+    "schoolId": 19,
     "name": "サン・クレメンテ",
-    "godmother_school": "ウニドス・デ・ヴィラ・イザベル",
+    "godmotherSchool": "ウニドス・デ・ヴィラ・イザベル",
     "colors": ["ブラック", "イエロー"],
     "symbols": ["タンバリン", "ボタフォゴ湾", "シュガーローフ山"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 78,
-    "language_code": "ja",
-    "school_id": 20,
+    "languageCode": "ja",
+    "schoolId": 20,
     "name": "エスタシオ・デ・サ",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["レッド", "ホワイト"],
     "symbols": ["ライオン"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 79,
-    "language_code": "ja",
-    "school_id": 21,
+    "languageCode": "ja",
+    "schoolId": 21,
     "name": "ウニドス・デ・バング",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["レッド", "ホワイト"],
     "symbols": ["タンバリン"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 80,
-    "language_code": "ja",
-    "school_id": 22,
+    "languageCode": "ja",
+    "schoolId": 22,
     "name": "アカデミコス・デ・ヴィガリオ・ジェラル",
-    "godmother_school": "ウニオン・ダ・イーリャ",
+    "godmotherSchool": "ウニオン・ダ・イーリャ",
     "colors": ["ブルー", "レッド", "ホワイト"],
     "symbols": ["バード", "ハート", "異人種間の握手"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 81,
-    "language_code": "ja",
-    "school_id": 23,
+    "languageCode": "ja",
+    "schoolId": 23,
     "name": "ウニドス・ダ・ポンテ",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["ネイビーブルー", "インディゴ", "ホワイト"],
     "symbols": ["イーグル", "ブリッジ", "握手"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 82,
-    "language_code": "ja",
-    "school_id": 24,
+    "languageCode": "ja",
+    "schoolId": 24,
     "name": "アランコ・ド・エンジェーニョ・デ・デントロ",
-    "godmother_school": "ポルテーラ",
+    "godmotherSchool": "ポルテーラ",
     "colors": ["ブルー", "ホワイト"],
     "symbols": ["ファルコン"],
 
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 83,
-    "language_code": "ja",
-    "school_id": 25,
+    "languageCode": "ja",
+    "schoolId": 25,
     "name": "エン・シーマ・ダ・オラ",
-    "godmother_school": "ポルテーラ",
+    "godmotherSchool": "ポルテーラ",
     "colors": ["ピーコック・ブルー", "ホワイト"],
     "symbols": ["リラ", "時計"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 84,
-    "language_code": "ja",
-    "school_id": 26,
+    "languageCode": "ja",
+    "schoolId": 26,
     "name": "ウニオン・デ・マリカ",
-    "godmother_school": "ウニドス・ド・ポルト・ダ・ペドラ",
+    "godmotherSchool": "ウニドス・ド・ポルト・ダ・ペドラ",
     "colors": ["レッド", "ゴールド", "ホワイト"],
     "symbols": ["クラウン"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 85,
-    "language_code": "ja",
-    "school_id": 27,
+    "languageCode": "ja",
+    "schoolId": 27,
     "name": "ウニオン・ド・パルケ・アカリ",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["イエロー", "ホワイト", "ピンク"],
     "symbols": ["クラウン", "人種間の握手"],
     "league": "LIERJ",
-    "current_division": "ゴールド・シリーズ"
+    "currentDivision": "ゴールド・シリーズ"
   },
   {
     "id": 86,
-    "language_code": "ja",
-    "school_id": 28,
+    "languageCode": "ja",
+    "schoolId": 28,
     "name": "リンス・インペリアル",
-    "godmother_school": "マングエイラ、ポルテーラ、サルゲイロ",
+    "godmotherSchool": "マングエイラ、ポルテーラ、サルゲイロ",
     "colors": ["グリーン", "ピンク"],
     "symbols": ["イーグル"],
     "league": "LIESB",
-    "current_division": "シルバー・シリーズ"
+    "currentDivision": "シルバー・シリーズ"
   },
   {
     "id": 87,
-    "language_code": "ja",
-    "school_id": 29,
+    "languageCode": "ja",
+    "schoolId": 29,
     "name": "ウニオン・デ・ジャカレパグア",
-    "godmother_school": "",
+    "godmotherSchool": "",
     "colors": ["グリーン", "ホワイト"],
     "symbols": ["握手"],
     "league": "LIESB",
-    "current_division": "シルバー・シリーズ"
+    "currentDivision": "シルバー・シリーズ"
   }
 ]
