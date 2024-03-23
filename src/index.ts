@@ -12,11 +12,17 @@ const app = new OpenAPIHono();
 //TODO(hectorAguero): Still not working in Deno Deploy 2023-01-15
 // app.get('*',cache({cacheName: 'samba-cache',cacheControl: 'max-age=3600',wait: true}))
 // cors from deno depency
-//@ts-expect-error Hono middleware is from a differnt dependency, deno
+//@ts-expect-error Hono middleware is from a different dependency, deno
 app.use('*', cors());
-//@ts-expect-error Hono middleware is from a differnt dependency, deno
+// app.use("*", (ctx, next) => {
+//     const wrapped = cors({
+//         origin: ctx.env.CORS_ORIGIN,
+//     })
+//     return wrapped(ctx, next)
+// })
+//@ts-expect-error Hono middleware is from a different dependency, deno
 app.use('/static/*', serveStatic({ root: '/assets' }));
-//@ts-expect-error Hono middleware is from a differnt dependency, deno
+//@ts-expect-error Hono middleware is from a different dependency, deno
 app.use('/favicon.ico', serveStatic({ path: '/assets/favicon.ico' }));
 // pretty json
 app.use('*', prettyJSON());

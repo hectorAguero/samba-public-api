@@ -2,21 +2,16 @@
     {
         "id": 1,
         "name": "English",
-        "code": "en"
+        "languageCode": "en"
     },
     {
         "id": 2,
         "name": "Español",
-        "code": "es"
+        "languageCode": "es"
     },
     {
         "id": 3,
         "name": "日本語",
-        "code": "ja"
-    },
-    {
-        "id": 4,
-        "name": "Português",
-        "code": "pt"
+        "languageCode": "ja"
     }
 ]
