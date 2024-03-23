@@ -14,7 +14,6 @@ export const getParades = async (
         const paradeTranslation = paradeTranslationList.find((paradeTranslation: ParadeTranslation) => paradeTranslation.paradeId === parade.id);
         let translation = {};
         if (paradeTranslation) {
-            console.log(paradeTranslation);
             const { languageCode: _languageCode, paradeId: _paradeId, id: _id, ...fields } = paradeTranslation;
             translation = fields;
         }
@@ -25,7 +24,6 @@ export const getParades = async (
             ...paradeWithoutTranslation,
             ...translation,
         };
-        console.log(objectToValidate);
         return paradeTranslatedSchema.parse(objectToValidate);
     });
     //Filtering
