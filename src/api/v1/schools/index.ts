@@ -7,11 +7,12 @@ import { languageValues } from '../supported_languages.ts';
 
 const schoolsApi = new OpenAPIHono();
 
+
 // Set the `/posts` as a base path in the document.
 schoolsApi.openapi(schoolsAllRoute,
     async (c) => {
         let { language, ...query } = c.req.query();
-        if (language == null || language == undefined) {
+        if (language == null || language === undefined) {
             const negotiator = new Negotiator(c.req.raw.headers)
             language = negotiator.language([...languageValues])
         }
@@ -23,9 +24,9 @@ schoolsApi.openapi(schoolsAllRoute,
 
 schoolsApi.openapi(schoolsByIdRoute,
     async (c) => {
-        const id = parseInt(c.req.param('id'));
+        const id = Number.parseInt(c.req.param('id'));
         let { language } = c.req.query();
-        if (language == null || language == undefined) {
+        if (language == null || language === undefined) {
             const negotiator = new Negotiator(c.req.raw.headers)
             language = negotiator.language([...languageValues])
         }

@@ -4,7 +4,7 @@
     "zod": "npm:zod",
     "@hono/zod-openapi": "npm:@hono/zod-openapi",
     //serveStatic, prettyJSON, cors, etag
-    "hono/middleware": "https://deno.land/x/hono@v3.12.6/middleware.ts",
+    "hono/middleware": "https://deno.land/x/hono@v4.1.3/middleware.ts",
     "hono/cors": "npm:hono/cors",
     "hono/etag": "npm:hono/etag",
     "hono/prettyJSON": "npm:hono/pretty-json",

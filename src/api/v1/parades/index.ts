@@ -4,14 +4,13 @@ import { languageValues } from '../supported_languages.ts';
 import { paradesAllRoute, paradesByIdRoute } from "./routes.ts";
 import { getParadeById, getParades } from "./model.ts";
 
-
 const paradesApi = new OpenAPIHono();
 
 // Set the `/posts` as a base path in the document.
 paradesApi.openapi(paradesAllRoute,
     async (c) => {
         let { language, ...params } = c.req.query();
-        if (language == null || language == undefined) {
+        if (language == null || language === undefined) {
             const negotiator = new Negotiator(c.req.raw.headers)
             language = negotiator.language([...languageValues])
         }
@@ -23,9 +22,9 @@ paradesApi.openapi(paradesAllRoute,
 
 paradesApi.openapi(paradesByIdRoute,
     async (c) => {
-        const id = parseInt(c.req.param('id'));
+        const id = Number.parseInt(c.req.param('id'));
         let { language } = c.req.query();
-        if (language == null || language == undefined) {
+        if (language == null || language === undefined) {
             const negotiator = new Negotiator(c.req.raw.headers)
             language = negotiator.language([...languageValues])
         }
