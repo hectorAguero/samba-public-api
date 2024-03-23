@@ -1,6 +1,5 @@
-import { serveStatic } from "hono/middleware"
+import { cors, serveStatic } from "hono/middleware"
 import { prettyJSON } from "hono/prettyJSON"
-import { cors } from "hono/cors"
 import { etag } from "hono/etag"
 import type { Context } from 'hono'
 import { OpenAPIHono } from '@hono/zod-openapi'
@@ -20,7 +19,8 @@ app.use('/favicon.ico', serveStatic({ path: '/assets/favicon.ico' }));
 
 // pretty json
 app.use('*', prettyJSON());
-// cors
+// cors from deno depency
+//@ts-expect-error Hono middleware is from a differnt dependency, deno
 app.use('*', cors());
 // etag hash
 app.use('*', etag());
