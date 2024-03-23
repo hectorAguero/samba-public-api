@@ -3,9 +3,12 @@ import { schoolsAllRoute, schoolsByIdRoute } from './routes.ts';
 import { getSchools, getSchoolById } from './model.ts';
 import Negotiator from "negotiator";
 import { languageValues } from '../supported_languages.ts';
+import { cors } from "hono/cors";
 
 
 const schoolsApi = new OpenAPIHono();
+
+schoolsApi.use('*', cors());
 
 // Set the `/posts` as a base path in the document.
 schoolsApi.openapi(schoolsAllRoute,

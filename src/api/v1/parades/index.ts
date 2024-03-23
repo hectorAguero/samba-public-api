@@ -4,7 +4,6 @@ import { languageValues } from '../supported_languages.ts';
 import { paradesAllRoute, paradesByIdRoute } from "./routes.ts";
 import { getParadeById, getParades } from "./model.ts";
 
-
 const paradesApi = new OpenAPIHono();
 
 // Set the `/posts` as a base path in the document.

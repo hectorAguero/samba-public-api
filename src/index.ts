@@ -2,7 +2,7 @@ import { serveStatic } from "hono/middleware"
 import { prettyJSON } from "hono/prettyJSON"
 import { cors } from "hono/cors"
 import { etag } from "hono/etag"
-import { Context } from 'hono'
+import type { Context } from 'hono'
 import { OpenAPIHono } from '@hono/zod-openapi'
 import { apiReference } from "@scalar/hono-api-reference";
 import schoolsApi from "./api/v1/schools/index.ts";
@@ -12,8 +12,12 @@ const app = new OpenAPIHono();
 
 //TODO(hectorAguero): Still not working in Deno Deploy 2023-01-15
 // app.get('*',cache({cacheName: 'samba-cache',cacheControl: 'max-age=3600',wait: true}))
+
+//@ts-expect-error Hono middleware is from a differnt dependency, deno
 app.use('/static/*', serveStatic({ root: '/assets' }));
+//@ts-expect-error Hono middleware is from a differnt dependency, deno
 app.use('/favicon.ico', serveStatic({ path: '/assets/favicon.ico' }));
+
 // pretty json
 app.use('*', prettyJSON());
 // cors

@@ -10,20 +10,23 @@ export const getParades = async (
     const paradeTranslationList: ParadeTranslation[] = JSON.parse(paradeTranslation).
         filter((parade: ParadeTranslation) => parade.languageCode === language);
     let dataList = paradeList.map((parade) => {
-        const { enredo: originalEnredo, division: originalDivision, carnivalName: originalcarnival_name, ...paradeWithoutTranslation } = parade;
+        const { enredo: originalEnredo, division: originalDivision, carnivalName: originalCarnivalName, ...paradeWithoutTranslation } = parade;
         const paradeTranslation = paradeTranslationList.find((paradeTranslation: ParadeTranslation) => paradeTranslation.paradeId === parade.id);
         let translation = {};
         if (paradeTranslation) {
+            console.log(paradeTranslation);
             const { languageCode: _languageCode, paradeId: _paradeId, id: _id, ...fields } = paradeTranslation;
             translation = fields;
         }
-        return paradeTranslatedSchema.parse({
-            originalcarnival_name,
+        const objectToValidate = {
+            originalCarnivalName,
             originalEnredo,
             originalDivision,
             ...paradeWithoutTranslation,
             ...translation,
-        });
+        };
+        console.log(objectToValidate);
+        return paradeTranslatedSchema.parse(objectToValidate);
     });
     //Filtering
     if (query.filter !== undefined)
@@ -115,7 +118,7 @@ export const getParadeById = async (
     const paradeTranslationList: ParadeTranslation[] = JSON.parse(paradesTranslations).filter((parade: ParadeTranslation) => parade.languageCode === language);
     const parade = paradeList.find((parade: Parade) => parade.id === id);
     if (!parade) return null;
-    const { enredo: originalEnredo, division: originalDivision, carnivalName: originalcarnival_name, ...paradeWithoutTranslation } = parade;
+    const { enredo: originalEnredo, division: originalDivision, carnivalName: originalCarnivalName, ...paradeWithoutTranslation } = parade;
     const paradeTranslation = paradeTranslationList.find((paradeTranslation: ParadeTranslation) => paradeTranslation.paradeId === parade.id);
     let translation = {};
     if (paradeTranslation) {
@@ -124,7 +127,7 @@ export const getParadeById = async (
     }
     const school = await getSchoolById(parade.schoolId, language);
     return paradeTranslatedSchema.parse({
-        originalcarnival_name,
+        originalCarnivalName,
         originalEnredo,
         originalDivision,
         school: school,

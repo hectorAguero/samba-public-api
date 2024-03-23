@@ -221,6 +221,7 @@
   {
     "id": 25,
     "paradeId": 1,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "La Dificultad del Hombre que Fue Excomulgado y Tratado con Malicia, Sin Protección de lo Más Sagrado",
     "carnavalescos": ["Leandro Vieira"],
@@ -229,6 +230,7 @@
   {
     "id": 26,
     "paradeId": 2,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "Rosa María de Egipto",
     "carnavalescos": ["Tarcísio Zanon"],
@@ -237,6 +239,7 @@
   {
     "id": 27,
     "paradeId": 3,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "¡En esta Fiesta, Yo Llevo Fe!",
     "carnavalescos": ["Paulo Barros"],
@@ -245,6 +248,7 @@
   {
     "id": 28,
     "paradeId": 4,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "¡Gente Valiente! El Grito de los Excluidos en el Bicentenario de la Independencia",
     "carnavalescos": ["Alexandre Louzada", "André Rodrigues"],
@@ -253,6 +257,7 @@
   {
     "id": 29,
     "paradeId": 5,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "Las Áfricas que Canta Bahía",
     "carnavalescos": ["Annik Salmon", "Guilherme Estevão"],
@@ -261,6 +266,7 @@
   {
     "id": 30,
     "paradeId": 6,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "¡Eh Zeca, Dónde Está el Pagode? Caminé Descalzo, Usé Carrozas y Trenes, Buscando Xerém. ¡Para Verte, Abrazarte, Beber y Tocar Percusión!",
     "carnavalescos": ["Gabriel Haddad", "Leonardo Bora"],
@@ -269,6 +275,7 @@
   {
     "id": 31,
     "paradeId": 7,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "Delirios de un Paraíso Rojo",
     "carnavalescos": ["Edson Pereira"],
@@ -277,6 +284,7 @@
   {
     "id": 32,
     "paradeId": 8,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "Mogangueiro de Cara Negra",
     "carnavalescos": ["Rosa Magalhães", "João Vitor Araújo"],
@@ -285,6 +293,7 @@
   {
     "id": 33,
     "paradeId": 9,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "Es la Ola que Viene... Es la Ola que Va... Seré la Bahía de Todos los Santos Reflejada en el Samba de Mi Tierra",
     "carnavalescos": ["Jack Vasconcelos"],
@@ -293,6 +302,7 @@
   {
     "id": 34,
     "paradeId": 10,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "El Azul que Viene del Infinito",
     "carnavalescos": ["Renato Lage", "Márcia Lage"],
@@ -301,6 +311,7 @@
   {
     "id": 35,
     "paradeId": 11,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "Tierra de Mi Cielo, Estrellas de Mi Suelo",
     "carnavalescos": ["Marcus Ferreira"],
@@ -309,6 +320,7 @@
   {
     "id": 36,
     "paradeId": 12,
+    "languageCode": "es",
     "carnivalName": "Carnaval de Río de Janeiro",
     "enredo": "Lugares de Arlindo",
     "carnavalescos": ["Alex de Souza"],
