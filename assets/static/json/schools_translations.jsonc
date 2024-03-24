@@ -309,7 +309,7 @@
     "godmotherSchool": "Mangueira, Portela y Salgueiro",
     "colors": ["Verde", "Rosa"],
     "symbols": ["Águila"],
-    "league": "Superliga",
+    "league": "SUPERLIGA",
     "currentDivision": "Serie Plata"
   },
   {
@@ -320,7 +320,7 @@
     "godmotherSchool": "",
     "colors": ["Verde", "Blanco"],
     "symbols": ["Apretón de mano"],
-    "league": "Superliga",
+    "league": "SUPERLIGA",
     "currentDivision": "Serie Plata"
   },
   {
@@ -634,7 +634,7 @@
     "godmotherSchool": "Mangueira, Portela, and Salgueiro",
     "colors": ["Green", "Pink"],
     "symbols": ["Eagle"],
-    "league": "Superliga",
+    "league": "SUPERLIGA",
     "currentDivision": "Silver Series"
   },
   {
@@ -645,7 +645,7 @@
     "godmotherSchool": "",
     "colors": ["Green", "White"],
     "symbols": ["Handshake"],
-    "league": "Superliga",
+    "league": "SUPERLIGA",
     "currentDivision": "Silver Series"
   },
   {
@@ -960,7 +960,7 @@
     "godmotherSchool": "マングエイラ、ポルテーラ、サルゲイロ",
     "colors": ["グリーン", "ピンク"],
     "symbols": ["イーグル"],
-    "league": "Superliga",
+    "league": "SUPERLIGA",
     "currentDivision": "シルバー・シリーズ"
   },
   {
@@ -971,7 +971,7 @@
     "godmotherSchool": "",
     "colors": ["グリーン", "ホワイト"],
     "symbols": ["握手"],
-    "league": "Superliga",
+    "league": "SUPERLIGA",
     "currentDivision": "シルバー・シリーズ"
   }
 ]
