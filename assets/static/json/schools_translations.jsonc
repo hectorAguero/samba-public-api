@@ -133,7 +133,7 @@
     "godmotherSchool": "",
     "colors": ["Verde", "Blanco"],
     "symbols": ["Corona"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -155,7 +155,7 @@
     "godmotherSchool": "",
     "colors": ["Rojo", "Blanco"],
     "symbols": ["Toro rojo"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -166,7 +166,7 @@
     "godmotherSchool": "Império Serrano",
     "colors": ["Rojo", "Azul", "Blanco"],
     "symbols": ["Águila", "Corazones"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -177,7 +177,7 @@
     "godmotherSchool": "",
     "colors": ["Verde", "Blanco"],
     "symbols": ["Corona"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -188,7 +188,7 @@
     "godmotherSchool": "",
     "colors": ["Azul", "Blanco"],
     "symbols": ["Lira"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -199,7 +199,7 @@
     "godmotherSchool": "Portela",
     "colors": ["Azul", "Blanco", "Rojo"],
     "symbols": ["Lira", "Caballito de mar"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -210,7 +210,7 @@
     "godmotherSchool": "Unidos de Vila Isabel",
     "colors": ["Negro", "Amarillo"],
     "symbols": ["Pandereta", "Ensenada de Botafogo", "Pan de Azúcar"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -221,7 +221,7 @@
     "godmotherSchool": "",
     "colors": ["Rojo", "Blanco"],
     "symbols": ["León"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -232,7 +232,7 @@
     "godmotherSchool": "",
     "colors": ["Rojo", "Blanco"],
     "symbols": ["Pandereta"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -243,7 +243,7 @@
     "godmotherSchool": "União da Ilha",
     "colors": ["Azul", "Rojo", "Blanco"],
     "symbols": ["Pájaro", "Corazón", "Apretón de manos interracial"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -254,7 +254,7 @@
     "godmotherSchool": "",
     "colors": ["Azul Marino", "Índigo", "Blanco"],
     "symbols": ["Águila", "Puente", "Apretón de manos"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -265,7 +265,7 @@
     "godmotherSchool": "Portela",
     "colors": ["Azul", "Blanco"],
     "symbols": ["Halcón"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -276,7 +276,7 @@
     "godmotherSchool": "Portela",
     "colors": ["Azul-Pavo", "Blanco"],
     "symbols": ["Lira", "Reloj"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -287,7 +287,7 @@
     "godmotherSchool": "Unidos do Porto da Pedra",
     "colors": ["Rojo", "Oro", "Blanco"],
     "symbols": ["Corona"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -298,7 +298,7 @@
     "godmotherSchool": "",
     "colors": ["Amarillo", "Blanco", "Rosa"],
     "symbols": ["Corona", "Apretón de manos interracial"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Serie Oro"
   },
   {
@@ -309,7 +309,7 @@
     "godmotherSchool": "Mangueira, Portela y Salgueiro",
     "colors": ["Verde", "Rosa"],
     "symbols": ["Águila"],
-    "league": "LIESB",
+    "league": "Superliga",
     "currentDivision": "Serie Plata"
   },
   {
@@ -320,7 +320,7 @@
     "godmotherSchool": "",
     "colors": ["Verde", "Blanco"],
     "symbols": ["Apretón de mano"],
-    "league": "LIESB",
+    "league": "Superliga",
     "currentDivision": "Serie Plata"
   },
   {
@@ -469,7 +469,7 @@
     "godmotherSchool": "",
     "colors": ["Green", "White"],
     "symbols": ["Crown"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -480,7 +480,7 @@
     "godmotherSchool": "",
     "colors": ["Red", "White"],
     "symbols": ["Red Bull"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -491,7 +491,7 @@
     "godmotherSchool": "Império Serrano",
     "colors": ["Red", "Blue", "White"],
     "symbols": ["Eagle", "Hearts"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -502,7 +502,7 @@
     "godmotherSchool": "",
     "colors": ["Green", "White"],
     "symbols": ["Crown"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -513,7 +513,7 @@
     "godmotherSchool": "",
     "colors": ["Blue", "White"],
     "symbols": ["Lyre"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -524,7 +524,7 @@
     "godmotherSchool": "Portela",
     "colors": ["Blue", "White", "Red"],
     "symbols": ["Lyre", "Seahorse"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -535,7 +535,7 @@
     "godmotherSchool": "Unidos de Vila Isabel",
     "colors": ["Black", "Yellow"],
     "symbols": ["Tambourine", "Botafogo Cove", "Sugarloaf Mountain"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -546,7 +546,7 @@
     "godmotherSchool": "",
     "colors": ["Red", "White"],
     "symbols": ["Lion"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -557,7 +557,7 @@
     "godmotherSchool": "",
     "colors": ["Red", "White"],
     "symbols": ["Tambourine"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -568,7 +568,7 @@
     "godmotherSchool": "União da Ilha",
     "colors": ["Blue", "Red", "White"],
     "symbols": ["Bird", "Heart", "Interracial Handshake"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -579,7 +579,7 @@
     "godmotherSchool": "",
     "colors": ["Navy Blue", "Indigo", "White"],
     "symbols": ["Eagle", "Bridge", "Handshake"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -590,7 +590,7 @@
     "godmotherSchool": "Portela",
     "colors": ["Blue", "White"],
     "symbols": ["Falcon"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -601,7 +601,7 @@
     "godmotherSchool": "Portela",
     "colors": ["Peacock Blue", "White"],
     "symbols": ["Lyre", "Clock"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -612,7 +612,7 @@
     "godmotherSchool": "Unidos do Porto da Pedra",
     "colors": ["Red", "Gold", "White"],
     "symbols": ["Crown"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -623,7 +623,7 @@
     "godmotherSchool": "",
     "colors": ["Yellow", "White", "Pink"],
     "symbols": ["Crown", "Interracial Handshake"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Gold Series"
   },
   {
@@ -634,7 +634,7 @@
     "godmotherSchool": "Mangueira, Portela, and Salgueiro",
     "colors": ["Green", "Pink"],
     "symbols": ["Eagle"],
-    "league": "LIESB",
+    "league": "Superliga",
     "currentDivision": "Silver Series"
   },
   {
@@ -645,7 +645,7 @@
     "godmotherSchool": "",
     "colors": ["Green", "White"],
     "symbols": ["Handshake"],
-    "league": "LIESB",
+    "league": "Superliga",
     "currentDivision": "Silver Series"
   },
   {
@@ -794,7 +794,7 @@
     "godmotherSchool": "",
     "colors": ["グリーン", "ホワイト"],
     "symbols": ["クラウン"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -805,7 +805,7 @@
     "godmotherSchool": "",
     "colors": ["レッド", "ホワイト"],
     "symbols": "レッド・ブル",
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -816,7 +816,7 @@
     "godmotherSchool": "インペリオ・セラーノ",
     "colors": ["レッド", "ブルー", "ホワイト"],
     "symbols": ["イーグル", "ハート"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -827,7 +827,7 @@
     "godmotherSchool": "",
     "colors": ["グリーン", "ホワイト"],
     "symbols": ["クラウン"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -838,7 +838,7 @@
     "godmotherSchool": "",
     "colors": ["ブルー", "ホワイト"],
     "symbols": ["リラ"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -849,7 +849,7 @@
     "godmotherSchool": "ポルテーラ",
     "colors": ["ブルー", "ホワイト", "レッド"],
     "symbols": ["リラ", "シーホース"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -860,7 +860,7 @@
     "godmotherSchool": "ウニドス・デ・ヴィラ・イザベル",
     "colors": ["ブラック", "イエロー"],
     "symbols": ["タンバリン", "ボタフォゴ湾", "シュガーローフ山"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -871,7 +871,7 @@
     "godmotherSchool": "",
     "colors": ["レッド", "ホワイト"],
     "symbols": ["ライオン"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -882,7 +882,7 @@
     "godmotherSchool": "",
     "colors": ["レッド", "ホワイト"],
     "symbols": ["タンバリン"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -893,7 +893,7 @@
     "godmotherSchool": "ウニオン・ダ・イーリャ",
     "colors": ["ブルー", "レッド", "ホワイト"],
     "symbols": ["バード", "ハート", "異人種間の握手"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -904,7 +904,7 @@
     "godmotherSchool": "",
     "colors": ["ネイビーブルー", "インディゴ", "ホワイト"],
     "symbols": ["イーグル", "ブリッジ", "握手"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -916,7 +916,7 @@
     "colors": ["ブルー", "ホワイト"],
     "symbols": ["ファルコン"],
 
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -927,7 +927,7 @@
     "godmotherSchool": "ポルテーラ",
     "colors": ["ピーコック・ブルー", "ホワイト"],
     "symbols": ["リラ", "時計"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -938,7 +938,7 @@
     "godmotherSchool": "ウニドス・ド・ポルト・ダ・ペドラ",
     "colors": ["レッド", "ゴールド", "ホワイト"],
     "symbols": ["クラウン"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -949,7 +949,7 @@
     "godmotherSchool": "",
     "colors": ["イエロー", "ホワイト", "ピンク"],
     "symbols": ["クラウン", "人種間の握手"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "ゴールド・シリーズ"
   },
   {
@@ -960,7 +960,7 @@
     "godmotherSchool": "マングエイラ、ポルテーラ、サルゲイロ",
     "colors": ["グリーン", "ピンク"],
     "symbols": ["イーグル"],
-    "league": "LIESB",
+    "league": "Superliga",
     "currentDivision": "シルバー・シリーズ"
   },
   {
@@ -971,7 +971,7 @@
     "godmotherSchool": "",
     "colors": ["グリーン", "ホワイト"],
     "symbols": ["握手"],
-    "league": "LIESB",
+    "league": "Superliga",
     "currentDivision": "シルバー・シリーズ"
   }
 ]
