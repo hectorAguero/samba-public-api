@@ -154,7 +154,7 @@
     "name": "Unidos de Padre Miguel",
     "godmotherSchool": "",
     "colors": ["Rojo", "Blanco"],
-    "symbols": "Toro rojo",
+    "symbols": ["Toro rojo"],
     "league": "LIERJ",
     "currentDivision": "Serie Oro"
   },
@@ -479,7 +479,7 @@
     "name": "Unidos de Padre Miguel",
     "godmotherSchool": "",
     "colors": ["Red", "White"],
-    "symbols": "Red Bull",
+    "symbols": ["Red Bull"],
     "league": "LIERJ",
     "currentDivision": "Gold Series"
   },
