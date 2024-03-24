@@ -145,7 +145,7 @@
     "godmotherSchool": "",
     "colors": ["Verde", "Branco"],
     "symbols": ["Coroa"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -169,7 +169,7 @@
     "godmotherSchool": "",
     "colors": ["Vermelho", "Branco"],
     "symbols": "Boi vermelho",
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -182,7 +182,7 @@
     "godmotherSchool": "Império Serrano",
     "colors": ["Vermelho", "Azul", "Branco"],
     "symbols": ["Águia", "Corações"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -194,7 +194,7 @@
     "godmotherSchool": "",
     "colors": ["Verde", "Branco"],
     "symbols": ["Coroa"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -206,7 +206,7 @@
     "godmotherSchool": "",
     "colors": ["Azul", "Branco"],
     "symbols": ["Lira"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -218,7 +218,7 @@
     "godmotherSchool": "Portela",
     "colors": ["Azul", "Branco", "Vermelho"],
     "symbols": ["Lira", "Cavalo-marinho"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -230,7 +230,7 @@
     "godmotherSchool": "Unidos de Vila Isabel",
     "colors": ["Preto", "Amarelo"],
     "symbols": ["Pandeiro", "Enseada de Botafogo", "Pão de Açúcar"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -242,7 +242,7 @@
     "godmotherSchool": "",
     "colors": ["Vermelho", "Branco"],
     "symbols": ["Leão"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -254,7 +254,7 @@
     "godmotherSchool": "",
     "colors": ["Vermelho", "Branco"],
     "symbols": ["Pandeiro"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -266,7 +266,7 @@
     "godmotherSchool": "União da Ilha",
     "colors": ["Azul", "Vermelho", "Branco"],
     "symbols": ["Passaro", "Coração", "Aperto de mãos interracial"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -278,7 +278,7 @@
     "godmotherSchool": "",
     "colors": ["Azul Marinho", "Índigo", "Branco"],
     "symbols": ["Águia", "Ponte", "Aperto de mãos"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -290,7 +290,7 @@
     "godmotherSchool": "Portela",
     "colors": ["Azul", "Branco"],
     "symbols": ["Falcão"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -302,7 +302,7 @@
     "godmotherSchool": "Portela",
     "colors": ["Azul-Pavão", "Branco"],
     "symbols": ["Lira", "Relógio"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -314,7 +314,7 @@
     "godmotherSchool": "Unidos do Porto da Pedra",
     "colors": ["Vermelho", "Ouro", "Branco"],
     "symbols": ["Coroa"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -326,7 +326,7 @@
     "godmotherSchool": "",
     "colors": ["Amarelo", "Branco", "Rosa"],
     "symbols": ["Coroa", "Aperto de mãos interracial"],
-    "league": "LIERJ",
+    "league": "LIGARJ",
     "currentDivision": "Série Ouro",
     "divisionNumber": 2
   },
@@ -338,7 +338,7 @@
     "godmotherSchool": "Mangueira, Portela e Salgueiro",
     "colors": ["Verde", "Rosa"],
     "symbols": ["Águia"],
-    "league": "LIESB",
+    "league": "Superliga",
     "currentDivision": "Série Prata",
     "divisionNumber": 3
   },
@@ -350,7 +350,7 @@
     "godmotherSchool": "",
     "colors": ["Verde", "Branco"],
     "symbols": ["Aperto de mão"],
-    "league": "LIESB",
+    "league": "Superliga",
     "currentDivision": "Série Prata",
     "divisionNumber": 3
   }
