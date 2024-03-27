@@ -42,7 +42,7 @@ export const getSchools = async (
                 const schoolValue = school[key as keyof SchoolTranslated];
                 if (Array.isArray(schoolValue)) {
                     const array = schoolValue as string[];
-                    return lookUpValue.split(',').every((lookUpItem) =>
+                    return lookUpValue.split(',').every((lookUpItem: string) =>
                         array.some((item) => item.toLocaleUpperCase().includes(lookUpItem.trim()))
                     );
                 }
