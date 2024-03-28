@@ -977,7 +977,7 @@
 	{
 		"id": 88,
 		"languageCode": "es",
-		"schoolId": 29,
+		"schoolId": 30,
 		"name": "Sereno de Campo Grande",
 		"godmotherSchool": "",
 		"colors": ["Azul", "Blanco"],
@@ -988,7 +988,7 @@
 	{
 		"id": 89,
 		"languageCode": "en",
-		"schoolId": 29,
+		"schoolId": 30,
 		"name": "Sereno de Campo Grande",
 		"godmotherSchool": "",
 		"colors": ["Blue", "White"],
@@ -999,7 +999,7 @@
 	{
 		"id": 90,
 		"languageCode": "ja",
-		"schoolId": 29,
+		"schoolId": 30,
 		"name": "セレーノ・デ・カンポ・グランデ",
 		"godmotherSchool": "",
 		"colors": ["青", "ホワイト"],

@@ -8,36 +8,41 @@ export const getSchools = async (
     const schoolFile = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/schools.jsonc`);
     const schoolTranslation = await Deno.readTextFile(`${Deno.cwd()}/assets/static/json/schools_translations.jsonc`);
     const schoolList: School[] = JSON.parse(schoolFile);
-    const schoolTranslationList: SchoolTranslation[] = JSON.parse(schoolTranslation).filter((school: SchoolTranslation) => school.languageCode === language);
+    const schoolTranslationList: SchoolTranslation[] = JSON.parse(schoolTranslation)
+        .filter((school: SchoolTranslation) => school.languageCode === language);
+
     let data = schoolList.map((school: School) => {
-        const schoolTranslation = schoolTranslationList.find((schoolTranslation: SchoolTranslation) => schoolTranslation.schoolId === school.id);
+        const schoolTranslation = schoolTranslationList
+            .find((schoolTranslation: SchoolTranslation) => schoolTranslation.schoolId === school.id);
         let translation = {};
         if (schoolTranslation) {
             const { languageCode: _language_code, schoolId: _school_id, id: _id, ...fields } = schoolTranslation;
             translation = fields;
         }
+
+
         return {
             ...school,
             ...translation,
-            originalName: schoolTranslation?.name ?? school.name,
-            originalColors: schoolTranslation?.colors ?? school.colors,
-            originalSymbols: schoolTranslation?.symbols ?? school.symbols,
+            originalName: school.name,
+            originalColors: school.colors,
+            originalSymbols: school.symbols,
         };
     });
 
     // Si quieres ordenar específicamente por divisionNumber y lastPosition
     if (sort === undefined || sort === 'divisionNumber' || sort === 'lastPosition') {
         sortOrder ??= 'asc';
-        data = data.sort((a, b) => {
+        data = data.sort((firstSchool, secondSchool) => {
             // Combina los dos campos para la comparación
-            const combinedA = `${a.divisionNumber}-${a.lastPosition}`;
-            const combinedB = `${b.divisionNumber}-${b.lastPosition}`;
+            const firstSchoolPosition = `${firstSchool.divisionNumber}-${secondSchool.lastPosition}`;
+            const secondSchoolPosition = `${firstSchool.divisionNumber}-${secondSchool.lastPosition}`;
 
             // Compara las combinaciones para el ordenamiento
             if (sortOrder === 'asc') {
-                return combinedA > combinedB ? 1 : -1;
+                return firstSchoolPosition > secondSchoolPosition ? 1 : -1;
             }
-            return combinedA < combinedB ? 1 : -1;
+            return firstSchoolPosition < secondSchoolPosition ? 1 : -1;
         });
     } else {
         sort ??= 'id';
@@ -99,11 +104,12 @@ export const getSchoolById = async (
         const { languageCode: _languageCode, schoolId: _schoolId, id: _id, ...fields } = schoolTranslation;
         translation = fields;
     }
+
     return {
         ...school,
         ...translation,
-        originalName: schoolTranslation?.name ?? school.name,
-        originalColors: schoolTranslation?.colors ?? school.colors,
-        originalSymbols: schoolTranslation?.symbols ?? school.symbols,
+        originalName: school.name,
+        originalColors: school.colors,
+        originalSymbols: school.symbols,
     };
 };
