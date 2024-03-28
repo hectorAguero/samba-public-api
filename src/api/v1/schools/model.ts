@@ -1,4 +1,5 @@
 import type { School, SchoolAllSelect, SchoolTranslated, SchoolTranslation } from './schemas.ts';
+import "@std/dotenv/load";
 
 
 
@@ -23,6 +24,7 @@ export const getSchools = async (
 
         return {
             ...school,
+            imageUrl: `${Deno.env.get("IMAGE_SERVER")}${school.imageUrl}`,
             ...translation,
             originalName: school.name,
             originalColors: school.colors,
@@ -35,15 +37,17 @@ export const getSchools = async (
         sortOrder ??= 'asc';
         data = data.sort((firstSchool, secondSchool) => {
             // Combina los dos campos para la comparación
-            const firstSchoolPosition = `${firstSchool.divisionNumber}-${secondSchool.lastPosition}`;
-            const secondSchoolPosition = `${firstSchool.divisionNumber}-${secondSchool.lastPosition}`;
+            const firstSchoolPosition = `${firstSchool.divisionNumber}${firstSchool.lastPosition}`;
+            const secondSchoolPosition = `${secondSchool.divisionNumber}${secondSchool.lastPosition}`;
 
             // Compara las combinaciones para el ordenamiento
             if (sortOrder === 'asc') {
+                console.log("sortOrder === 'asc'")
                 return firstSchoolPosition > secondSchoolPosition ? 1 : -1;
             }
             return firstSchoolPosition < secondSchoolPosition ? 1 : -1;
         });
+        console.log(`1.Returning data from getSchools ${data[0].name}`);
     } else {
         sort ??= 'id';
         sortOrder ??= 'asc';
@@ -84,7 +88,7 @@ export const getSchools = async (
         if (query.pageSize === undefined) query.pageSize = 10;
         data = data.slice((query.page - 1) * query.pageSize, query.page * query.pageSize);
     }
-
+    console.log(`2.Returning data from getSchools ${data[0].name}`);
     return data;
 };
 

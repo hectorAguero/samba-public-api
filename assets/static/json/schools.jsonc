@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"name": "Imperatriz Leopoldinense",
-		"imageUrl": "/static/images/schools/imperatriz_leopoldinense.jpg",
+		"imageUrl": "imperatriz_leopoldinense.jpg",
 		"foundationDate": "1959/3/6",
 		"godmotherSchool": "Império Serrano",
 		"colors": ["Verde", "Branco", "Ouro"],
@@ -18,7 +18,7 @@
 	{
 		"id": 2,
 		"name": "Unidos do Viradouro",
-		"imageUrl": "/static/images/schools/unidos_do_viradouro.jpg",
+		"imageUrl": "unidos_do_viradouro.jpg",
 		"foundationDate": "1946/6/24",
 		"godmotherSchool": "Portela",
 		"colors": ["Vermelho", "Branco"],
@@ -34,7 +34,7 @@
 	{
 		"id": 3,
 		"name": "Unidos de Vila Isabel",
-		"imageUrl": "/static/images/schools/unidos_de_vila_isabel.jpg",
+		"imageUrl": "unidos_de_vila_isabel.jpg",
 		"foundationDate": "1946/4/4",
 		"godmotherSchool": "Portela",
 		"colors": ["Branco", "Azul"],
@@ -50,7 +50,7 @@
 	{
 		"id": 4,
 		"name": "Beija-Flor de Nilópolis",
-		"imageUrl": "/static/images/schools/beija_flor_de_nipolis.jpg",
+		"imageUrl": "beija_flor_de_nipolis.jpg",
 		"foundationDate": "1948/12/25",
 		"godmotherSchool": "Portela",
 		"colors": ["Azul", "Branco"],
@@ -66,7 +66,7 @@
 	{
 		"id": 5,
 		"name": "Estação Primeira de Mangueira",
-		"imageUrl": "/static/images/schools/estacao_primera_de_mangueira.jpg",
+		"imageUrl": "estacao_primera_de_mangueira.jpg",
 		"foundationDate": "1928/4/28",
 		"godmotherSchool": "",
 		"colors": ["Verde", "Rosa"],
@@ -82,7 +82,7 @@
 	{
 		"id": 6,
 		"name": "Acadêmicos do Grande Rio",
-		"imageUrl": "/static/images/schools/academicos_do_grande_rio.jpg",
+		"imageUrl": "academicos_do_grande_rio.jpg",
 		"foundationDate": "1988/9/22",
 		"godmotherSchool": "Salgueiro",
 		"colors": ["Verde", "Branco", "Vermelho"],
@@ -98,7 +98,7 @@
 	{
 		"id": 7,
 		"name": "Acadêmicos do Salgueiro",
-		"imageUrl": "/static/images/schools/academicos_do_salgueiro.jpg",
+		"imageUrl": "academicos_do_salgueiro.jpg",
 		"foundationDate": "1953/3/5",
 		"godmotherSchool": "Mangueira",
 		"colors": ["Vermelho", "Branco"],
@@ -120,7 +120,7 @@
 	{
 		"id": 8,
 		"name": "Paraíso do Tuiuti",
-		"imageUrl": "/static/images/schools/paraiso_do_tuiuti.jpg",
+		"imageUrl": "paraiso_do_tuiuti.jpg",
 		"foundationDate": "1952/4/5",
 		"godmotherSchool": "Mangueira",
 		"colors": ["Azul", "Amarelo"],
@@ -136,7 +136,7 @@
 	{
 		"id": 9,
 		"name": "Unidos da Tijuca",
-		"imageUrl": "/static/images/schools/unidos_da_tijuca.jpg",
+		"imageUrl": "unidos_da_tijuca.jpg",
 		"foundationDate": "1931/12/31",
 		"godmotherSchool": "",
 		"colors": ["Azul", "Amarelo"],
@@ -152,7 +152,7 @@
 	{
 		"id": 10,
 		"name": "Portela",
-		"imageUrl": "/static/images/schools/portela.jpg",
+		"imageUrl": "portela.jpg",
 		"foundationDate": "1923/4/11",
 		"godmotherSchool": "",
 		"colors": ["Azul", "Branco"],
@@ -168,7 +168,7 @@
 	{
 		"id": 11,
 		"name": "Mocidade Independente de Padre Miguel",
-		"imageUrl": "/static/images/schools/mocidade_independente_de_padre_miguel.jpg",
+		"imageUrl": "mocidade_independente_de_padre_miguel.jpg",
 		"foundationDate": "1955/11/10",
 		"godmotherSchool": "Império Serrano",
 		"colors": ["Verde", "Branco"],
@@ -184,7 +184,7 @@
 	{
 		"id": 12,
 		"name": "Império Serrano",
-		"imageUrl": "/static/images/schools/imperio_serrano.jpg",
+		"imageUrl": "imperio_serrano.jpg",
 		"foundationDate": "1947/3/23",
 		"godmotherSchool": "",
 		"colors": ["Verde", "Branco"],
@@ -200,7 +200,7 @@
 	{
 		"id": 13,
 		"name": "Unidos do Porto da Pedra",
-		"imageUrl": "/static/images/schools/unidos_do_porto_da_pedra.jpg",
+		"imageUrl": "unidos_do_porto_da_pedra.jpg",
 		"foundationDate": "1978/3/8",
 		"godmotherSchool": "União da Ilha",
 		"colors": ["Vermelho", "Branco"],
@@ -216,7 +216,7 @@
 	{
 		"id": 14,
 		"name": "Unidos de Padre Miguel",
-		"imageUrl": "/static/images/schools/unidos_de_padre_miguel.jpg",
+		"imageUrl": "unidos_de_padre_miguel.jpg",
 		"foundationDate": "1957/11/12",
 		"godmotherSchool": "",
 		"colors": ["Vermelho", "Branco"],
@@ -232,7 +232,7 @@
 	{
 		"id": 15,
 		"name": "Inocentes de Belford Roxo",
-		"imageUrl": "/static/images/schools/inocentes_de_belford_roxo.jpg",
+		"imageUrl": "inocentes_de_belford_roxo.jpg",
 		"foundationDate": "1993/7/11",
 		"godmotherSchool": "Império Serrano",
 		"colors": ["Vermelho", "Azul", "Branco"],
@@ -248,7 +248,7 @@
 	{
 		"id": 16,
 		"name": "Império da Tijuca",
-		"imageUrl": "/static/images/schools/imperio_da_tijuca.jpg",
+		"imageUrl": "imperio_da_tijuca.jpg",
 		"foundationDate": "1940/12/8",
 		"godmotherSchool": "",
 		"colors": ["Verde", "Branco"],
@@ -264,7 +264,7 @@
 	{
 		"id": 17,
 		"name": "Acadêmicos de Niterói",
-		"imageUrl": "/static/images/schools/academicos_de_niteroi.jpg",
+		"imageUrl": "academicos_de_niteroi.jpg",
 		"foundationDate": "2018/3/26",
 		"godmotherSchool": "",
 		"colors": ["Azul", "Branco"],
@@ -280,7 +280,7 @@
 	{
 		"id": 18,
 		"name": "União da Ilha do Governador",
-		"imageUrl": "/static/images/schools/uniao_da_ilha_do_governador.jpg",
+		"imageUrl": "uniao_da_ilha_do_governador.jpg",
 		"foundationDate": "1953/3/7",
 		"godmotherSchool": "Portela",
 		"colors": ["Azul", "Branco", "Vermelho"],
@@ -296,7 +296,7 @@
 	{
 		"id": 19,
 		"name": "São Clemente",
-		"imageUrl": "/static/images/schools/sao_clemente.jpg",
+		"imageUrl": "sao_clemente.jpg",
 		"foundationDate": "1961/10/25",
 		"godmotherSchool": "Unidos de Vila Isabel",
 		"colors": ["Preto", "Amarelo"],
@@ -312,7 +312,7 @@
 	{
 		"id": 20,
 		"name": "Estácio de Sá",
-		"imageUrl": "/static/images/schools/estacio_de_sa.jpg",
+		"imageUrl": "estacio_de_sa.jpg",
 		"foundationDate": "1955/2/27",
 		"godmotherSchool": "",
 		"colors": ["Vermelho", "Branco"],
@@ -328,7 +328,7 @@
 	{
 		"id": 21,
 		"name": "Unidos de Bangu",
-		"imageUrl": "/static/images/schools/unidos_de_bangu.jpg",
+		"imageUrl": "unidos_de_bangu.jpg",
 		"foundationDate": "1937/11/15",
 		"godmotherSchool": "",
 		"colors": ["Vermelho", "Branco"],
@@ -344,7 +344,7 @@
 	{
 		"id": 22,
 		"name": "Acadêmicos de Vigário Geral",
-		"imageUrl": "/static/images/schools/academicos_de_vigario_geral.jpg",
+		"imageUrl": "academicos_de_vigario_geral.jpg",
 		"foundationDate": "1991/3/13",
 		"godmotherSchool": "União da Ilha",
 		"colors": ["Azul", "Vermelho", "Branco"],
@@ -360,7 +360,7 @@
 	{
 		"id": 23,
 		"name": "Unidos da Ponte",
-		"imageUrl": "/static/images/schools/unidos_da_ponte.jpg",
+		"imageUrl": "unidos_da_ponte.jpg",
 		"foundationDate": "1952/11/3",
 		"godmotherSchool": "",
 		"colors": ["Azul Marinho", "Índigo", "Branco"],
@@ -376,7 +376,7 @@
 	{
 		"id": 24,
 		"name": "Arranco do Engenho de Dentro",
-		"imageUrl": "/static/images/schools/arranco.jpg",
+		"imageUrl": "arranco.jpg",
 		"foundationDate": "1973/3/21",
 		"godmotherSchool": "Portela",
 		"colors": ["Azul", "Branco"],
@@ -392,7 +392,7 @@
 	{
 		"id": 25,
 		"name": "Em Cima da Hora",
-		"imageUrl": "/static/images/schools/em_cima_da_hora.jpg",
+		"imageUrl": "em_cima_da_hora.jpg",
 		"foundationDate": "1959/11/15",
 		"godmotherSchool": "Portela",
 		"colors": ["Azul-Pavão", "Branco"],
@@ -408,7 +408,7 @@
 	{
 		"id": 26,
 		"name": "União de Maricá",
-		"imageUrl": "/static/images/schools/uniao_de_marica.jpg",
+		"imageUrl": "uniao_de_marica.jpg",
 		"foundationDate": "2023/11/23",
 		"godmotherSchool": "Unidos do Porto da Pedra",
 		"colors": ["Vermelho", "Ouro", "Branco"],
@@ -424,7 +424,7 @@
 	{
 		"id": 27,
 		"name": "União do Parque Acarí",
-		"imageUrl": "/static/images/schools/uniao_do_parque_acari.jpg",
+		"imageUrl": "uniao_do_parque_acari.jpg",
 		"foundationDate": "2018/1/1",
 		"godmotherSchool": "",
 		"colors": ["Amarelo", "Branco", "Rosa"],
@@ -440,7 +440,7 @@
 	{
 		"id": 28,
 		"name": "Lins Imperial",
-		"imageUrl": "/static/images/schools/lins_imperial.jpg",
+		"imageUrl": "lins_imperial.jpg",
 		"foundationDate": "1963/3/7",
 		"godmotherSchool": "Mangueira, Portela e Salgueiro",
 		"colors": ["Verde", "Rosa"],
@@ -456,7 +456,7 @@
 	{
 		"id": 29,
 		"name": "União de Jacarepaguá",
-		"imageUrl": "/static/images/schools/uniao_de_jacarepagua.jpg",
+		"imageUrl": "uniao_de_jacarepagua.jpg",
 		"foundationDate": "1956/11/15",
 		"godmotherSchool": "",
 		"colors": ["Verde", "Branco"],
@@ -472,7 +472,7 @@
 	{
 		"id": 30,
 		"name": "Sereno de Campo Grande",
-		"imageUrl": "/static/images/schools/sereno_de_campo_grande.jpg",
+		"imageUrl": "sereno.jpg",
 		"foundationDate": "1996/02/12",
 		"godmotherSchool": "",
 		"colors": ["Azul", "Branco"],

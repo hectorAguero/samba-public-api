@@ -7,8 +7,6 @@ import { languageValues } from '../supported_languages.ts';
 
 const schoolsApi = new OpenAPIHono();
 
-
-// Set the `/posts` as a base path in the document.
 schoolsApi.openapi(schoolsAllRoute,
     async (c) => {
         let { language, ...query } = c.req.query();

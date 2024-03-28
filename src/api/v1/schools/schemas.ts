@@ -2,7 +2,7 @@ import { z } from "@hono/zod-openapi";
 
 const schoolSchema = z.object({
     id: z.coerce.number().int().positive().openapi({ default: 1 }),
-    imageUrl: z.string().openapi({ default: "/static/images/schools/vila_isabel.jpg" }),
+    imageUrl: z.string().openapi({ default: "vila_isabel.jpg" }),
     name: z.string().openapi({ default: 'Grêmio Recreativo Escola de Samba Unidos de Vila Isabel' }),
     foundationDate: z.string().openapi({ default: '1946/4/4' }),
     godmotherSchool: z.string().openapi({ default: 'Portela' }),
