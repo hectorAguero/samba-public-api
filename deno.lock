@@ -2,10 +2,16 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "jsr:@std/dotenv@^0.221.0": "jsr:@std/dotenv@0.221.0",
       "npm:@hono/zod-openapi": "npm:@hono/zod-openapi@0.9.5_hono@3.12.1_zod@3.22.4",
       "npm:@scalar/hono-api-reference": "npm:@scalar/hono-api-reference@0.3.10_hono@3.12.1",
       "npm:hono": "npm:hono@3.12.1",
       "npm:zod": "npm:zod@3.22.4"
+    },
+    "jsr": {
+      "@std/dotenv@0.221.0": {
+        "integrity": "60358ec8a55ff177ca000e5028d8e995b4f1380a90d5a83f087acf0d729cc817"
+      }
     },
     "npm": {
       "@apidevtools/json-schema-ref-parser@9.0.6": {
@@ -2342,6 +2348,7 @@
   },
   "workspace": {
     "dependencies": [
+      "jsr:@std/dotenv@^0.221.0",
       "npm:@hono/zod-openapi",
       "npm:@scalar/hono-api-reference",
       "npm:hono",

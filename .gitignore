@@ -1,0 +1,40 @@
+# Deno cache
+.cache
+
+# Deno test results
+deno-test-results
+
+# Deno coverage reports
+coverage
+
+# Deno compiled output
+dist
+
+# Deno dependency lock file
+deno.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+
+# Build system files
+build/
+
+# Package files
+*.tar
+*.tgz
+*.zip
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

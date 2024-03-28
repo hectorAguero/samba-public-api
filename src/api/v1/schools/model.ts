@@ -1,4 +1,5 @@
 import type { School, SchoolAllSelect, SchoolTranslated, SchoolTranslation } from './schemas.ts';
+import "@std/dotenv/load";
 
 
 
@@ -23,6 +24,7 @@ export const getSchools = async (
 
         return {
             ...school,
+            imageUrl: `${Deno.env.get("IMAGE_SERVER")}${school.imageUrl}`,
             ...translation,
             originalName: school.name,
             originalColors: school.colors,
