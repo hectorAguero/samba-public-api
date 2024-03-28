@@ -37,8 +37,8 @@ export const getSchools = async (
         sortOrder ??= 'asc';
         data = data.sort((firstSchool, secondSchool) => {
             // Combina los dos campos para la comparación
-            const firstSchoolPosition = `${firstSchool.divisionNumber}-${secondSchool.lastPosition}`;
-            const secondSchoolPosition = `${firstSchool.divisionNumber}-${secondSchool.lastPosition}`;
+            const firstSchoolPosition = `${firstSchool.divisionNumber}${secondSchool.lastPosition}`;
+            const secondSchoolPosition = `${firstSchool.divisionNumber}${secondSchool.lastPosition}`;
 
             // Compara las combinaciones para el ordenamiento
             if (sortOrder === 'asc') {
@@ -86,7 +86,7 @@ export const getSchools = async (
         if (query.pageSize === undefined) query.pageSize = 10;
         data = data.slice((query.page - 1) * query.pageSize, query.page * query.pageSize);
     }
-
+    console.log(`Returning data from getSchools ${data[1].name}`);
     return data;
 };
 
