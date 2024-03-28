@@ -10,6 +10,10 @@ const schoolSchema = z.object({
     symbols: z.array(z.string()).openapi({ default: ['Coroa', 'Clave de Sol', 'Pandeiro', 'Pena'] }),
     league: z.string().openapi({ default: 'LIESA' }),
     divisionNumber: z.coerce.number().int().positive().openapi({ default: 1 }),
+    firstDivisionChampionships: z.coerce.number().int().positive().openapi({ default: 3 }),
+    country: z.string().openapi({ default: 'Brazil' }),
+    leagueLocation: z.string().openapi({ default: 'Rio de Janeiro' }),
+    lastPosition: z.coerce.number().int().positive().openapi({ default: 1 }),
 }).openapi('School');
 
 const schoolTranslationSchema = z.object({
@@ -24,7 +28,15 @@ const schoolTranslationSchema = z.object({
     currentDivison: z.string().openapi({ default: 'Grupo Especial' }),
 }).openapi('SchoolTranslation');
 
-export const schoolTranslatedSchema = schoolSchema.omit({}).openapi('SchoolTranslated');
+
+// Add translatedName
+export const schoolTranslatedSchema = schoolSchema
+    .omit({})
+    .extend({
+        originalName: schoolTranslationSchema.shape.name,
+        originalColors: schoolTranslationSchema.shape.colors,
+        originalSymbols: schoolTranslationSchema.shape.symbols,
+    }).openapi('SchoolTranslated');
 
 export const schoolGetAllQuerySchema = z.object({
     filter: z.string().refine((f) => f.split(';')
