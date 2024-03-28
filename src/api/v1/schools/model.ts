@@ -18,13 +18,31 @@ export const getSchools = async (
         }
         return {
             ...school,
-            ...translation
+            ...translation,
+            originalName: schoolTranslation?.name ?? school.name,
+            originalColors: schoolTranslation?.colors ?? school.colors,
+            originalSymbols: schoolTranslation?.symbols ?? school.symbols,
         };
     });
 
-    if (sort !== undefined || sortOrder !== undefined) {
+    // Si quieres ordenar específicamente por divisionNumber y lastPosition
+    if (sort === undefined || sort === 'divisionNumber' || sort === 'lastPosition') {
+        sortOrder ??= 'asc';
+        data = data.sort((a, b) => {
+            // Combina los dos campos para la comparación
+            const combinedA = `${a.divisionNumber}-${a.lastPosition}`;
+            const combinedB = `${b.divisionNumber}-${b.lastPosition}`;
+
+            // Compara las combinaciones para el ordenamiento
+            if (sortOrder === 'asc') {
+                return combinedA > combinedB ? 1 : -1;
+            }
+            return combinedA < combinedB ? 1 : -1;
+        });
+    } else {
         sort ??= 'id';
         sortOrder ??= 'asc';
+        // Ordenamiento estándar basado en el campo sort
         data = data.sort((a: SchoolTranslated, b: SchoolTranslated) => {
             if (sortOrder === 'asc') return a[sort as keyof SchoolTranslated] > b[sort as keyof SchoolTranslated] ? 1 : -1;
             return a[sort as keyof SchoolTranslated] < b[sort as keyof SchoolTranslated] ? 1 : -1;
@@ -84,5 +102,8 @@ export const getSchoolById = async (
     return {
         ...school,
         ...translation,
+        originalName: schoolTranslation?.name ?? school.name,
+        originalColors: schoolTranslation?.colors ?? school.colors,
+        originalSymbols: schoolTranslation?.symbols ?? school.symbols,
     };
 };
