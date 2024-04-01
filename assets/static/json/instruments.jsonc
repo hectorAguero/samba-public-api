@@ -1,1 +1,86 @@
-[]
+[
+	{
+		"id": 1,
+		"name": "Repinique",
+		"type": "percussão",
+		"description": "O Repinique é um instrumento de percussão brasileiro. É um tipo de tambor, com uma cabeça de tambor esticada sobre um aro de metal. É tocado com as mãos e é utilizado na música de samba",
+		"imageUri": "instruments/repinique.jpg",
+		"gallery": [
+			"instruments/repinique1.jpg",
+			"instruments/repinique2.jpg",
+			"instruments/repinique3.jpg",
+			"instruments/repinique4.jpg",
+			"instruments/repinique5.jpg"
+		]
+	},
+	{
+		"id": 2,
+		"name": "Caixa",
+		"type": "percussão",
+		"description": "O Caixa é um tambor de caixa percussão brasileiro de 12 ou 14 polegadas (30 ou 36 cm) de diâmetro e 8 polegadas (20 cm) de profundidade, com esteira típica do samba tocado no sul do Brasil. Feito de alumínio ou aço com a esteira na parte superior, pode ser tocado com uma alça ou 'em cima' - sobre o ombro para projetar o som.",
+		"imageUri": "instruments/caixa.jpg",
+		"gallery": [
+			"instruments/caixa1.jpg",
+			"instruments/caixa2.jpg",
+			"instruments/caixa3.jpg",
+			"instruments/caixa4.jpg",
+			"instruments/caixa5.jpg"
+		]
+	},
+	{
+		"id": 3,
+		"name": "Surdo",
+		"type": "percussão",
+		"description": "O Surdo é um grande tambor de baixo utilizado na música brasileira, como o samba, com tamanhos de 40 a 73 cm de diâmetro e 50 a 60 cm de profundidade. Pode ter um corpo de madeira, aço galvanizado ou alumínio, e é tocado com baquetas. Na música moderna, o tom de chão de uma bateria é usado como substituto.",
+		"imageUri": "instruments/surdo.jpg",
+		"gallery": [
+			"instruments/surdo1.jpg",
+			"instruments/surdo2.jpg",
+			"instruments/surdo3.jpg",
+			"instruments/surdo4.jpg",
+			"instruments/surdo5.jpg"
+		]
+	},
+	{
+		"id": 4,
+		"name": "Agogo",
+		"type": "percussão",
+		"description": "O Agogô é um instrumento de percussão brasileiro. É um tipo de sino, com uma haste de metal ligada a uma base de madeira. É tocado batendo na haste com um maço e é utilizado na música de samba.",
+		"imageUri": "instruments/agogo.jpg",
+		"gallery": [
+			"instruments/agogo1.jpg",
+			"instruments/agogo2.jpg",
+			"instruments/agogo3.jpg",
+			"instruments/agogo4.jpg",
+			"instruments/agogo5.jpg"
+		]
+	},
+	{
+		"id": 5,
+		"name": "Chocalho",
+		"type": "percussão",
+		"description": "O Chocalho ou Soalheira é um instrumento musical brasileiro que contém soalhas e é tocado agitando-o em uma direção paralela às varas que contêm as soalhas.",
+		"imageUri": "instruments/chocalho.jpg",
+		"gallery": [
+			"instruments/chocalho1.jpg",
+			"instruments/chocalho2.jpg",
+			"instruments/chocalho3.jpg",
+			"instruments/chocalho4.jpg",
+			"instruments/chocalho5.jpg"
+		]
+	},
+	{
+		"id": 6,
+		"name": "Pandeiro",
+		"type": "percussão",
+		"description": "O pandeiro é um tambor de aro manual popular no Brasil, utilizado em várias formas de música brasileira. Tem uma pele de tambor ajustável e pratinelas de metal que criam um som seco e menos sustentado do que o tambor. É segurado em uma mão e golpeado na pele com a outra mão para produzir o som.",
+		"imageUri": "instruments/pandeiro.jpg",
+		"gallery": [
+			"instruments/pandeiro1.jpg",
+			"instruments/pandeiro2.jpg",
+			"instruments/pandeiro2.jpg",
+			"instruments/pandeiro4.jpg",
+			"instruments/pandeiro5.jpg"
+		]
+	}
+]

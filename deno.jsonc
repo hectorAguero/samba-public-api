@@ -6,7 +6,7 @@
 		"hono": "npm:hono",
 		"hono/cors": "npm:hono/cors",
 		"hono/etag": "npm:hono/etag",
-		"hono/middleware": "https://deno.land/x/hono@v4.1.5/middleware.ts",
+		"hono/middleware": "https://deno.land/x/hono@v4.2.0-rc.1/middleware.ts",
 		"hono/prettyJSON": "npm:hono/pretty-json",
 		"negotiator": "https://deno.land/x/negotiator@1.0.1/mod.ts",
 		"zod": "npm:zod"

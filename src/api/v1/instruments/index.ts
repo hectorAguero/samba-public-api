@@ -1,14 +1,13 @@
 import { OpenAPIHono } from "@hono/zod-openapi";
+import { instrumentsAllRoute, instrumentsByIdRoute } from "./routes.ts";
+import { getInstruments, getInstrumentById } from "./model.ts";
 import Negotiator from "negotiator";
 import { languageValues } from "../supported_languages.ts";
-import { getParadesRoute, paradeByIdRoute } from "./routes.ts";
-import { getParadeById, getParades } from "./model.ts";
 
-const paradesApi = new OpenAPIHono();
+const instrumentsApi = new OpenAPIHono();
 
-// Set the `/posts` as a base path in the document.
-paradesApi.openapi(getParadesRoute, async (c) => {
-	let { language, ...params } = c.req.query();
+instrumentsApi.openapi(instrumentsAllRoute, async (c) => {
+	let { language, ...query } = c.req.query();
 	if (language == null || language === undefined) {
 		const negotiator = new Negotiator(c.req.raw.headers);
 		language = negotiator.language([...languageValues]);
@@ -16,14 +15,15 @@ paradesApi.openapi(getParadesRoute, async (c) => {
 	if (!languageValues.includes(language)) {
 		language = "en";
 	}
-	const parades = await getParades({
-		...params,
+	const instruments = await getInstruments({
 		language: language as "en" | "es" | "ja" | "pt",
+		...query,
 	});
-	return c.json(parades);
+
+	return c.json(instruments);
 });
 
-paradesApi.openapi(paradeByIdRoute, async (c) => {
+instrumentsApi.openapi(instrumentsByIdRoute, async (c) => {
 	const id = Number.parseInt(c.req.param("id"));
 	let { language } = c.req.query();
 	if (language == null || language === undefined) {
@@ -32,12 +32,11 @@ paradesApi.openapi(paradeByIdRoute, async (c) => {
 	}
 	language =
 		language != null && languageValues.includes(language) ? language : "en";
-	const parade = await getParadeById(id, language);
-	if (!parade) {
-		console.error("Parade not found");
-		return c.json({ error: "Parade not found" }, 404);
+	const instrument = await getInstrumentById(id, language);
+	if (!instrument) {
+		console.error("Instrument not found");
+		return c.json({ error: "Instrument not found" }, 404);
 	}
-	return c.json(parade);
+	return c.json(instrument);
 });
-
-export default paradesApi;
+export default instrumentsApi;
