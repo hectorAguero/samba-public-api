@@ -1,1 +1,146 @@
-[]
+[
+	{
+		"id": 1,
+		"instrumentId": 1,
+		"languageCode": "es",
+		"name": "Repique",
+		"type": "percusion",
+		"description": "Repique es un instrumento de percusión brasileño. Es un tipo de tambor, con una cabeza de tambor estirada sobre un marco de metal. Se toca con las manos y se utiliza en la música de samba."
+	},
+	{
+		"id": 2,
+		"instrumentId": 2,
+		"languageCode": "es",
+		"name": "Caixa",
+		"type": "percusion",
+		"description": "'Caixa' significa 'Caja'. Este es un tambor de caja simple de 12 o 14 pulgadas (30 o 36 cm) de diámetro y 8 pulgadas (20 cm) de profundidad, con trampas típicas del samba tocado en el sur de Brasil. Hecho de aluminio o acero con las trampas en la parte superior, se puede tocar con una correa o 'em cima' - sobre el hombro para proyectar el sonido."
+	},
+	{
+		"id": 3,
+		"instrumentId": 3,
+		"languageCode": "es",
+		"name": "Surdo",
+		"type": "percusion",
+		"description": "La surdo es un gran tambor de bajo usado en la música brasileña, como el samba, con tamaños de 40 a 73 cm de diámetro y 50 a 60 cm de profundidad. Puede tener una carcasa de madera, acero galvanizado o aluminio, y se toca con mazos. En la música moderna, el tom de piso de una batería se usa como sustituto."
+	},
+	{
+		"id": 4,
+		"instrumentId": 4,
+		"languageCode": "es",
+		"name": "Agogo",
+		"type": "percusion",
+		"description": "El Agogó es un instrumento de percusión brasileño. Es un tipo de campana, con una varilla de metal unida a una base de madera. Se toca golpeando la varilla con un mazo y se utiliza en la música de samba."
+	},
+	{
+		"id": 5,
+		"instrumentId": 5,
+		"languageCode": "es",
+		"name": "Chocalho",
+		"type": "percusion",
+		"description": "El Chocalho o la Soalheira es un instrumento musical brasileño que contiene soalhas y se toca agitándolo en una dirección paralela a las varillas que contienen las soalhas."
+	},
+	{
+		"id": 6,
+		"instrumentId": 6,
+		"languageCode": "es",
+		"name": "Pandeiro",
+		"type": "percusion",
+		"description": "El pandeiro es un tambor de marco de mano popular en Brasil, utilizado en varias formas de música brasileña. Tiene una cabeza de tambor ajustable y platinelas de metal que crean un tono seco y menos sostenido que el tambor. Se sostiene en una mano y se golpea en la cabeza con la otra mano para producir el sonido"
+	},
+	{
+		"id": 7,
+		"instrumentId": 1,
+		"languageCode": "en",
+		"name": "Repique",
+		"type": "percussion",
+		"description": "Repinique is a Brazilian percussion instrument. It is a type of tambourine, with a drum head stretched over a metal frame. It is played with the hands, and is used in samba music"
+	},
+	{
+		"id": 8,
+		"instrumentId": 2,
+		"languageCode": "en",
+		"name": "Caixa",
+		"type": "percussion",
+		"description": "'Caixa' meaning 'box'. This is a simple 12 or 14 in (30 or 36 cm) diameter, 8 in (20 cm) deep snare typical of Samba played in Southern Brasil. Made from aluminum or steel with the snare wires on top, it can be played from a sling or 'em cima' – on the shoulder to project the sound."
+	},
+	{
+		"id": 9,
+		"instrumentId": 3,
+		"languageCode": "en",
+		"name": "Surdo",
+		"type": "percussion",
+		"description": "The surdo is a large bass drum used in Brazilian music, such as samba, with sizes ranging from 40 to 73 cm in diameter and 50 to 60 cm in depth. It may have a wooden, galvanized steel, or aluminum shell, and is played with mallets. In modern music, the floor tom of a drum kit is often used as a substitute."
+	},
+	{
+		"id": 10,
+		"instrumentId": 4,
+		"languageCode": "en",
+		"name": "Agogo",
+		"type": "percussion",
+		"description": "Agogo is a Brazilian percussion instrument. It is a type of bell, with a metal rod attached to a wooden base. It is played by striking the rod with a mallet, and is used in samba music."
+	},
+	{
+		"id": 11,
+		"instrumentId": 5,
+		"languageCode": "en",
+		"name": "Chocalho",
+		"type": "percussion",
+		"description": "The Chocalho or Soalheira is a Brazilian musical instrument containing soalhas and played by shaking it in a direction parallel to the rods that contain the soalhas."
+	},
+	{
+		"id": 12,
+		"instrumentId": 6,
+		"languageCode": "en",
+		"name": "Pandeiro",
+		"type": "percussion",
+		"description": "The pandeiro is a hand frame drum popular in Brazil, used in several forms of Brazilian music. It has a tunable drumhead and metal jingles that create a dry and less sustained tone than the tambourine. It is held in one hand and struck on the head with the other hand to produce the sound."
+	},
+	{
+		"id": 13,
+		"instrumentId": 1,
+		"languageCode": "ja",
+		"name": "レピニーク",
+		"type": "パーカッション",
+		"description": "レピニークはブラジルの打楽器です。金属製のフレームに張られたドラムヘッドを持つタイプのドラムです。手で演奏し、サンバの音楽で使用されます。"
+	},
+	{
+		"id": 14,
+		"instrumentId": 2,
+		"languageCode": "ja",
+		"name": "カイシャ",
+		"type": "パーカッション",
+		"description": "「Caixa（カイシャ）」は「箱」を意味します。これはブラジル南部で演奏されるサンバの典型的なトラップ付きの12または14インチ（30または36 cm）直径、8インチ（20 cm）深さのシングルヘッドのスネアドラムです。アルミニウムまたは鋼製でトラップは上部にあり、ストラップまたは肩にかけて「em cima」と呼ばれる方法で演奏され、音を響かせます。"
+	},
+	{
+		"id": 15,
+		"instrumentId": 3,
+		"languageCode": "ja",
+		"name": "スルド",
+		"type": "パーカッション",
+		"description": "スルドは、ブラジルの音楽、サンバなどで使われる大型の低音ドラムで、直径40から73 cm、深さ50から60 cmのサイズがあります。木製、亜鉛めっき鋼、またはアルミニウムのシェルを持ち、マレットで演奏されます。現代の音楽では、フロアタムとしてドラムセットの代用としても使用されます。"
+	},
+	{
+		"id": 16,
+		"instrumentId": 4,
+		"languageCode": "ja",
+		"name": "アゴゴ",
+		"type": "パーカッション",
+		"description": "アゴゴはブラジルの打楽器です。これはタイプのベルで、金属製の棒が木製の台座に取り付けられています。棒をマレットで叩いて演奏し、サンバの音楽で使用されます。"
+	},
+	{
+		"id": 17,
+		"instrumentId": 5,
+		"languageCode": "ja",
+		"name": "チョカリョ",
+		"type": "パーカッション",
+		"description": "チョカリョまたはソアリェイラは、ブラジルの楽器で、ソアリャを含み、ソアリャを含む棒を平行に振って演奏します。"
+	},
+	{
+		"id": 18,
+		"instrumentId": 6,
+		"languageCode": "ja",
+		"name": "パンデイロ",
+		"type": "パーカッション",
+		"description": "パンデイロはブラジルで人気のある手のフレームドラムで、様々な形式のブラジル音楽で使用されます。調整可能なドラムヘッドと金属のシンバルがあり、ドラムよりも乾いた音色で鳴ります。片手で持ち、もう一方の手でヘッドを叩いて音を出します。"
+	}
+]

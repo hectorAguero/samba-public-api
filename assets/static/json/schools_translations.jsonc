@@ -7,8 +7,9 @@
 		"godmotherSchool": "Império Serrano",
 		"colors": ["Verde", "Blanco", "Oro"],
 		"symbols": ["Corona"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 2,
@@ -18,8 +19,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Rojo", "Blanco"],
 		"symbols": ["Corona", "Apretón de manos interracial"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 3,
@@ -29,8 +31,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Blanco", "Azul"],
 		"symbols": ["Corona", "Clave de Sol", "Pandereta", "Pluma"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 4,
@@ -40,8 +43,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Azul", "Blanco"],
 		"symbols": ["Colibrí"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 5,
@@ -50,8 +54,9 @@
 		"godmotherSchool": "",
 		"colors": ["Verde", "Rosa"],
 		"symbols": ["Tambor", "Surdo", "Corona", "Ramas de laurel"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 6,
@@ -61,8 +66,9 @@
 		"godmotherSchool": "Salgueiro",
 		"colors": ["Verde", "Blanco", "Rojo"],
 		"symbols": ["Corona"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 7,
@@ -78,8 +84,9 @@
 			"Afoxé de calabaza",
 			"Baqueta"
 		],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 8,
@@ -89,8 +96,9 @@
 		"godmotherSchool": "Mangueira",
 		"colors": ["Azul", "Amarillo"],
 		"symbols": ["Corona", "Lira", "Ramas de laurel"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 9,
@@ -100,8 +108,9 @@
 		"godmotherSchool": "",
 		"colors": ["Azul", "Amarillo"],
 		"symbols": ["Pavo real"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 10,
@@ -111,8 +120,9 @@
 		"godmotherSchool": "",
 		"colors": ["Azul", "Blanco"],
 		"symbols": ["Águila"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 11,
@@ -122,8 +132,9 @@
 		"godmotherSchool": "Império Serrano",
 		"colors": ["Verde", "Blanco"],
 		"symbols": ["Estrella de cinco puntas"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 12,
@@ -133,8 +144,9 @@
 		"godmotherSchool": "",
 		"colors": ["Verde", "Blanco"],
 		"symbols": ["Corona"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 13,
@@ -144,8 +156,9 @@
 		"godmotherSchool": "União da Ilha",
 		"colors": ["Rojo", "Blanco"],
 		"symbols": ["Tigre"],
-		"league": "LIESA",
-		"currentDivision": "Grupo Especial"
+		"currentDivision": "Grupo Especial",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 14,
@@ -155,8 +168,9 @@
 		"godmotherSchool": "",
 		"colors": ["Rojo", "Blanco"],
 		"symbols": ["Toro rojo"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 15,
@@ -166,8 +180,9 @@
 		"godmotherSchool": "Império Serrano",
 		"colors": ["Rojo", "Azul", "Blanco"],
 		"symbols": ["Águila", "Corazones"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 16,
@@ -177,8 +192,9 @@
 		"godmotherSchool": "",
 		"colors": ["Verde", "Blanco"],
 		"symbols": ["Corona"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 17,
@@ -188,8 +204,9 @@
 		"godmotherSchool": "",
 		"colors": ["Azul", "Blanco"],
 		"symbols": ["Lira"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 18,
@@ -199,8 +216,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Azul", "Blanco", "Rojo"],
 		"symbols": ["Lira", "Caballito de mar"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 19,
@@ -210,8 +228,9 @@
 		"godmotherSchool": "Unidos de Vila Isabel",
 		"colors": ["Negro", "Amarillo"],
 		"symbols": ["Pandereta", "Ensenada de Botafogo", "Pan de Azúcar"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 20,
@@ -221,8 +240,9 @@
 		"godmotherSchool": "",
 		"colors": ["Rojo", "Blanco"],
 		"symbols": ["León"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 21,
@@ -232,8 +252,9 @@
 		"godmotherSchool": "",
 		"colors": ["Rojo", "Blanco"],
 		"symbols": ["Pandereta"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 22,
@@ -243,8 +264,9 @@
 		"godmotherSchool": "União da Ilha",
 		"colors": ["Azul", "Rojo", "Blanco"],
 		"symbols": ["Pájaro", "Corazón", "Apretón de manos interracial"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 23,
@@ -254,8 +276,9 @@
 		"godmotherSchool": "",
 		"colors": ["Azul Marino", "Índigo", "Blanco"],
 		"symbols": ["Águila", "Puente", "Apretón de manos"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 24,
@@ -265,8 +288,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Azul", "Blanco"],
 		"symbols": ["Halcón"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 25,
@@ -276,8 +300,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Azul-Pavo", "Blanco"],
 		"symbols": ["Lira", "Reloj"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 26,
@@ -287,8 +312,9 @@
 		"godmotherSchool": "Unidos do Porto da Pedra",
 		"colors": ["Rojo", "Oro", "Blanco"],
 		"symbols": ["Corona"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 27,
@@ -298,8 +324,9 @@
 		"godmotherSchool": "",
 		"colors": ["Amarillo", "Blanco", "Rosa"],
 		"symbols": ["Corona", "Apretón de manos interracial"],
-		"league": "LIGARJ",
-		"currentDivision": "Serie Oro"
+		"currentDivision": "Serie Oro",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 28,
@@ -309,8 +336,9 @@
 		"godmotherSchool": "Mangueira, Portela y Salgueiro",
 		"colors": ["Verde", "Rosa"],
 		"symbols": ["Águila"],
-		"league": "SUPERLIGA",
-		"currentDivision": "Serie Plata"
+		"currentDivision": "Serie Plata",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 29,
@@ -320,8 +348,9 @@
 		"godmotherSchool": "",
 		"colors": ["Verde", "Blanco"],
 		"symbols": ["Apretón de mano"],
-		"league": "SUPERLIGA",
-		"currentDivision": "Serie Plata"
+		"currentDivision": "Serie Plata",
+		"country": "Brasil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 30,
@@ -331,8 +360,9 @@
 		"godmotherSchool": "Império Serrano",
 		"colors": ["Green", "White", "Gold"],
 		"symbols": ["Crown"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 31,
@@ -342,8 +372,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Red", "White"],
 		"symbols": ["Crown", "Interracial Handshake"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 32,
@@ -353,8 +384,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["White", "Blue"],
 		"symbols": ["Crown", "Treble Clef", "Tambourine", "Feather"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 33,
@@ -364,8 +396,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Blue", "White"],
 		"symbols": ["Hummingbird"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 34,
@@ -375,8 +408,9 @@
 		"godmotherSchool": "",
 		"colors": ["Green", "Pink"],
 		"symbols": ["Drum", "Bass Drum", "Crown", "Laurel Branches"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 35,
@@ -386,8 +420,9 @@
 		"godmotherSchool": "Salgueiro",
 		"colors": ["Green", "White", "Red"],
 		"symbols": ["Crown"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 36,
@@ -403,8 +438,9 @@
 			"Gourd Afoxé",
 			"Drumstick"
 		],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 37,
@@ -414,8 +450,9 @@
 		"godmotherSchool": "Mangueira",
 		"colors": ["Blue", "Yellow"],
 		"symbols": ["Crown", "Lyre", "Laurel Branches"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 38,
@@ -425,8 +462,9 @@
 		"godmotherSchool": "",
 		"colors": ["Blue", "Yellow"],
 		"symbols": ["Peacock"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 39,
@@ -436,8 +474,9 @@
 		"godmotherSchool": "",
 		"colors": ["Blue", "White"],
 		"symbols": ["Eagle"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 40,
@@ -447,8 +486,9 @@
 		"godmotherSchool": "Império Serrano",
 		"colors": ["Green", "White"],
 		"symbols": ["Five-Pointed Star"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 41,
@@ -458,8 +498,9 @@
 		"godmotherSchool": "União da Ilha",
 		"colors": ["Red", "White"],
 		"symbols": ["Tiger"],
-		"league": "LIESA",
-		"currentDivision": "Special Group"
+		"currentDivision": "Special Group",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 42,
@@ -469,8 +510,9 @@
 		"godmotherSchool": "",
 		"colors": ["Green", "White"],
 		"symbols": ["Crown"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 43,
@@ -480,8 +522,9 @@
 		"godmotherSchool": "",
 		"colors": ["Red", "White"],
 		"symbols": ["Red Bull"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 44,
@@ -491,8 +534,9 @@
 		"godmotherSchool": "Império Serrano",
 		"colors": ["Red", "Blue", "White"],
 		"symbols": ["Eagle", "Hearts"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 45,
@@ -502,8 +546,9 @@
 		"godmotherSchool": "",
 		"colors": ["Green", "White"],
 		"symbols": ["Crown"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 46,
@@ -513,8 +558,9 @@
 		"godmotherSchool": "",
 		"colors": ["Blue", "White"],
 		"symbols": ["Lyre"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 47,
@@ -524,8 +570,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Blue", "White", "Red"],
 		"symbols": ["Lyre", "Seahorse"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 48,
@@ -535,8 +582,9 @@
 		"godmotherSchool": "Unidos de Vila Isabel",
 		"colors": ["Black", "Yellow"],
 		"symbols": ["Tambourine", "Botafogo Cove", "Sugarloaf Mountain"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 49,
@@ -546,8 +594,9 @@
 		"godmotherSchool": "",
 		"colors": ["Red", "White"],
 		"symbols": ["Lion"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 50,
@@ -557,8 +606,9 @@
 		"godmotherSchool": "",
 		"colors": ["Red", "White"],
 		"symbols": ["Tambourine"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 51,
@@ -568,8 +618,9 @@
 		"godmotherSchool": "União da Ilha",
 		"colors": ["Blue", "Red", "White"],
 		"symbols": ["Bird", "Heart", "Interracial Handshake"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 52,
@@ -579,8 +630,9 @@
 		"godmotherSchool": "",
 		"colors": ["Navy Blue", "Indigo", "White"],
 		"symbols": ["Eagle", "Bridge", "Handshake"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 53,
@@ -590,8 +642,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Blue", "White"],
 		"symbols": ["Falcon"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 54,
@@ -601,8 +654,9 @@
 		"godmotherSchool": "Portela",
 		"colors": ["Peacock Blue", "White"],
 		"symbols": ["Lyre", "Clock"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 55,
@@ -612,8 +666,9 @@
 		"godmotherSchool": "Unidos do Porto da Pedra",
 		"colors": ["Red", "Gold", "White"],
 		"symbols": ["Crown"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 56,
@@ -623,8 +678,9 @@
 		"godmotherSchool": "",
 		"colors": ["Yellow", "White", "Pink"],
 		"symbols": ["Crown", "Interracial Handshake"],
-		"league": "LIGARJ",
-		"currentDivision": "Gold Series"
+		"currentDivision": "Gold Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 57,
@@ -634,8 +690,9 @@
 		"godmotherSchool": "Mangueira, Portela, and Salgueiro",
 		"colors": ["Green", "Pink"],
 		"symbols": ["Eagle"],
-		"league": "SUPERLIGA",
-		"currentDivision": "Silver Series"
+		"currentDivision": "Silver Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 58,
@@ -645,8 +702,9 @@
 		"godmotherSchool": "",
 		"colors": ["Green", "White"],
 		"symbols": ["Handshake"],
-		"league": "SUPERLIGA",
-		"currentDivision": "Silver Series"
+		"currentDivision": "Silver Series",
+		"country": "Brazil",
+		"leagueLocation": "Rio de Janeiro"
 	},
 	{
 		"id": 59,
@@ -656,8 +714,9 @@
 		"godmotherSchool": "インペリオ・セラーノ",
 		"colors": ["グリーン", "ホワイト", "ゴールド"],
 		"symbols": ["クラウン"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 60,
@@ -667,8 +726,9 @@
 		"godmotherSchool": "ポルテーラ",
 		"colors": ["レッド", "ホワイト"],
 		"symbols": ["クラウン", "異人種間の握手"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 61,
@@ -678,8 +738,9 @@
 		"godmotherSchool": "ポルテーラ",
 		"colors": ["ホワイト", "青"],
 		"symbols": ["クラウン", "トレブルクリフ", "タンバリン", "フェザー"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 62,
@@ -689,8 +750,9 @@
 		"godmotherSchool": "ポルテーラ",
 		"colors": ["青", "ホワイト"],
 		"symbols": ["ハチドリ"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 63,
@@ -700,8 +762,9 @@
 		"godmotherSchool": "",
 		"colors": ["グリーン", "ピンク"],
 		"symbols": ["ドラム", "バスドラム", "クラウン", "ローレルの枝"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 64,
@@ -711,8 +774,9 @@
 		"godmotherSchool": "サルゲイロ",
 		"colors": ["グリーン", "ホワイト", "レッド"],
 		"symbols": ["クラウン"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 65,
@@ -728,8 +792,9 @@
 			"ゴードアフォシェ",
 			"ドラムスティック"
 		],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 66,
@@ -739,8 +804,9 @@
 		"godmotherSchool": "マングエイラ",
 		"colors": ["青", "イエロー"],
 		"symbols": ["クラウン", "リラ", "ローレルの枝"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 67,
@@ -750,8 +816,9 @@
 		"godmotherSchool": "",
 		"colors": ["青", "イエロー"],
 		"symbols": ["クジャク"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 68,
@@ -761,8 +828,9 @@
 		"godmotherSchool": "",
 		"colors": ["青", "ホワイト"],
 		"symbols": ["イーグル"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 69,
@@ -772,8 +840,9 @@
 		"godmotherSchool": "インペリオ・セラーノ",
 		"colors": ["グリーン", "ホワイト"],
 		"symbols": ["五芒星"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 70,
@@ -783,8 +852,9 @@
 		"godmotherSchool": "ウニオン・ダ・イーリャ",
 		"colors": ["グリーン", "ホワイト"],
 		"symbols": ["タイガー"],
-		"league": "LIESA",
-		"currentDivision": "スペシャル・グループ"
+		"currentDivision": "スペシャル・グループ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 71,
@@ -794,8 +864,9 @@
 		"godmotherSchool": "",
 		"colors": ["レッド", "ホワイト"],
 		"symbols": ["クラウン"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 72,
@@ -805,8 +876,9 @@
 		"godmotherSchool": "",
 		"colors": ["レッド", "ホワイト"],
 		"symbols": ["赤・ブル"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 73,
@@ -816,8 +888,9 @@
 		"godmotherSchool": "インペリオ・セラーノ",
 		"colors": ["レッド", "青", "ホワイト"],
 		"symbols": ["イーグル", "ハート"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 74,
@@ -827,8 +900,9 @@
 		"godmotherSchool": "",
 		"colors": ["グリーン", "ホワイト"],
 		"symbols": ["クラウン"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 75,
@@ -838,8 +912,9 @@
 		"godmotherSchool": "",
 		"colors": ["青", "ホワイト"],
 		"symbols": ["リラ"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 76,
@@ -849,8 +924,9 @@
 		"godmotherSchool": "ポルテーラ",
 		"colors": ["青", "ホワイト", "レッド"],
 		"symbols": ["リラ", "シーホース"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 77,
@@ -860,8 +936,9 @@
 		"godmotherSchool": "ウニドス・デ・ヴィラ・イザベル",
 		"colors": ["ブラック", "イエロー"],
 		"symbols": ["タンバリン", "ボタフォゴ湾", "シュガーローフ山"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 78,
@@ -871,8 +948,9 @@
 		"godmotherSchool": "",
 		"colors": ["レッド", "ホワイト"],
 		"symbols": ["ライオン"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 79,
@@ -882,8 +960,9 @@
 		"godmotherSchool": "",
 		"colors": ["レッド", "ホワイト"],
 		"symbols": ["タンバリン"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 80,
@@ -893,8 +972,9 @@
 		"godmotherSchool": "ウニオン・ダ・イーリャ",
 		"colors": ["青", "レッド", "ホワイト"],
 		"symbols": ["バード", "ハート", "異人種間の握手"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 81,
@@ -904,8 +984,9 @@
 		"godmotherSchool": "",
 		"colors": ["ネイビー青", "インディゴ", "ホワイト"],
 		"symbols": ["イーグル", "ブリッジ", "握手"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 82,
@@ -915,9 +996,9 @@
 		"godmotherSchool": "ポルテーラ",
 		"colors": ["青", "ホワイト"],
 		"symbols": ["ファルコン"],
-
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 83,
@@ -927,8 +1008,9 @@
 		"godmotherSchool": "ポルテーラ",
 		"colors": ["ピーコック・青", "ホワイト"],
 		"symbols": ["リラ", "時計"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 84,
@@ -938,8 +1020,9 @@
 		"godmotherSchool": "ウニドス・ド・ポルト・ダ・ペドラ",
 		"colors": ["レッド", "ゴールド", "ホワイト"],
 		"symbols": ["クラウン"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 85,
@@ -949,8 +1032,9 @@
 		"godmotherSchool": "",
 		"colors": ["イエロー", "ホワイト", "ピンク"],
 		"symbols": ["クラウン", "人種間の握手"],
-		"league": "LIGARJ",
-		"currentDivision": "ゴールド・シリーズ"
+		"currentDivision": "ゴールド・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 86,
@@ -960,8 +1044,9 @@
 		"godmotherSchool": "マングエイラ、ポルテーラ、サルゲイロ",
 		"colors": ["グリーン", "ピンク"],
 		"symbols": ["イーグル"],
-		"league": "SUPERLIGA",
-		"currentDivision": "シルバー・シリーズ"
+		"currentDivision": "シルバー・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 87,
@@ -971,8 +1056,9 @@
 		"godmotherSchool": "",
 		"colors": ["グリーン", "ホワイト"],
 		"symbols": ["握手"],
-		"league": "SUPERLIGA",
-		"currentDivision": "シルバー・シリーズ"
+		"currentDivision": "シルバー・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 88,
@@ -982,8 +1068,9 @@
 		"godmotherSchool": "",
 		"colors": ["Azul", "Blanco"],
 		"symbols": ["Búho"],
-		"league": "SUPERLIGA",
-		"currentDivision": "Serie Plata"
+		"currentDivision": "Serie Plata",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 89,
@@ -993,8 +1080,9 @@
 		"godmotherSchool": "",
 		"colors": ["Blue", "White"],
 		"symbols": ["Owl"],
-		"league": "SUPERLIGA",
-		"currentDivision": "Silver Series"
+		"currentDivision": "Silver Series",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	},
 	{
 		"id": 90,
@@ -1004,7 +1092,8 @@
 		"godmotherSchool": "",
 		"colors": ["青", "ホワイト"],
 		"symbols": ["フクロウ"],
-		"league": "SUPERLIGA",
-		"currentDivision": "シルバー・シリーズ"
+		"currentDivision": "シルバー・シリーズ",
+		"country": "ブラジル",
+		"leagueLocation": "リオデジャネイロ"
 	}
 ]
