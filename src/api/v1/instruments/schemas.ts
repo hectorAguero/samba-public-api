@@ -5,7 +5,7 @@ export const instrumentSchema = z.object({
 	name: z.string(),
 	type: z.string(),
 	description: z.string(),
-	imageUri: z.string(),
+	imageUrl: z.string(),
 	gallery: z.array(z.string()),
 });
 
