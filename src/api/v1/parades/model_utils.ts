@@ -1,4 +1,7 @@
+
+import { getSchoolById } from "../schools/model.ts";
 import type { Parade, ParadeTranslation, TranslatedParade } from "./schemas.ts";
+import { translatedParadeSchema } from './schemas.ts';
 
 export async function getParadeData(
 	language: string,
@@ -21,20 +24,23 @@ export async function getParadeData(
 	return [paradeList, filteredTranslations];
 }
 
-export function translateParade(
+export async function translateParade(
 	parade: Parade,
 	translations: ParadeTranslation[],
-): TranslatedParade {
+	language: string,
+): Promise<TranslatedParade> {
 	const translation = translations.find((t) => t.paradeId === parade.id) || {};
-	return {
+	const school = await getSchoolById(parade.schoolId, language);
+
+	return translatedParadeSchema.parse({
 		...translation,
 		...parade,
 		translatedCarnivalName: parade.carnivalName,
 		translatedEnredo: parade.enredo,
 		translatedDivision: parade.division,
 		translatedCarnavalescos: parade.carnavalescos,
-		school: null,
-	};
+		school: school,
+	});
 }
 
 export const sortDataList = (

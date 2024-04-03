@@ -14,9 +14,9 @@ export async function getParades({
 	pageSize = 10,
 }: ParadesGetRequest): Promise<TranslatedParade[]> {
 	const [paradeList, paradeTranslations] = await getParadeData(language);
-	let translatedParades = paradeList.map((parade) =>
-		translateParade(parade, paradeTranslations),
-	);
+	let translatedParades = await Promise.all(paradeList.map(parade =>
+		translateParade(parade, paradeTranslations, language)
+	));
 	if (filter) {
 		translatedParades = filterDataList(translatedParades, filter.toString());
 	}
@@ -34,7 +34,7 @@ export async function getParadeById(
 	const [paradeList, paradeTranslations] = await getParadeData(language);
 	const parade = paradeList.find((p) => p.id === id);
 	if (parade) {
-		const translatedParade = translateParade(parade, paradeTranslations);
+		const translatedParade = translateParade(parade, paradeTranslations, language);
 		const school = await getSchoolById(parade.schoolId, language);
 
 		return translatedParadeSchema.parse({ ...translatedParade, school });
