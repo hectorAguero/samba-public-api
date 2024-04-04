@@ -14,11 +14,13 @@ can get the api response in different languages as (es-pt-ja).
 
 ## Installation
 
-1. Install Deno
-2. Run the project in the current folder with the command
-   ```
-   deno task dev
-   ```
+1. Install Deno (https://deno.land/)
+1. Set the Environment Variables
+1. Run the project in the current folder with the command
+
+```
+deno task dev
+```
 
 ## Usage
 
