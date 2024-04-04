@@ -1,13 +1,11 @@
 {
 	"imports": {
+		"bcrypt": "https://deno.land/x/bcrypt@v0.4.1/mod.ts",
 		"@hono/zod-openapi": "npm:@hono/zod-openapi",
 		"@scalar/hono-api-reference": "npm:@scalar/hono-api-reference",
 		"@std/dotenv/load": "jsr:@std/dotenv@^0.221.0/load",
 		"hono": "npm:hono",
-		"hono/cors": "npm:hono/cors",
-		"hono/etag": "npm:hono/etag",
-		"hono/middleware": "https://deno.land/x/hono@v4.2.0-rc.1/middleware.ts",
-		"hono/prettyJSON": "npm:hono/pretty-json",
+		"hono/middleware": "https://deno.land/x/hono@v4.2.1/middleware.ts",
 		"negotiator": "https://deno.land/x/negotiator@1.0.1/mod.ts",
 		"zod": "npm:zod"
 	},
