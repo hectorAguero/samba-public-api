@@ -1,39 +1,49 @@
-import {
-	serveStatic,
-	secureHeaders,
-	cors,
-	prettyJSON,
-	etag,
-} from "hono/middleware";
-import type { Context } from "hono";
 import { OpenAPIHono } from "@hono/zod-openapi";
 import { apiReference } from "@scalar/hono-api-reference";
-import schoolsApi from "./api/v1/schools/index.ts";
-import paradesApi from "./api/v1/parades/index.ts";
-import instrumentsApi from "./api/v1/instruments/index.ts";
-import authApi from "./api/v1/auth/index.ts";
+import type { Context } from "hono";
+import { serveStatic } from "hono/cloudflare-workers";
+// @ts-expect-error __STATIC_CONTENT_MANIFEST is not typed
+import manifest from "__STATIC_CONTENT_MANIFEST";
+import { cache } from "hono/cache";
+import { cors } from "hono/cors";
+import { etag } from "hono/etag";
+import { trimTrailingSlash } from "hono/trailing-slash";
 import { HTTPException } from "hono/http-exception";
+import { prettyJSON } from "hono/pretty-json";
+import { secureHeaders } from "hono/secure-headers";
 
-const app = new OpenAPIHono();
+import authApi from "./api/v1/auth/index.ts";
+import instrumentsApi from "./api/v1/instruments/index.ts";
+import paradesApi from "./api/v1/parades/index.ts";
+import schoolsApi from "./api/v1/schools/index.ts";
 
-//TODO(hectorAguero): Cache is not working in Deno Deploy at 2024-04-4
-app.use("*", cors(), secureHeaders(), prettyJSON(), etag());
-app.use("/static/*", serveStatic({ root: "/assets" }));
-app.use("/favicon.ico", serveStatic({ path: "/assets/favicon.ico" }));
+const app = new OpenAPIHono<{
+	Bindings: { __STATIC_CONTENT: KVNamespace };
+	strict: true;
+}>();
 
-// Routing
+app.get("/static/*", serveStatic({ root: "./", manifest }));
+app.get("/favicon.ico", serveStatic({ path: "./favicon.ico", manifest }));
+app.use(
+	"*",
+	trimTrailingSlash(),
+	cors(),
+	secureHeaders(),
+	prettyJSON(),
+	etag(),
+	// cache({
+	// 	cacheName: 'my-app',
+	// 	cacheControl: 'max-age=3600',
+	// }
+);
+
+// Main Route
 app.get("/", (c: Context) => c.redirect("/doc"));
-// Custom Not Found Message
-app.notFound((c: Context) => {
-	return c.text("Custom Batu 404 Not Found", 404);
-});
-
 // Grouping, Nested Routes
 app.route("/schools", schoolsApi);
 app.route("/parades", paradesApi);
 app.route("/instruments", instrumentsApi);
 app.route("/auth", authApi);
-
 // Error Handling
 app.onError((err, c) => {
 	console.error(err);
@@ -86,4 +96,4 @@ app.openAPIRegistry.registerComponent("securitySchemes", "Bearer", {
 	bearerFormat: "JWT",
 });
 
-Deno.serve({ port: 8787 }, app.fetch);
+export default app;

@@ -1,0 +1,14 @@
+name = "my-app"
+
+main = "src/index.ts"
+
+compatibility_date = "2023-12-01"
+
+[site]
+bucket = "./assets"
+
+[vars]
+IMAGE_SERVER="YOUR_IMAGE_SERVER"
+JWT_SECRET="YOUR_RANDOM_SECRET"
+JWT_REFRESH_SECRET="YOUR_RANDOM_REFRESH_SECRET"
+ADMIN_PASSWORD_HASH="PASSWORD_EXAMPlE_HASHED"

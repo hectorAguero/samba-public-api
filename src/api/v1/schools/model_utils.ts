@@ -1,37 +1,42 @@
 import type { School, SchoolTranslation, TranslatedSchool } from "./schemas.ts";
-import "@std/dotenv/load";
 import { translatedSchoolSchema } from "./schemas.ts";
+import { bufferToJSON, getKVAsset as getKVAssets } from "../workers_util.ts";
 
-export async function getSchoolData(
-	language: string,
-): Promise<[School[], SchoolTranslation[]]> {
-	const schoolFilePath = `${Deno.cwd()}/assets/static/json/schools.jsonc`;
-	const translationFilePath = `${Deno.cwd()}/assets/static/json/schools_translations.jsonc`;
-
-	const schoolFileContents = await Deno.readTextFile(schoolFilePath);
-	const translationFileContents = await Deno.readTextFile(translationFilePath);
-
-	const schoolList: School[] = JSON.parse(schoolFileContents);
-	const schoolTranslations: SchoolTranslation[] = JSON.parse(
-		translationFileContents,
-	);
-
-	const filteredTranslations = schoolTranslations.filter(
+export async function getSchoolData({
+	language,
+	namespace,
+}: { language: string; namespace: KVNamespace<string> | undefined }): Promise<
+	[School[], SchoolTranslation[]]
+> {
+	const schoolFilePath = "static/json/schools.jsonc";
+	const translationFilePath = "static/json/schools_translations.jsonc";
+	const schoolFile = await getKVAssets(schoolFilePath, { namespace });
+	const intlFile = await getKVAssets(translationFilePath, { namespace });
+	if (!schoolFile || !intlFile) {
+		throw new Error("Failed to fetch data");
+	}
+	const schoolList: School[] = await bufferToJSON(schoolFile);
+	const translations: SchoolTranslation[] = await bufferToJSON(intlFile);
+	const filteredTranslations = translations.filter(
 		(translation) => translation.languageCode === language,
 	);
-
 	return [schoolList, filteredTranslations];
 }
 
-export function translateSchool(
-	school: School,
-	translations: SchoolTranslation[],
-): TranslatedSchool {
+export function translateSchool({
+	school,
+	translations,
+	imageServer,
+}: {
+	school: School;
+	translations: SchoolTranslation[];
+	imageServer: string;
+}): TranslatedSchool {
 	const translation = translations.find((t) => t.schoolId === school.id);
 	return translatedSchoolSchema.parse({
 		...translation,
 		...school,
-		imageUrl: `${Deno.env.get("IMAGE_SERVER")}${school.imageUrl}`,
+		imageUrl: `${imageServer}${school.imageUrl}`,
 		translatedName: translation?.name ?? school.name,
 		translatedColors: translation?.colors ?? school.colors,
 		translatedSymbols: translation?.symbols ?? school.symbols,
@@ -53,12 +58,10 @@ export const sortDataList = (
 	return dataList.sort((prevParade, nextParade) => {
 		let previous = prevParade[sort as keyof TranslatedSchool] ?? 0;
 		let next = nextParade[sort as keyof TranslatedSchool] ?? 0;
-
 		if (sort === "lastPosition" || sort === undefined) {
 			previous = Number.parseInt(`${prevParade.divisionNumber}${previous}`);
 			next = Number.parseInt(`${nextParade.divisionNumber}${next}`);
 		}
-
 		return (previous > next ? 1 : -1) * sortOrderDirection;
 	});
 };

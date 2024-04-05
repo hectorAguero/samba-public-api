@@ -77,7 +77,7 @@ export const refreshTokenRoute = createRoute({
 							refreshToken: z.string(),
 						})
 						.openapi({
-							default: { refreshToken: "$refresh$Token" },
+							default: { refreshToken: "THE_USER_REFRESH_TOKEN" },
 						}),
 				},
 			},
