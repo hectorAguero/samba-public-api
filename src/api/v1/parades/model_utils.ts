@@ -1,37 +1,51 @@
-
 import { getSchoolById } from "../schools/model.ts";
+import { bufferToJSON, getKVAsset } from "../workers_util.ts";
 import type { Parade, ParadeTranslation, TranslatedParade } from "./schemas.ts";
-import { translatedParadeSchema } from './schemas.ts';
+import { translatedParadeSchema } from "./schemas.ts";
 
-export async function getParadeData(
-	language: string,
-): Promise<[Parade[], ParadeTranslation[]]> {
-	const paradeFilePath = `${Deno.cwd()}/assets/static/json/parades.jsonc`;
-	const translationFilePath = `${Deno.cwd()}/assets/static/json/parades_translations.jsonc`;
+export async function getParadeData({
+	language,
+	namespace,
+}: { language: string; namespace: KVNamespace | undefined }): Promise<
+	[Parade[], ParadeTranslation[]]
+> {
+	const paradeFilePath = "static/json/parades.jsonc";
+	const translationFilePath = "static/json/parades_translations.jsonc";
+	const paradeFile = await getKVAsset(paradeFilePath, { namespace });
+	const translationFile = await getKVAsset(translationFilePath, { namespace });
+	if (!paradeFile || !translationFile) {
+		throw new Error("Failed to fetch data");
+	}
+	const paradeList: Parade[] = await bufferToJSON(paradeFile);
+	const translatations: ParadeTranslation[] =
+		await bufferToJSON(translationFile);
 
-	const paradeFileContents = await Deno.readTextFile(paradeFilePath);
-	const translationFileContents = await Deno.readTextFile(translationFilePath);
-
-	const paradeList: Parade[] = JSON.parse(paradeFileContents);
-	const paradeTranslations: ParadeTranslation[] = JSON.parse(
-		translationFileContents,
-	);
-
-	const filteredTranslations = paradeTranslations.filter(
+	const filteredTranslations = translatations.filter(
 		(translation) => translation.languageCode === language,
 	);
-
 	return [paradeList, filteredTranslations];
 }
 
-export async function translateParade(
-	parade: Parade,
-	translations: ParadeTranslation[],
-	language: string,
-): Promise<TranslatedParade> {
+export async function translateParade({
+	parade,
+	translations,
+	language,
+	imageServer,
+	namespace,
+}: {
+	parade: Parade;
+	translations: ParadeTranslation[];
+	language: string;
+	imageServer: string;
+	namespace: KVNamespace | undefined;
+}): Promise<TranslatedParade> {
 	const translation = translations.find((t) => t.paradeId === parade.id) || {};
-	const school = await getSchoolById(parade.schoolId, language);
-
+	const school = await getSchoolById({
+		id: parade.schoolId,
+		language,
+		imageServer,
+		namespace,
+	});
 	return translatedParadeSchema.parse({
 		...translation,
 		...parade,
@@ -53,7 +67,6 @@ export const sortDataList = (
 	return dataList.sort((prevParade, nextParade) => {
 		const previous = prevParade[sortBy as keyof TranslatedParade] ?? 0;
 		const next = nextParade[sortBy as keyof TranslatedParade] ?? 0;
-
 		return (previous > next ? 1 : -1) * sortOrderDirection;
 	});
 };

@@ -1,37 +1,45 @@
+import { bufferToJSON, getKVAsset } from "../workers_util.ts";
 import { translatedInstrumentSchema } from "./schemas.ts";
 import type {
 	Instrument,
 	InstrumentTranslation,
 	TranslatedInstrument,
 } from "./schemas.ts";
+import { env } from "hono/adapter";
 
-export async function getInstrumentData(
-	language: string,
-): Promise<[Instrument[], InstrumentTranslation[]]> {
-	const instrumentFilePath = `${Deno.cwd()}/assets/static/json/instruments.jsonc`;
-	const translationFilePath = `${Deno.cwd()}/assets/static/json/instruments_translations.jsonc`;
+export async function getInstrumentData({
+	language,
+	namespace,
+}: { language: string; namespace: KVNamespace<string> | undefined }): Promise<
+	[Instrument[], InstrumentTranslation[]]
+> {
+	const instrumensPath = "static/json/instruments.jsonc";
+	const translationsPath = "static/json/instruments_translations.jsonc";
 
-	const instrumentFileContents = await Deno.readTextFile(instrumentFilePath);
-	const translationFileContents = await Deno.readTextFile(translationFilePath);
-
-	const instrumentList: Instrument[] = JSON.parse(instrumentFileContents);
-	const instrumentTranslations: InstrumentTranslation[] = JSON.parse(
-		translationFileContents,
-	);
-
-	const filteredTranslations = instrumentTranslations.filter(
+	const instrumentFile = await getKVAsset(instrumensPath, { namespace });
+	const intlFile = await getKVAsset(translationsPath, { namespace });
+	if (!instrumentFile || !intlFile) {
+		throw new Error("Failed to fetch data");
+	}
+	const instruments: Instrument[] = await bufferToJSON(instrumentFile);
+	const translations: InstrumentTranslation[] = await bufferToJSON(intlFile);
+	const filteredTranslations = translations.filter(
 		(translation) => translation.languageCode === language,
 	);
 
-	return [instrumentList, filteredTranslations];
+	return [instruments, filteredTranslations];
 }
 
-export function translateInstrument(
-	instrument: Instrument,
-	translations: InstrumentTranslation[],
-): TranslatedInstrument {
-	const imageServer = Deno.env.get("IMAGE_SERVER");
-	const translation = translations.find(
+export function translateInstrument({
+	instrument,
+	instrumentTranslations,
+	imageServer,
+}: {
+	instrument: Instrument;
+	instrumentTranslations: InstrumentTranslation[];
+	imageServer: string;
+}): TranslatedInstrument {
+	const translation = instrumentTranslations.find(
 		(t) => t.instrumentId === instrument.id,
 	);
 	return translatedInstrumentSchema.parse({
@@ -51,7 +59,6 @@ export const sortDataList = (
 	sortOrder: string,
 ) => {
 	const sortOrderDirection = sortOrder === "desc" ? -1 : 1;
-
 	return dataList.sort((prevInstrument, nextInstrument) => {
 		const previous = prevInstrument[sortBy as keyof TranslatedInstrument] ?? 0;
 		const next = nextInstrument[sortBy as keyof TranslatedInstrument] ?? 0;

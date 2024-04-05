@@ -1,29 +1,21 @@
 import { sign, verify } from "hono/jwt";
-import * as bcrypt from "bcrypt";
-import "@std/dotenv/load";
-import { bearerAuth } from "hono/middleware";
+import { bearerAuth } from "hono/bearer-auth";
 import { ADMIN_USERNAME } from "./consts.ts";
-
-export const requireAuthMiddleware = bearerAuth({
-	verifyToken: (token, _) => verifyToken(token),
-});
-
-function getSecrets() {
-	const secret = Deno.env.get("JWT_SECRET");
-	const refreshSecret = Deno.env.get("JWT_REFRESH_SECRET");
-
-	if (!secret || !refreshSecret) {
-		throw new Error("JWT secrets are not defined in environment variables");
-	}
-
-	return { secret, refreshSecret };
-}
+import { env } from "hono/adapter";
+import type { Context } from "hono";
+import { verifyPassword } from "../workers_util.ts";
 
 export const createTokens = async ({
+	secret,
+	refreshSecret,
 	username,
 	withRefresh = true,
-}: { username: string; withRefresh?: boolean }) => {
-	const { secret, refreshSecret } = getSecrets();
+}: {
+	username: string;
+	withRefresh?: boolean;
+	secret: string;
+	refreshSecret: string;
+}) => {
 	const exp = Math.floor(Date.now() / 1000) + 15 * 60;
 	const jwt = await sign({ username, exp: exp }, secret);
 	if (!withRefresh) return { token: jwt, refreshToken: "" };
@@ -31,30 +23,39 @@ export const createTokens = async ({
 	return { token: jwt, refreshToken: refreshJWT };
 };
 
-export const verifyToken = async (jwt: string) => {
-	const { secret } = getSecrets();
-	const data = await verify(jwt, secret);
-	return data;
-};
-
-export const verifyRefreshToken = async (jwt: string) => {
-	const { refreshSecret } = getSecrets();
+export const verifyRefreshToken = async ({
+	refreshSecret,
+	jwt,
+}: { refreshSecret: string; jwt: string }) => {
 	const data = await verify(jwt, refreshSecret);
 	return data;
 };
 
-export const verifyPassword = (password: string, hash: string) => {
-	return bcrypt.compareSync(password, hash);
+export const verifyUserAndPassword = async ({
+	username,
+	passwordAttempt,
+	storedHash,
+}: {
+	username: string;
+	passwordAttempt: string;
+	storedHash: string;
+}) => {
+	const isPasswordValid = await verifyPassword({
+		storedHash,
+		passwordAttempt,
+	});
+	const isAdminUser = username === ADMIN_USERNAME;
+	console.log(isAdminUser, isPasswordValid);
+
+	return isPasswordValid && isAdminUser;
 };
 
-export const verifyUserAndPassword = (username: string, password: string) => {
-	// This is a simple example, in a real application you should use a database
-	const adminHash = Deno.env.get("ADMIN_PASSWORD_HASH");
-	if (!adminHash) {
-		throw new Error("ADMIN_PASSWORD_HASH is not defined in environment");
-	}
-	if (username === ADMIN_USERNAME && verifyPassword(password, adminHash)) {
-		return true;
-	}
-	return false;
-};
+export const requireAuthMiddleware = bearerAuth({
+	verifyToken: async (token, c) => {
+		const { JWT_SECRET: secret } = env<{ JWT_SECRET: string }>(c);
+		console.log("secret", secret);
+		console.log("token", token);
+		const data = await verify(token, secret);
+		return data;
+	},
+});
