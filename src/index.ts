@@ -31,10 +31,6 @@ app.use(
 	secureHeaders(),
 	prettyJSON(),
 	etag(),
-	cache({
-		cacheName: "samba",
-		cacheControl: "max-age=3600",
-	}),
 );
 
 // Main Route
