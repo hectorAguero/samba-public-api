@@ -55,8 +55,13 @@ export const sortDataList = (
 		let next = nextParade[sort as keyof TranslatedSchool] ?? 0;
 
 		if (sort === "lastPosition" || sort === undefined) {
-			previous = Number.parseInt(`${prevParade.divisionNumber}${previous}`);
-			next = Number.parseInt(`${nextParade.divisionNumber}${next}`);
+			previous = `${prevParade.divisionNumber}${
+				prevParade.subdivisionNumber ?? 0
+			}_${previous.toString().padStart(2, "0")}`;
+
+			next = `${nextParade.divisionNumber}${
+				nextParade.subdivisionNumber ?? 0
+			}_${next.toString().padStart(2, "0")}`;
 		}
 
 		return (previous > next ? 1 : -1) * sortOrderDirection;
