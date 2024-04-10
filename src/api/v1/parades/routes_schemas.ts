@@ -40,4 +40,11 @@ export const paradesGetRequest = z
 	.partial()
 	.openapi("ParadesGetRequest");
 
+export const paradesSearchRequest = paradesGetRequest
+	.omit({ ids: true })
+	.extend({
+		search: z.string().openapi({ example: "Imperatriz" }),
+	});
+
 export type ParadesGetRequest = z.infer<typeof paradesGetRequest>;
+export type ParadesSearchRequest = z.infer<typeof paradesSearchRequest>;

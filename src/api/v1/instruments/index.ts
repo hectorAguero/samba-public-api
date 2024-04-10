@@ -1,8 +1,10 @@
 import { OpenAPIHono } from "@hono/zod-openapi";
 import { instrumentsAllRoute, instrumentsByIdRoute } from "./routes.ts";
+import { instrumentsSearchRoute } from "./routes.ts";
 import { getInstruments, getInstrumentById } from "./model.ts";
 import Negotiator from "negotiator";
 import { languageValues } from "../supported_languages.ts";
+import { searchInstruments } from "./model.ts";
 
 const instrumentsApi = new OpenAPIHono();
 
@@ -24,6 +26,23 @@ instrumentsApi.openapi(instrumentsAllRoute, async (c) => {
 
 	return c.json(instruments);
 });
+instrumentsApi.openapi(instrumentsSearchRoute, async (c) => {
+	console.log("instrumentsSearchRoute");
+	let { language, search, ...query } = c.req.query();
+
+	if (language == null || language === undefined) {
+		const negotiator = new Negotiator(c.req.raw.headers);
+		language = negotiator.language([...languageValues]);
+	}
+	language =
+		language != null && languageValues.includes(language) ? language : "en";
+	const instruments = await searchInstruments({
+		search,
+		language: language as "en" | "es" | "ja" | "pt",
+		...query,
+	});
+	return c.json(instruments);
+});
 
 instrumentsApi.openapi(instrumentsByIdRoute, async (c) => {
 	const id = Number.parseInt(c.req.param("id"));
@@ -41,4 +60,5 @@ instrumentsApi.openapi(instrumentsByIdRoute, async (c) => {
 	}
 	return c.json(instrument);
 });
+
 export default instrumentsApi;

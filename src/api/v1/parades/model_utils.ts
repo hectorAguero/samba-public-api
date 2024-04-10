@@ -33,16 +33,16 @@ export async function translateParade(
 	translations: ParadeTranslation[],
 	language: string,
 ): Promise<TranslatedParade> {
-	const translation = translations.find((t) => t.paradeId === parade.id) || {};
+	const translation = translations.find((t) => t.paradeId === parade.id);
 	const school = await getSchoolById(parade.schoolId, language);
 
 	return translatedParadeSchema.parse({
 		...translation,
 		...parade,
-		translatedCarnivalName: parade.carnivalName,
-		translatedEnredo: parade.enredo,
-		translatedDivision: parade.division,
-		translatedCarnavalescos: parade.carnavalescos,
+		translatedCarnivalName: translation?.carnivalName ?? parade.carnivalName,
+		translatedEnredo: translation?.enredo ?? parade.enredo,
+		translatedDivision: translation?.division ?? parade.division,
+		translatedCarnavalescos: translation?.carnavalescos ?? parade.carnavalescos,
 		school: school,
 	});
 }
@@ -102,4 +102,16 @@ export const filterDataList = (
 			);
 		});
 	});
+};
+
+export const paradeSearchWeights = {
+	enredo: 3,
+	translatedEnredo: 3,
+	"school.name": 2,
+	"school.translatedName": 2,
+	carnavalescos: 2,
+	translatedCarnavalescos: 2,
+	carnivalName: 1,
+	translatedCarnivalName: 1,
+	division: 1,
 };

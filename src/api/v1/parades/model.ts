@@ -1,9 +1,17 @@
 import { getSchoolById } from "../schools/model.ts";
 import { getParadeData, translateParade } from "./model_utils.ts";
-import type { ParadesGetRequest } from "./routes_schemas.ts";
+import type {
+	ParadesGetRequest,
+	ParadesSearchRequest,
+} from "./routes_schemas.ts";
 import type { TranslatedParade } from "./schemas.ts";
 import { translatedParadeSchema } from "./schemas.ts";
-import { filterDataList, sortDataList } from "./model_utils.ts";
+import {
+	filterDataList,
+	sortDataList,
+	paradeSearchWeights,
+} from "./model_utils.ts";
+import { searchItems } from "../../utils/search_array.ts";
 
 export async function getParades({
 	language = "en",
@@ -47,4 +55,36 @@ export async function getParadeById(
 		return translatedParadeSchema.parse({ ...translatedParade, school });
 	}
 	return null;
+}
+
+export async function searchParades({
+	language = "en",
+	search,
+	filter,
+	sort = "id",
+	sortOrder = "asc",
+	page = 1,
+	pageSize = 10,
+}: ParadesSearchRequest): Promise<TranslatedParade[]> {
+	const [paradeList, paradeTranslations] = await getParadeData(language);
+	const translatedParades = await Promise.all(
+		paradeList.map((parade) =>
+			translateParade(parade, paradeTranslations, language),
+		),
+	);
+
+	let results = searchItems<TranslatedParade>(
+		translatedParades,
+		search,
+		paradeSearchWeights,
+	);
+
+	if (filter) {
+		results = filterDataList(results, filter.toString());
+	}
+	results = sortDataList(results, sort, sortOrder);
+
+	const startIndex = (page - 1) * pageSize;
+	const endIndex = startIndex + pageSize;
+	return results.slice(startIndex, endIndex);
 }

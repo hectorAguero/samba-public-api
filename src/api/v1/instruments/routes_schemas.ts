@@ -40,4 +40,11 @@ export const instrumentsGetRequest = z
 	.partial()
 	.openapi("InstrumentGetRequest");
 
+export const instrumentsSearchRequest = instrumentsGetRequest
+	.omit({ ids: true })
+	.extend({
+		search: z.string().openapi({ example: "Repique" }),
+	});
+
 export type InstrumentsGetRequest = z.infer<typeof instrumentsGetRequest>;
+export type InstrumentsSearchRequest = z.infer<typeof instrumentsSearchRequest>;

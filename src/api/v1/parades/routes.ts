@@ -3,6 +3,7 @@ import { GenericResponses } from "../generic_responses.ts";
 import { translatedParadeSchema } from "./schemas.ts";
 import { languages } from "../supported_languages.ts";
 import { paradesGetRequest } from "./routes_schemas.ts";
+import { paradesSearchRequest } from "./routes_schemas.ts";
 
 // Route to get all parades
 export const getParadesRoute = createRoute({
@@ -23,13 +24,35 @@ export const getParadesRoute = createRoute({
 	},
 });
 
+export const paradesSearchRoute = createRoute({
+	method: "get",
+	path: "/search",
+	tags: ["Parades"],
+	summary: "Search parade",
+	description: "Search parade",
+	request: {
+		query: paradesSearchRequest,
+	},
+	responses: {
+		200: {
+			description: "List of parades",
+			content: {
+				"application/json": {
+					schema: translatedParadeSchema.array(),
+				},
+			},
+		},
+		...GenericResponses,
+	},
+});
+
 // Route to get parade by id
 export const paradeByIdRoute = createRoute({
 	method: "get",
 	path: "/{id}",
 	tags: ["Parades"],
-	summary: "Get Parade by id",
-	description: "Get Parade by id with translated fields",
+	summary: "Get parade by id",
+	description: "Get parade by id with translated fields",
 	request: {
 		params: translatedParadeSchema.pick({ id: true }),
 		query: z.object({
@@ -41,7 +64,7 @@ export const paradeByIdRoute = createRoute({
 	},
 	responses: {
 		200: {
-			description: "Parade",
+			description: "parade",
 			content: { "application/json": { schema: translatedParadeSchema } },
 		},
 		404: { description: "Parade not found" },

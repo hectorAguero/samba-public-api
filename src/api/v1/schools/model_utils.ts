@@ -116,3 +116,22 @@ export const filterDataList = (
 		});
 	});
 };
+
+export const schoolSearchWeights = {
+	name: 4,
+	translatedName: 4,
+	godMotherSchool: 3,
+	translatedGodmotherSchool: 3,
+	country: 2,
+	translatedCountry: 2,
+	colors: 2,
+	translatedColors: 2,
+	symbols: 2,
+	translatedSymbols: 2,
+	currentDivision: 1,
+	divisionNumber: 1,
+	subdivisionNumber: 1,
+	firstDivisionChampionships: 1,
+	leagueLocation: 1,
+	lastPosition: 1,
+};

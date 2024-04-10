@@ -3,9 +3,18 @@ import {
 	translateSchool,
 	filterDataList,
 	sortDataList,
+	schoolSearchWeights,
 } from "./model_utils.ts";
-import type { SchoolsGetRequest } from "./routes_schemas.ts";
-import { type TranslatedSchool, translatedSchoolSchema } from "./schemas.ts";
+import type {
+	SchoolsGetRequest,
+	SchoolsSearchRequest,
+} from "./routes_schemas.ts";
+import {
+	type TranslatedSchool,
+	translatedSchoolSchema,
+	type School,
+} from "./schemas.ts";
+import { searchItems } from "../../utils/search_array.ts";
 
 export async function getSchools({
 	language = "en",
@@ -28,6 +37,35 @@ export async function getSchools({
 	const startIndex = (page - 1) * pageSize;
 	const endIndex = startIndex + pageSize;
 	return sortedSchools.slice(startIndex, endIndex);
+}
+
+export async function searchSchools({
+	language = "en",
+	search,
+	filter,
+	sort = "lastPosition",
+	sortOrder = "asc",
+	page = 1,
+	pageSize = 10,
+}: SchoolsSearchRequest): Promise<TranslatedSchool[]> {
+	const [schools, schoolTranslations] = await getSchoolData(language);
+	const translatedSchools = schools.map((school: School) =>
+		translateSchool(school, schoolTranslations),
+	);
+
+	let results = searchItems<TranslatedSchool>(
+		translatedSchools,
+		search,
+		schoolSearchWeights,
+	);
+
+	if (filter) {
+		results = filterDataList(results, filter.toString());
+	}
+	results = sortDataList(results, sort, sortOrder);
+	const startIndex = (page - 1) * pageSize;
+	const endIndex = startIndex + pageSize;
+	return results.slice(startIndex, endIndex);
 }
 
 export async function getSchoolById(

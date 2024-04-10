@@ -109,3 +109,12 @@ export const filterDataList = (
 		});
 	});
 };
+
+export const instrumentsSearchWeights = {
+	name: 3,
+	type: 3,
+	translatedName: 2,
+	translatedType: 2,
+	description: 1,
+	translatedDescription: 1,
+};
