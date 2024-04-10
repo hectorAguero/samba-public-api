@@ -4,6 +4,7 @@ import { translatedSchoolSchema } from "./schemas.ts";
 
 export async function getSchoolData(
 	language: string,
+	ids?: number[],
 ): Promise<[School[], SchoolTranslation[]]> {
 	const schoolFilePath = `${Deno.cwd()}/assets/static/json/schools.jsonc`;
 	const translationFilePath = `${Deno.cwd()}/assets/static/json/schools_translations.jsonc`;
@@ -11,13 +12,14 @@ export async function getSchoolData(
 	const schoolFileContents = await Deno.readTextFile(schoolFilePath);
 	const translationFileContents = await Deno.readTextFile(translationFilePath);
 
-	const schoolList: School[] = JSON.parse(schoolFileContents);
-	const schoolTranslations: SchoolTranslation[] = JSON.parse(
-		translationFileContents,
+	const schoolList: School[] = JSON.parse(schoolFileContents).filter(
+		(school: School) => (ids ? ids.includes(school.id) : true),
 	);
-
-	const filteredTranslations = schoolTranslations.filter(
-		(translation) => translation.languageCode === language,
+	const translations: SchoolTranslation[] = JSON.parse(translationFileContents);
+	const filteredTranslations: SchoolTranslation[] = translations.filter(
+		(translation: SchoolTranslation) =>
+			(ids ? ids.includes(translation.schoolId) : true) &&
+			translation.languageCode === language,
 	);
 
 	return [schoolList, filteredTranslations];

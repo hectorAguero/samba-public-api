@@ -7,6 +7,7 @@ import type {
 
 export async function getInstrumentData(
 	language: string,
+	ids?: number[],
 ): Promise<[Instrument[], InstrumentTranslation[]]> {
 	const instrumentFilePath = `${Deno.cwd()}/assets/static/json/instruments.jsonc`;
 	const translationFilePath = `${Deno.cwd()}/assets/static/json/instruments_translations.jsonc`;
@@ -14,13 +15,19 @@ export async function getInstrumentData(
 	const instrumentFileContents = await Deno.readTextFile(instrumentFilePath);
 	const translationFileContents = await Deno.readTextFile(translationFilePath);
 
-	const instrumentList: Instrument[] = JSON.parse(instrumentFileContents);
+	const instrumentList: Instrument[] = JSON.parse(
+		instrumentFileContents,
+	).filter((instrument: Instrument) =>
+		ids ? ids.includes(instrument.id) : true,
+	);
 	const instrumentTranslations: InstrumentTranslation[] = JSON.parse(
 		translationFileContents,
 	);
 
 	const filteredTranslations = instrumentTranslations.filter(
-		(translation) => translation.languageCode === language,
+		(translation) =>
+			(ids ? ids.includes(translation.instrumentId) : true) &&
+			translation.languageCode === language,
 	);
 
 	return [instrumentList, filteredTranslations];

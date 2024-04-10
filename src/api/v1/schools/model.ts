@@ -14,8 +14,9 @@ export async function getSchools({
 	sortOrder = "asc",
 	page = 1,
 	pageSize = 10,
+	ids,
 }: SchoolsGetRequest): Promise<TranslatedSchool[]> {
-	const [schoolList, schoolTranslations] = await getSchoolData(language);
+	const [schoolList, schoolTranslations] = await getSchoolData(language, ids);
 	let translatedSchools = schoolList.map((school) =>
 		translateSchool(school, schoolTranslations),
 	);

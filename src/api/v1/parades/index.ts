@@ -9,6 +9,7 @@ const paradesApi = new OpenAPIHono();
 // Set the `/posts` as a base path in the document.
 paradesApi.openapi(getParadesRoute, async (c) => {
 	let { language, ...params } = c.req.query();
+	const ids = c.req.queries("id")?.flatMap((id) => Number.parseInt(id));
 	if (language == null || language === undefined) {
 		const negotiator = new Negotiator(c.req.raw.headers);
 		language = negotiator.language([...languageValues]);
@@ -19,6 +20,7 @@ paradesApi.openapi(getParadesRoute, async (c) => {
 	const parades = await getParades({
 		...params,
 		language: language as "en" | "es" | "ja" | "pt",
+		ids,
 	});
 	return c.json(parades);
 });

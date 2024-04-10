@@ -1,10 +1,10 @@
-
 import { getSchoolById } from "../schools/model.ts";
 import type { Parade, ParadeTranslation, TranslatedParade } from "./schemas.ts";
-import { translatedParadeSchema } from './schemas.ts';
+import { translatedParadeSchema } from "./schemas.ts";
 
 export async function getParadeData(
 	language: string,
+	ids?: number[],
 ): Promise<[Parade[], ParadeTranslation[]]> {
 	const paradeFilePath = `${Deno.cwd()}/assets/static/json/parades.jsonc`;
 	const translationFilePath = `${Deno.cwd()}/assets/static/json/parades_translations.jsonc`;
@@ -12,13 +12,17 @@ export async function getParadeData(
 	const paradeFileContents = await Deno.readTextFile(paradeFilePath);
 	const translationFileContents = await Deno.readTextFile(translationFilePath);
 
-	const paradeList: Parade[] = JSON.parse(paradeFileContents);
+	const paradeList: Parade[] = JSON.parse(paradeFileContents).filter(
+		(parade: Parade) => (ids ? ids.includes(parade.id) : true),
+	);
 	const paradeTranslations: ParadeTranslation[] = JSON.parse(
 		translationFileContents,
 	);
 
 	const filteredTranslations = paradeTranslations.filter(
-		(translation) => translation.languageCode === language,
+		(translation) =>
+			(ids ? ids.includes(translation.paradeId) : true) &&
+			translation.languageCode === language,
 	);
 
 	return [paradeList, filteredTranslations];
