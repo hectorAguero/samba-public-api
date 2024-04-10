@@ -3,6 +3,7 @@ import { GenericResponses } from "../generic_responses.ts";
 import { translatedParadeSchema } from "./schemas.ts";
 import { languages } from "../supported_languages.ts";
 import { paradesGetRequest } from "./routes_schemas.ts";
+import { paradesSearchRequest } from "./routes_schemas.ts";
 
 // Route to get all parades
 export const getParadesRoute = createRoute({
@@ -17,6 +18,28 @@ export const getParadesRoute = createRoute({
 			description: "List of Parades",
 			content: {
 				"application/json": { schema: translatedParadeSchema.array() },
+			},
+		},
+		...GenericResponses,
+	},
+});
+
+export const paradesSearchRoute = createRoute({
+	method: "get",
+	path: "/search",
+	tags: ["parades"],
+	summary: "Search Parade",
+	description: "Search Parade",
+	request: {
+		query: paradesSearchRequest,
+	},
+	responses: {
+		200: {
+			description: "List of parades",
+			content: {
+				"application/json": {
+					schema: translatedParadeSchema.array(),
+				},
 			},
 		},
 		...GenericResponses,

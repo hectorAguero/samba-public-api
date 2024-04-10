@@ -2,7 +2,10 @@ import { createRoute, z } from "@hono/zod-openapi";
 import { GenericResponses } from "../generic_responses.ts";
 import { translatedInstrumentSchema } from "./schemas.ts";
 import { languages } from "../supported_languages.ts";
-import { instrumentsGetRequest } from "./routes_schemas.ts";
+import {
+	instrumentsGetRequest,
+	instrumentsSearchRequest,
+} from "./routes_schemas.ts";
 
 export const instrumentsAllRoute = createRoute({
 	method: "get",
@@ -50,6 +53,28 @@ export const instrumentsByIdRoute = createRoute({
 		},
 		404: {
 			description: "Instrument not found",
+		},
+		...GenericResponses,
+	},
+});
+
+export const instrumentsSearchRoute = createRoute({
+	method: "get",
+	path: "/search",
+	tags: ["instruments"],
+	summary: "Search Instruments",
+	description: "Search Instruments",
+	request: {
+		query: instrumentsSearchRequest,
+	},
+	responses: {
+		200: {
+			description: "List of Instruments",
+			content: {
+				"application/json": {
+					schema: translatedInstrumentSchema.array(),
+				},
+			},
 		},
 		...GenericResponses,
 	},

@@ -44,4 +44,11 @@ export const schoolsGetRequest = z
 	.partial()
 	.openapi("SchoolSelectAll");
 
+export const schoolsSearchRequest = schoolsGetRequest
+	.omit({ ids: true })
+	.extend({
+		search: z.string().openapi({ example: "Imperio" }),
+	});
+
 export type SchoolsGetRequest = z.infer<typeof schoolsGetRequest>;
+export type SchoolsSearchRequest = z.infer<typeof schoolsSearchRequest>;

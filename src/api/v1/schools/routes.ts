@@ -1,7 +1,7 @@
 import { createRoute } from "@hono/zod-openapi";
 import { GenericResponses } from "../generic_responses.ts";
 import { translatedSchoolSchema } from "./schemas.ts";
-import { schoolsGetRequest } from "./routes_schemas.ts";
+import { schoolsGetRequest, schoolsSearchRequest } from "./routes_schemas.ts";
 
 export const schoolsAllRoute = createRoute({
 	method: "get",
@@ -11,6 +11,28 @@ export const schoolsAllRoute = createRoute({
 	description: "Get all Schools",
 	request: {
 		query: schoolsGetRequest,
+	},
+	responses: {
+		200: {
+			description: "List of schools",
+			content: {
+				"application/json": {
+					schema: translatedSchoolSchema.array(),
+				},
+			},
+		},
+		...GenericResponses,
+	},
+});
+
+export const schoolsSearchRoute = createRoute({
+	method: "get",
+	path: "/search",
+	tags: ["schools"],
+	summary: "Search Schools",
+	description: "Search Schools",
+	request: {
+		query: schoolsSearchRequest,
 	},
 	responses: {
 		200: {
