@@ -5,6 +5,7 @@ export const paradeSchema = z
 	.object({
 		id: z.coerce.number().int().positive().openapi({ default: 1 }),
 		schoolId: z.coerce.number().openapi({ default: 1 }),
+		carnivalId: z.coerce.number().openapi({ default: 1 }),
 		carnivalName: z.string().openapi({ default: "Carnaval do Rio de Janeiro" }),
 		enredo: z.string().openapi({
 			default:
@@ -13,6 +14,7 @@ export const paradeSchema = z
 		carnavalescos: z.array(z.string()).openapi({ default: ["Leandro Vieira"] }),
 		division: z.string().openapi({ default: "Grupo Especial" }),
 		divisionNumber: z.coerce.number().int().openapi({ default: 1 }),
+		subdivisionNumber: z.coerce.number().nullable().openapi({ default: 1 }),
 		paradeYear: z.coerce.number().int().openapi({ default: 2023 }),
 		date: z.string().datetime().openapi({}),
 		championParade: z.string().datetime().nullable().openapi({}),
@@ -22,8 +24,11 @@ export const paradeSchema = z
 		numberOfTripods: z.coerce.number().int().openapi({ default: 2 }),
 		placing: z.coerce.number().int().openapi({ default: 1 }),
 		relegated: z.boolean().openapi({ default: false }),
+		promoted: z.boolean().openapi({ default: false }),
+		champion: z.boolean().openapi({ default: false }),
 		performanceOrder: z.coerce.number().int().openapi({ default: 4 }),
 		points: z.coerce.number().openapi({ default: 269.8 }),
+		details: z.string().openapi({ default: "Detalhes do desfile" }),
 	})
 	.openapi("Parade");
 

@@ -4,6 +4,7 @@ import { translatedSchoolSchema } from "./schemas.ts";
 
 export async function getSchoolData(
 	language: string,
+	ids?: number[],
 ): Promise<[School[], SchoolTranslation[]]> {
 	const schoolFilePath = `${Deno.cwd()}/assets/static/json/schools.jsonc`;
 	const translationFilePath = `${Deno.cwd()}/assets/static/json/schools_translations.jsonc`;
@@ -11,13 +12,14 @@ export async function getSchoolData(
 	const schoolFileContents = await Deno.readTextFile(schoolFilePath);
 	const translationFileContents = await Deno.readTextFile(translationFilePath);
 
-	const schoolList: School[] = JSON.parse(schoolFileContents);
-	const schoolTranslations: SchoolTranslation[] = JSON.parse(
-		translationFileContents,
+	const schoolList: School[] = JSON.parse(schoolFileContents).filter(
+		(school: School) => (ids ? ids.includes(school.id) : true),
 	);
-
-	const filteredTranslations = schoolTranslations.filter(
-		(translation) => translation.languageCode === language,
+	const translations: SchoolTranslation[] = JSON.parse(translationFileContents);
+	const filteredTranslations: SchoolTranslation[] = translations.filter(
+		(translation: SchoolTranslation) =>
+			(ids ? ids.includes(translation.schoolId) : true) &&
+			translation.languageCode === language,
 	);
 
 	return [schoolList, filteredTranslations];
@@ -55,8 +57,13 @@ export const sortDataList = (
 		let next = nextParade[sort as keyof TranslatedSchool] ?? 0;
 
 		if (sort === "lastPosition" || sort === undefined) {
-			previous = Number.parseInt(`${prevParade.divisionNumber}${previous}`);
-			next = Number.parseInt(`${nextParade.divisionNumber}${next}`);
+			previous = `${prevParade.divisionNumber}${
+				prevParade.subdivisionNumber ?? 0
+			}_${previous.toString().padStart(2, "0")}`;
+
+			next = `${nextParade.divisionNumber}${
+				nextParade.subdivisionNumber ?? 0
+			}_${next.toString().padStart(2, "0")}`;
 		}
 
 		return (previous > next ? 1 : -1) * sortOrderDirection;

@@ -8,13 +8,14 @@ const schoolsApi = new OpenAPIHono();
 
 schoolsApi.openapi(schoolsAllRoute, async (c) => {
 	let { language, ...query } = c.req.query();
+	const ids = c.req.queries("id")?.flatMap((id) => Number.parseInt(id));
 	if (language == null || language === undefined) {
 		const negotiator = new Negotiator(c.req.raw.headers);
 		language = negotiator.language([...languageValues]);
 	}
 	language =
 		language != null && languageValues.includes(language) ? language : "en";
-	const schools = await getSchools({ language, ...query });
+	const schools = await getSchools({ language, ...query, ids });
 	return c.json(schools);
 });
 

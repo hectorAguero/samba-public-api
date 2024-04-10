@@ -5,6 +5,9 @@ import { translatedInstrumentSchema } from "./schemas.ts";
 
 export const instrumentsGetRequest = z
 	.object({
+		ids: z
+			.array(z.coerce.number().int().positive())
+			.openapi({ examples: [[1], [2, 3]] }),
 		language: languages.openapi({ example: "ja" }),
 		filter: z
 			.string()

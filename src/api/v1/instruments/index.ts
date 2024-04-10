@@ -8,6 +8,7 @@ const instrumentsApi = new OpenAPIHono();
 
 instrumentsApi.openapi(instrumentsAllRoute, async (c) => {
 	let { language, ...query } = c.req.query();
+	const ids = c.req.queries("id")?.flatMap((id) => Number.parseInt(id));
 	if (language == null || language === undefined) {
 		const negotiator = new Negotiator(c.req.raw.headers);
 		language = negotiator.language([...languageValues]);
@@ -18,6 +19,7 @@ instrumentsApi.openapi(instrumentsAllRoute, async (c) => {
 	const instruments = await getInstruments({
 		language: language as "en" | "es" | "ja" | "pt",
 		...query,
+		ids,
 	});
 
 	return c.json(instruments);

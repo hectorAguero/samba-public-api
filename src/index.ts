@@ -18,7 +18,7 @@ const app = new OpenAPIHono();
 
 //TODO(hectorAguero): Cache is not working in Deno Deploy at 2024-04-4
 app.use("*", cors(), secureHeaders(), prettyJSON(), etag());
-app.use("/static/*", serveStatic({ root: "/assets" }));
+app.use("/assets/*", serveStatic({ root: "./" }));
 app.use("/favicon.ico", serveStatic({ path: "/assets/favicon.ico" }));
 
 // Routing

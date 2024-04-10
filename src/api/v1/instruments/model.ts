@@ -17,9 +17,12 @@ export async function getInstruments({
 	sortOrder = "asc",
 	page = 1,
 	pageSize = 10,
+	ids,
 }: InstrumentsGetRequest): Promise<TranslatedInstrument[]> {
-	const [instrumentList, instrumentTranslations] =
-		await getInstrumentData(language);
+	const [instrumentList, instrumentTranslations] = await getInstrumentData(
+		language,
+		ids,
+	);
 	let translatedInstruments = instrumentList.map((instrument) =>
 		translateInstrument(instrument, instrumentTranslations),
 	);

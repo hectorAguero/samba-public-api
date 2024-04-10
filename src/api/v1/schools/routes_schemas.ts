@@ -1,8 +1,10 @@
 import { z } from "@hono/zod-openapi";
 import { translatedSchoolSchema } from "./schemas.ts";
-
 export const schoolsGetRequest = z
 	.object({
+		ids: z
+			.array(z.coerce.number().int().positive())
+			.openapi({ examples: [[1], [2, 3]] }),
 		filter: z
 			.string()
 			.refine(

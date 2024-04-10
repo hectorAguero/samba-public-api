@@ -3,18 +3,20 @@ import { z } from "@hono/zod-openapi";
 const schoolSchema = z
 	.object({
 		id: z.coerce.number().int().positive().openapi({ example: 1 }),
-		imageUrl: z.string().openapi({ example: "vila_isabel.jpg" }),
 		name: z.string().openapi({
 			example: "Grêmio Recreativo Escola de Samba Unidos de Vila Isabel",
 		}),
+		imageUrl: z.string().openapi({ example: "vila_isabel.jpg" }),
 		foundationDate: z.string().openapi({ example: "1946/4/4" }),
 		godmotherSchool: z.string().openapi({ example: "Portela" }),
 		colors: z.array(z.string()).openapi({ example: ["Branco", "Azul"] }),
 		symbols: z
 			.array(z.string())
 			.openapi({ example: ["Coroa", "Clave de Sol", "Pandeiro", "Pena"] }),
-		league: z.string().openapi({ example: "LIESA" }),
+		carnivalCategory: z.string().openapi({ example: "Escolas de samba" }),
+		currentDivision: z.string().openapi({ example: "Série Ouro" }),
 		divisionNumber: z.coerce.number().int().positive().openapi({ example: 1 }),
+		subdivisionNumber: z.coerce.number().nullable().openapi({ example: 1 }),
 		firstDivisionChampionships: z.coerce
 			.number()
 			.int()
@@ -22,7 +24,7 @@ const schoolSchema = z
 			.openapi({ example: 3 }),
 		country: z.string().openapi({ example: "Brazil" }),
 		leagueLocation: z.string().openapi({ example: "Rio de Janeiro" }),
-		lastPosition: z.coerce.number().int().positive().openapi({ default: 1 }),
+		lastPosition: z.coerce.number().int().nonnegative().openapi({ default: 1 }),
 	})
 	.openapi("School");
 
