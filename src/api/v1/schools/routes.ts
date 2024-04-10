@@ -6,9 +6,9 @@ import { schoolsGetRequest, schoolsSearchRequest } from "./routes_schemas.ts";
 export const schoolsAllRoute = createRoute({
 	method: "get",
 	path: "/",
-	tags: ["schools"],
-	summary: "Get all Schools",
-	description: "Get all Schools",
+	tags: ["Schools"],
+	summary: "Get all schools",
+	description: "Get all schools",
 	request: {
 		query: schoolsGetRequest,
 	},
@@ -28,9 +28,9 @@ export const schoolsAllRoute = createRoute({
 export const schoolsSearchRoute = createRoute({
 	method: "get",
 	path: "/search",
-	tags: ["schools"],
-	summary: "Search Schools",
-	description: "Search Schools",
+	tags: ["Schools"],
+	summary: "Search schools",
+	description: "Search schools",
 	request: {
 		query: schoolsSearchRequest,
 	},
@@ -50,16 +50,16 @@ export const schoolsSearchRoute = createRoute({
 export const schoolsByIdRoute = createRoute({
 	method: "get",
 	path: "/{id}",
-	tags: ["schools"],
-	summary: "Get School by id",
-	description: "Get School by id",
+	tags: ["Schools"],
+	summary: "Get school by id",
+	description: "Get school by id",
 	request: {
 		params: translatedSchoolSchema.pick({ id: true }).openapi("School id"),
 		query: schoolsGetRequest.pick({ language: true }).partial(),
 	},
 	responses: {
 		200: {
-			description: "School",
+			description: "school",
 			content: {
 				"application/json": {
 					schema: translatedSchoolSchema,

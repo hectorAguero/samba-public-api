@@ -16,7 +16,7 @@ export const instrumentsAllRoute = createRoute({
 	request: { query: instrumentsGetRequest },
 	responses: {
 		200: {
-			description: "List of Instruments",
+			description: "List of instruments",
 			content: {
 				"application/json": {
 					schema: translatedInstrumentSchema.array(),
@@ -31,8 +31,8 @@ export const instrumentsByIdRoute = createRoute({
 	method: "get",
 	path: "/{id}",
 	tags: ["Instruments"],
-	summary: "Get Instrument by id",
-	description: "Get Instrument by id with translated fields",
+	summary: "Get instrument by id",
+	description: "Get instrument by id with translated fields",
 	request: {
 		params: translatedInstrumentSchema.pick({ id: true }),
 		query: z.object({
@@ -44,7 +44,7 @@ export const instrumentsByIdRoute = createRoute({
 	},
 	responses: {
 		200: {
-			description: "Instrument",
+			description: "instrument",
 			content: {
 				"application/json": {
 					schema: translatedInstrumentSchema,
@@ -52,7 +52,7 @@ export const instrumentsByIdRoute = createRoute({
 			},
 		},
 		404: {
-			description: "Instrument not found",
+			description: "instrument not found",
 		},
 		...GenericResponses,
 	},
@@ -61,9 +61,9 @@ export const instrumentsByIdRoute = createRoute({
 export const instrumentsSearchRoute = createRoute({
 	method: "get",
 	path: "/search",
-	tags: ["instruments"],
-	summary: "Search Instruments",
-	description: "Search Instruments",
+	tags: ["Instruments"],
+	summary: "Search instruments",
+	description: "Search instruments",
 	request: {
 		query: instrumentsSearchRequest,
 	},

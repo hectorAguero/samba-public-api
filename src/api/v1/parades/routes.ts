@@ -27,9 +27,9 @@ export const getParadesRoute = createRoute({
 export const paradesSearchRoute = createRoute({
 	method: "get",
 	path: "/search",
-	tags: ["parades"],
-	summary: "Search Parade",
-	description: "Search Parade",
+	tags: ["Parades"],
+	summary: "Search parade",
+	description: "Search parade",
 	request: {
 		query: paradesSearchRequest,
 	},
@@ -51,8 +51,8 @@ export const paradeByIdRoute = createRoute({
 	method: "get",
 	path: "/{id}",
 	tags: ["Parades"],
-	summary: "Get Parade by id",
-	description: "Get Parade by id with translated fields",
+	summary: "Get parade by id",
+	description: "Get parade by id with translated fields",
 	request: {
 		params: translatedParadeSchema.pick({ id: true }),
 		query: z.object({
@@ -64,7 +64,7 @@ export const paradeByIdRoute = createRoute({
 	},
 	responses: {
 		200: {
-			description: "Parade",
+			description: "parade",
 			content: { "application/json": { schema: translatedParadeSchema } },
 		},
 		404: { description: "Parade not found" },
