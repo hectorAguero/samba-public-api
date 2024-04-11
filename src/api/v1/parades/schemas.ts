@@ -28,6 +28,7 @@ export const paradeSchema = z
 		champion: z.boolean().openapi({ default: false }),
 		performanceOrder: z.coerce.number().int().openapi({ default: 4 }),
 		points: z.coerce.number().openapi({ default: 269.8 }),
+		performanceDay: z.coerce.number().int().positive().openapi({ default: 1 }),
 		details: z.string().openapi({ default: "Detalhes do desfile" }),
 	})
 	.openapi("Parade");
