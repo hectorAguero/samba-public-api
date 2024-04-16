@@ -43,8 +43,8 @@ export async function getInstruments({
 		sortOrder,
 	);
 
-	const startIndex = (page - 1) * pageSize;
-	const endIndex = startIndex + pageSize;
+	const startIndex: number = (Number(page) - 1) * Number(pageSize);
+	const endIndex: number = startIndex + Number(pageSize);
 	return sortedInstruments.slice(startIndex, endIndex);
 }
 
@@ -92,7 +92,7 @@ export async function searchInstruments({
 		results = filterDataList(results, filter.toString());
 	}
 	results = sortDataList(results, sort, sortOrder);
-	const startIndex = (page - 1) * pageSize;
-	const endIndex = startIndex + pageSize;
+	const startIndex: number = (Number(page) - 1) * Number(pageSize);
+	const endIndex: number = startIndex + Number(pageSize);
 	return results.slice(startIndex, endIndex);
 }

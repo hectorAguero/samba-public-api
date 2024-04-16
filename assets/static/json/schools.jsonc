@@ -1944,7 +1944,7 @@
 	{
 		"id": 108,
 		"name": "Camisa 10",
-		"imageUrl": "camisa_10_.jpg",
+		"imageUrl": "camisa_10.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2020/9/6",
 		"colors": ["Vermelho", "Branco"],
@@ -2311,7 +2311,7 @@
 	{
 		"id": 128,
 		"name": "Vai Barrar? Nunca!",
-		"imageUrl": "vai_barrar?_nunca!.jpg",
+		"imageUrl": "vai_barrar__nunca!.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2010/12/10",
 		"colors": ["Azul", "Vermelho", "Branco"],
@@ -2491,7 +2491,7 @@
 	{
 		"id": 138,
 		"name": "Mocidade Unida de Manguariba",
-		"imageUrl": "mocidade_unida_de_manguariba.jpg",
+		"imageUrl": "",
 		"godmotherSchool": "",
 		"foundationDate": "2002/2/3",
 		"colors": ["Azul-escuro", "Branco"],
@@ -2617,7 +2617,7 @@
 	{
 		"id": 145,
 		"name": "Canarinhos das Laranjeiras",
-		"imageUrl": "canarinhos_das_laranjeiras",
+		"imageUrl": "canarinhos_das_laranjeiras.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1949/9/6",
 		"colors": ["Amarelo", "Branco"],

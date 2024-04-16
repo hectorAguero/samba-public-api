@@ -33,9 +33,8 @@ export async function getSchools({
 		translatedSchools = filterDataList(translatedSchools, filter.toString());
 	}
 	const sortedSchools = sortDataList(translatedSchools, sort, sortOrder);
-
-	const startIndex = (page - 1) * pageSize;
-	const endIndex = startIndex + pageSize;
+	const startIndex: number = (Number(page) - 1) * Number(pageSize);
+	const endIndex: number = startIndex + Number(pageSize);
 	return sortedSchools.slice(startIndex, endIndex);
 }
 
@@ -63,8 +62,8 @@ export async function searchSchools({
 		results = filterDataList(results, filter.toString());
 	}
 	results = sortDataList(results, sort, sortOrder);
-	const startIndex = (page - 1) * pageSize;
-	const endIndex = startIndex + pageSize;
+	const startIndex: number = (Number(page) - 1) * Number(pageSize);
+	const endIndex: number = startIndex + Number(pageSize);
 	return results.slice(startIndex, endIndex);
 }
 
