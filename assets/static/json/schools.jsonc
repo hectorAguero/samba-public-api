@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"name": "Imperatriz Leopoldinense",
-		"imageUrl": "imperatriz_leopoldinense.jpg",
+		"imageUrl": "schools/imperatriz_leopoldinense.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "1959/3/6",
 		"colors": ["Verde", "Branco", "Ouro"],
@@ -20,7 +20,7 @@
 	{
 		"id": 2,
 		"name": "Unidos do Viradouro",
-		"imageUrl": "unidos_do_viradouro.jpg",
+		"imageUrl": "schools/unidos_do_viradouro.jpg",
 		"godmotherSchool": "Portela",
 		"foundationDate": "1946/6/24",
 		"colors": ["Vermelho", "Branco"],
@@ -38,7 +38,7 @@
 	{
 		"id": 3,
 		"name": "Unidos de Vila Isabel",
-		"imageUrl": "unidos_de_vila_isabel.jpg",
+		"imageUrl": "schools/unidos_de_vila_isabel.jpg",
 		"godmotherSchool": "Portela",
 		"foundationDate": "1946/4/4",
 		"colors": ["Branco", "Azul"],
@@ -56,7 +56,7 @@
 	{
 		"id": 4,
 		"name": "Beija-Flor de Nilópolis",
-		"imageUrl": "beija_flor_de_nipolis.jpg",
+		"imageUrl": "schools/beija_flor_de_nipolis.jpg",
 		"godmotherSchool": "Portela",
 		"foundationDate": "1948/12/25",
 		"colors": ["Azul", "Branco"],
@@ -74,7 +74,7 @@
 	{
 		"id": 5,
 		"name": "Estação Primeira de Mangueira",
-		"imageUrl": "estacao_primera_de_mangueira.jpg",
+		"imageUrl": "schools/estacao_primera_de_mangueira.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1928/4/28",
 		"colors": ["Verde", "Rosa"],
@@ -92,7 +92,7 @@
 	{
 		"id": 6,
 		"name": "Acadêmicos do Grande Rio",
-		"imageUrl": "academicos_do_grande_rio.jpg",
+		"imageUrl": "schools/academicos_do_grande_rio.jpg",
 		"godmotherSchool": "Salgueiro",
 		"foundationDate": "1988/9/22",
 		"colors": ["Verde", "Branco", "Vermelho"],
@@ -110,7 +110,7 @@
 	{
 		"id": 7,
 		"name": "Acadêmicos do Salgueiro",
-		"imageUrl": "academicos_do_salgueiro.jpg",
+		"imageUrl": "schools/academicos_do_salgueiro.jpg",
 		"godmotherSchool": "Mangueira",
 		"foundationDate": "1953/3/5",
 		"colors": ["Vermelho", "Branco"],
@@ -134,7 +134,7 @@
 	{
 		"id": 8,
 		"name": "Paraíso do Tuiuti",
-		"imageUrl": "paraiso_do_tuiuti.jpg",
+		"imageUrl": "schools/paraiso_do_tuiuti.jpg",
 		"godmotherSchool": "Mangueira",
 		"foundationDate": "1952/4/5",
 		"colors": ["Azul", "Amarelo"],
@@ -152,7 +152,7 @@
 	{
 		"id": 9,
 		"name": "Unidos da Tijuca",
-		"imageUrl": "unidos_da_tijuca.jpg",
+		"imageUrl": "schools/unidos_da_tijuca.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1931/12/31",
 		"colors": ["Azul", "Amarelo"],
@@ -170,7 +170,7 @@
 	{
 		"id": 10,
 		"name": "Portela",
-		"imageUrl": "portela.jpg",
+		"imageUrl": "schools/portela.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1923/4/11",
 		"colors": ["Azul", "Branco"],
@@ -188,7 +188,7 @@
 	{
 		"id": 11,
 		"name": "Mocidade Independente de Padre Miguel",
-		"imageUrl": "mocidade_independente_de_padre_miguel.jpg",
+		"imageUrl": "schools/mocidade_independente_de_padre_miguel.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "1955/11/10",
 		"colors": ["Verde", "Branco"],
@@ -206,7 +206,7 @@
 	{
 		"id": 12,
 		"name": "Império Serrano",
-		"imageUrl": "imperio_serrano.jpg",
+		"imageUrl": "schools/imperio_serrano.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1947/3/23",
 		"colors": ["Verde", "Branco"],
@@ -224,7 +224,7 @@
 	{
 		"id": 13,
 		"name": "Unidos do Porto da Pedra",
-		"imageUrl": "unidos_do_porto_da_pedra.jpg",
+		"imageUrl": "schools/unidos_do_porto_da_pedra.jpg",
 		"godmotherSchool": "União da Ilha",
 		"foundationDate": "1978/3/8",
 		"colors": ["Vermelho", "Branco"],
@@ -242,7 +242,7 @@
 	{
 		"id": 14,
 		"name": "Unidos de Padre Miguel",
-		"imageUrl": "unidos_de_padre_miguel.jpg",
+		"imageUrl": "schools/unidos_de_padre_miguel.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1957/11/12",
 		"colors": ["Vermelho", "Branco"],
@@ -260,7 +260,7 @@
 	{
 		"id": 15,
 		"name": "Inocentes de Belford Roxo",
-		"imageUrl": "inocentes_de_belford_roxo.jpg",
+		"imageUrl": "schools/inocentes_de_belford_roxo.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "1993/7/11",
 		"colors": ["Vermelho", "Azul", "Branco"],
@@ -278,7 +278,7 @@
 	{
 		"id": 16,
 		"name": "Império da Tijuca",
-		"imageUrl": "imperio_da_tijuca.jpg",
+		"imageUrl": "schools/imperio_da_tijuca.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1940/12/8",
 		"colors": ["Verde", "Branco"],
@@ -296,7 +296,7 @@
 	{
 		"id": 17,
 		"name": "Acadêmicos de Niterói",
-		"imageUrl": "academicos_de_niteroi.jpg",
+		"imageUrl": "schools/academicos_de_niteroi.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2018/3/26",
 		"colors": ["Azul", "Branco"],
@@ -314,7 +314,7 @@
 	{
 		"id": 18,
 		"name": "União da Ilha do Governador",
-		"imageUrl": "uniao_da_ilha_do_governador.jpg",
+		"imageUrl": "schools/uniao_da_ilha_do_governador.jpg",
 		"godmotherSchool": "Portela",
 		"foundationDate": "1953/3/7",
 		"colors": ["Azul", "Branco", "Vermelho"],
@@ -332,7 +332,7 @@
 	{
 		"id": 19,
 		"name": "São Clemente",
-		"imageUrl": "sao_clemente.jpg",
+		"imageUrl": "schools/sao_clemente.jpg",
 		"godmotherSchool": "Unidos de Vila Isabel",
 		"foundationDate": "1961/10/25",
 		"colors": ["Preto", "Amarelo"],
@@ -350,7 +350,7 @@
 	{
 		"id": 20,
 		"name": "Estácio de Sá",
-		"imageUrl": "estacio_de_sa.jpg",
+		"imageUrl": "schools/estacio_de_sa.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1955/2/27",
 		"colors": ["Vermelho", "Branco"],
@@ -368,7 +368,7 @@
 	{
 		"id": 21,
 		"name": "Unidos de Bangu",
-		"imageUrl": "unidos_de_bangu.jpg",
+		"imageUrl": "schools/unidos_de_bangu.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1937/11/15",
 		"colors": ["Vermelho", "Branco"],
@@ -386,7 +386,7 @@
 	{
 		"id": 22,
 		"name": "Acadêmicos de Vigário Geral",
-		"imageUrl": "academicos_de_vigario_geral.jpg",
+		"imageUrl": "schools/academicos_de_vigario_geral.jpg",
 		"godmotherSchool": "União da Ilha",
 		"foundationDate": "1991/3/13",
 		"colors": ["Azul", "Vermelho", "Branco"],
@@ -404,7 +404,7 @@
 	{
 		"id": 23,
 		"name": "Unidos da Ponte",
-		"imageUrl": "unidos_da_ponte.jpg",
+		"imageUrl": "schools/unidos_da_ponte.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1952/11/3",
 		"colors": ["Azul Marinho", "Índigo", "Branco"],
@@ -422,7 +422,7 @@
 	{
 		"id": 24,
 		"name": "Arranco",
-		"imageUrl": "arranco.jpg",
+		"imageUrl": "schools/arranco.jpg",
 		"godmotherSchool": "Portela",
 		"foundationDate": "1973/3/21",
 		"colors": ["Azul", "Branco"],
@@ -440,7 +440,7 @@
 	{
 		"id": 25,
 		"name": "Em Cima da Hora",
-		"imageUrl": "em_cima_da_hora.jpg",
+		"imageUrl": "schools/em_cima_da_hora.jpg",
 		"godmotherSchool": "Portela",
 		"foundationDate": "1959/11/15",
 		"colors": ["Azul-Pavão", "Branco"],
@@ -458,7 +458,7 @@
 	{
 		"id": 26,
 		"name": "Lins Imperial",
-		"imageUrl": "lins_imperial.jpg",
+		"imageUrl": "schools/lins_imperial.jpg",
 		"godmotherSchool": "Mangueira, Portela e Salgueiro",
 		"foundationDate": "1963/3/7",
 		"colors": ["Verde", "Rosa"],
@@ -476,7 +476,7 @@
 	{
 		"id": 27,
 		"name": "União de Jacarepaguá",
-		"imageUrl": "uniao_de_jacarepagua.jpg",
+		"imageUrl": "schools/uniao_de_jacarepagua.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1956/11/15",
 		"colors": ["Verde", "Branco"],
@@ -494,7 +494,7 @@
 	{
 		"id": 28,
 		"name": "União de Maricá",
-		"imageUrl": "uniao_de_marica.jpg",
+		"imageUrl": "schools/uniao_de_marica.jpg",
 		"godmotherSchool": "Unidos do Porto da Pedra",
 		"foundationDate": "2023/11/23",
 		"colors": ["Vermelho", "Ouro", "Branco"],
@@ -512,7 +512,7 @@
 	{
 		"id": 29,
 		"name": "União do Parque Acarí",
-		"imageUrl": "uniao_do_parque_acari.jpg",
+		"imageUrl": "schools/uniao_do_parque_acari.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2018/1/1",
 		"colors": ["Amarelo", "Branco", "Rosa"],
@@ -530,7 +530,7 @@
 	{
 		"id": 30,
 		"name": "Acadêmicos da Rocinha",
-		"imageUrl": "academicos_da_rocinha.jpg",
+		"imageUrl": "schools/academicos_da_rocinha.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1988/3/30",
 		"colors": ["Azul", "Verde", "Branco"],
@@ -548,7 +548,7 @@
 	{
 		"id": 31,
 		"name": "Leão de Nova Iguaçu",
-		"imageUrl": "leao_de_nova_iguacu.jpg",
+		"imageUrl": "schools/leao_de_nova_iguacu.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1968/11/15",
 		"colors": ["Vermelho", "Ouro", "Branco"],
@@ -566,7 +566,7 @@
 	{
 		"id": 32,
 		"name": "Acadêmicos de Santa Cruz",
-		"imageUrl": "academicos_de_santa_cruz.jpg",
+		"imageUrl": "schools/academicos_de_santa_cruz.jpg",
 		"godmotherSchool": "Unidos de Bangu",
 		"foundationDate": "1959/2/18",
 		"colors": ["Verde", "Branco"],
@@ -584,7 +584,7 @@
 	{
 		"id": 33,
 		"name": "Acadêmicos do Engenho da Rainha",
-		"imageUrl": "academicos_do_engenho_da_rainha.jpg",
+		"imageUrl": "schools/academicos_do_engenho_da_rainha.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1949/7/1",
 		"colors": ["Vermelho", "Branco"],
@@ -602,7 +602,7 @@
 	{
 		"id": 34,
 		"name": "Unidos de Lucas",
-		"imageUrl": "unidos_de_lucas.jpg",
+		"imageUrl": "schools/unidos_de_lucas.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1966/5/1",
 		"colors": ["Vermelho", "Ouro"],
@@ -620,7 +620,7 @@
 	{
 		"id": 35,
 		"name": "Unidos do Jacarezinho",
-		"imageUrl": "unidos_do_jacarezinho.jpg",
+		"imageUrl": "schools/unidos_do_jacarezinho.jpg",
 		"godmotherSchool": "Mangueira",
 		"foundationDate": "1966/6/16",
 		"colors": ["Rosa", "Branco", "Verde"],
@@ -638,7 +638,7 @@
 	{
 		"id": 36,
 		"name": "Unidos da Vila Santa Tereza",
-		"imageUrl": "unidos_da_vila_santa_tereza.jpg",
+		"imageUrl": "schools/unidos_da_vila_santa_tereza.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1956/12/20",
 		"colors": ["Azul", "Branco"],
@@ -656,7 +656,7 @@
 	{
 		"id": 37,
 		"name": "Caprichosos de Pilares",
-		"imageUrl": "caprichosos_de_pilares.jpg",
+		"imageUrl": "schools/caprichosos_de_pilares.jpg",
 		"godmotherSchool": "Portela",
 		"foundationDate": "1949/2/19",
 		"colors": ["Azul Royal", "Azul Turquesa", "Branco"],
@@ -674,7 +674,7 @@
 	{
 		"id": 38,
 		"name": "Independente da Praça da Bandeira",
-		"imageUrl": "independente_da_praca_da_bandeira.jpg",
+		"imageUrl": "schools/independente_da_praca_da_bandeira.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1975/3/26",
 		"colors": ["Azul", "Verde", "Branco"],
@@ -692,7 +692,7 @@
 	{
 		"id": 39,
 		"name": "Acadêmicos da Abolição",
-		"imageUrl": "academicos_da_abolicao.jpg",
+		"imageUrl": "schools/academicos_da_abolicao.jpg",
 		"godmotherSchool": "Caprichosos de Pilares",
 		"foundationDate": "1976/1/20",
 		"colors": ["Verde", "Branco"],
@@ -710,7 +710,7 @@
 	{
 		"id": 40,
 		"name": "Acadêmicos de Jacarepaguá",
-		"imageUrl": "academicos_de_jacarepagua.jpg",
+		"imageUrl": "schools/academicos_de_jacarepagua.jpg",
 		"godmotherSchool": "Renascer de Jacarepaguá",
 		"foundationDate": "2018/7/23",
 		"colors": ["Azul", "Verde", "Branco"],
@@ -728,7 +728,7 @@
 	{
 		"id": 41,
 		"name": "Acadêmicos do Peixe",
-		"imageUrl": "academicos_do_peixe.jpg",
+		"imageUrl": "schools/academicos_do_peixe.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2019/4/14",
 		"colors": ["Vermelho", "Branco"],
@@ -746,7 +746,7 @@
 	{
 		"id": 42,
 		"name": "Rosa de Ouro",
-		"imageUrl": "rosa_de_ouro.jpg",
+		"imageUrl": "schools/rosa_de_ouro.jpg",
 		"godmotherSchool": "Portela",
 		"foundationDate": "1970/5/17",
 		"colors": ["Azul", "Amarelo", "Branco"],
@@ -764,7 +764,7 @@
 	{
 		"id": 43,
 		"name": "Raça Rubro-Negra",
-		"imageUrl": "raca_rubro-negra.jpg",
+		"imageUrl": "schools/raca_rubro-negra.jpg",
 		"godmotherSchool": "Beija-Flor",
 		"foundationDate": "2019/9/20",
 		"colors": ["Preto", "Vermelho"],
@@ -782,7 +782,7 @@
 	{
 		"id": 44,
 		"name": "Sereno de Campo Grande",
-		"imageUrl": "sereno_de_campo_grande.jpg",
+		"imageUrl": "schools/sereno_de_campo_grande.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1996/02/12",
 		"colors": ["Azul", "Branco"],
@@ -800,7 +800,7 @@
 	{
 		"id": 45,
 		"name": "Renascer de Jacarepaguá",
-		"imageUrl": "renascer_de_jacarepagua.jpg",
+		"imageUrl": "schools/renascer_de_jacarepagua.jpg",
 		"godmotherSchool": "Salgueiro",
 		"foundationDate": "1992/8/2",
 		"colors": ["Vermelho", "Branco"],
@@ -818,7 +818,7 @@
 	{
 		"id": 46,
 		"name": "Mocidade Unida do Santa Marta",
-		"imageUrl": "mocidade_unida_do_santa_marta.jpg",
+		"imageUrl": "schools/mocidade_unida_do_santa_marta.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1992/03/08",
 		"colors": ["Azul", "Branco"],
@@ -836,7 +836,7 @@
 	{
 		"id": 47,
 		"name": "Botafogo Samba Clube",
-		"imageUrl": "botafogo_samba_clube.jpg",
+		"imageUrl": "schools/botafogo_samba_clube.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2018/07/20",
 		"colors": ["Preto", "Branco"],
@@ -854,7 +854,7 @@
 	{
 		"id": 48,
 		"name": "Independentes de Olaria",
-		"imageUrl": "independentes_de_olaria.jpg",
+		"imageUrl": "schools/independentes_de_olaria.jpg",
 		"godmotherSchool": "Imperatriz Leopoldinense",
 		"foundationDate": "2017/04/03",
 		"colors": ["Azul", "Branco"],
@@ -872,7 +872,7 @@
 	{
 		"id": 49,
 		"name": "Acadêmicos do Dendê",
-		"imageUrl": "academicos_do_dende.jpg",
+		"imageUrl": "schools/academicos_do_dende.jpg",
 		"godmotherSchool": "Unidos de Vila Isabel",
 		"foundationDate": "1992/06/25",
 		"colors": ["Azul", "Branco"],
@@ -890,7 +890,7 @@
 	{
 		"id": 50,
 		"name": "Império da Uva",
-		"imageUrl": "imperio_da_uva.jpg",
+		"imageUrl": "schools/imperio_da_uva.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "1980/11/15",
 		"colors": ["Verde", "Branco", "Roxo"],
@@ -908,7 +908,7 @@
 	{
 		"id": 51,
 		"name": "Força Jovem",
-		"imageUrl": "forca_jovem.jpg",
+		"imageUrl": "schools/forca_jovem.jpg",
 		"godmotherSchool": "Mancha Verde",
 		"foundationDate": "2019/06/15",
 		"colors": ["Vermelho", "Preto", "Branco"],
@@ -926,7 +926,7 @@
 	{
 		"id": 52,
 		"name": "Flor da Mina do Andaraí",
-		"imageUrl": "flor_da_mina_do_andarai.jpg",
+		"imageUrl": "schools/flor_da_mina_do_andarai.jpg",
 		"godmotherSchool": "Salgueiro",
 		"foundationDate": "1962/12/12",
 		"colors": ["Verde", "Vermelho", "Branco"],
@@ -944,7 +944,7 @@
 	{
 		"id": 53,
 		"name": "Alegria da Zona Sul",
-		"imageUrl": "alegria_da_zona_sul.jpg",
+		"imageUrl": "schools/alegria_da_zona_sul.jpg",
 		"godmotherSchool": "Salgueiro",
 		"foundationDate": "1992/06/28",
 		"colors": ["Vermelho", "Dourado", "Branco"],
@@ -962,7 +962,7 @@
 	{
 		"id": 54,
 		"name": "Arame de Ricardo",
-		"imageUrl": "arame_de_ricardo.jpg",
+		"imageUrl": "schools/arame_de_ricardo.jpg",
 		"godmotherSchool": "Beija-Flor",
 		"foundationDate": "1995/03/18",
 		"colors": ["Azul", "Branco"],
@@ -980,7 +980,7 @@
 	{
 		"id": 55,
 		"name": "Arrastão de Cascadura",
-		"imageUrl": "arrastao_de_cascadura.jpg",
+		"imageUrl": "schools/arrastao_de_cascadura.jpg",
 		"godmotherSchool": "Imperio Serrano",
 		"foundationDate": "1973/04/27",
 		"colors": ["Verde", "Branco"],
@@ -998,7 +998,7 @@
 	{
 		"id": 56,
 		"name": "Acadêmicos do Cubango",
-		"imageUrl": "academicos_do_cubango.jpg",
+		"imageUrl": "schools/academicos_do_cubango.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "1959/12/17",
 		"colors": ["Verde", "Branco"],
@@ -1018,7 +1018,7 @@
 	{
 		"id": 57,
 		"name": "Acadêmicos da Diversidade",
-		"imageUrl": "academicos_da_diversidade.jpg",
+		"imageUrl": "schools/academicos_da_diversidade.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "2018/8/14",
 		"colors": [
@@ -1044,7 +1044,7 @@
 	{
 		"id": 58,
 		"name": "União do Parque Curicica",
-		"imageUrl": "uniao_do_parque_curicica.jpg",
+		"imageUrl": "schools/uniao_do_parque_curicica.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1993/3/1",
 		"colors": ["Azul", "Vermelho", "Branco"],
@@ -1062,7 +1062,7 @@
 	{
 		"id": 59,
 		"name": "Unidos de São Cristóvão",
-		"imageUrl": "unidos_de_sao_cristovao.jpg",
+		"imageUrl": "schools/unidos_de_sao_cristovao.jpg",
 		"godmotherSchool": "Império Serrano e Paraíso do Tuiuti",
 		"foundationDate": "1964/8/20",
 		"colors": ["Verde", "Branco"],
@@ -1080,7 +1080,7 @@
 	{
 		"id": 60,
 		"name": "Vizinha Faladeira",
-		"imageUrl": "vizinha_faladeira.jpg",
+		"imageUrl": "schools/vizinha_faladeira.jpg",
 		"godmotherSchool": "União da Ilha",
 		"foundationDate": "1932/12/10",
 		"colors": ["Azul", "Vermelho", "Branco"],
@@ -1098,7 +1098,7 @@
 	{
 		"id": 61,
 		"name": "Tradição",
-		"imageUrl": "tradicao.jpg",
+		"imageUrl": "schools/tradicao.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "1984/10/1",
 		"colors": ["Azul Royal", "Azul Turquesa", "Ouro", "Branco"],
@@ -1116,7 +1116,7 @@
 	{
 		"id": 62,
 		"name": "Novo Império",
-		"imageUrl": "novo_imperio.jpg",
+		"imageUrl": "schools/novo_imperio.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2019/9/7",
 		"colors": ["Azul", "Vermelho", "Branco"],
@@ -1134,7 +1134,7 @@
 	{
 		"id": 63,
 		"name": "Acadêmicos da Pedra Branca",
-		"imageUrl": "academicos_da_pedra_branca.jpg",
+		"imageUrl": "schools/academicos_da_pedra_branca.jpg",
 		"godmotherSchool": "Unidos de Bangu e Imperio Serrano",
 		"foundationDate": "2020/8/23",
 		"colors": ["Verde", "Branco", "Dourado"],
@@ -1152,7 +1152,7 @@
 	{
 		"id": 64,
 		"name": "Siri de Ramos",
-		"imageUrl": "siri_de_ramos.jpg",
+		"imageUrl": "schools/siri_de_ramos.jpg",
 		"godmotherSchool": "Imperatriz Leopoldinense",
 		"foundationDate": "1979/12/7",
 		"colors": ["Verde", "Branco"],
@@ -1170,7 +1170,7 @@
 	{
 		"id": 65,
 		"name": "Mensageiros da Paz",
-		"imageUrl": "mensageiros_da_paz.jpg",
+		"imageUrl": "schools/mensageiros_da_paz.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2005/9/7",
 		"colors": ["Azul", "Branco"],
@@ -1188,7 +1188,7 @@
 	{
 		"id": 66,
 		"name": "Garras do Tigre",
-		"imageUrl": "garras_do_tigre.jpg",
+		"imageUrl": "schools/garras_do_tigre.jpg",
 		"godmotherSchool": "Porto da Pedra",
 		"foundationDate": "2012/2/9",
 		"colors": ["Preto", "Amarelo"],
@@ -1206,7 +1206,7 @@
 	{
 		"id": 67,
 		"name": "Academia Niterói de Samba",
-		"imageUrl": "academia_niteroi_de_samba.jpg",
+		"imageUrl": "schools/academia_niteroi_de_samba.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2009/10/1",
 		"colors": ["Azul", "Branco", "Dourado"],
@@ -1224,7 +1224,7 @@
 	{
 		"id": 68,
 		"name": "União de Vaz Lobo",
-		"imageUrl": "uniao_de_vaz_lobo.jpg",
+		"imageUrl": "schools/uniao_de_vaz_lobo.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1930/10/14",
 		"colors": ["Azul", "Rosa", "Branco"],
@@ -1242,7 +1242,7 @@
 	{
 		"id": 69,
 		"name": "Urubu Samba",
-		"imageUrl": "urubu_samba.jpg",
+		"imageUrl": "schools/urubu_samba.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2021/1/1",
 		"colors": ["Vermelho", "Preto", "Branco"],
@@ -1260,7 +1260,7 @@
 	{
 		"id": 70,
 		"name": "Tubarão de Mesquita",
-		"imageUrl": "tubarao_de_mesquita.jpg",
+		"imageUrl": "schools/tubarao_de_mesquita.jpg",
 		"godmotherSchool": "Beija-Flor",
 		"foundationDate": "2021/03/05",
 		"colors": ["Preto", "Branco", "Dourado"],
@@ -1278,7 +1278,7 @@
 	{
 		"id": 71,
 		"name": "Unidos da Barra da Tijuca",
-		"imageUrl": "unidos_da_barra_da_tijuca.jpg",
+		"imageUrl": "schools/unidos_da_barra_da_tijuca.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2018/3/15",
 		"colors": ["Azul", "Verde", "Branco"],
@@ -1296,7 +1296,7 @@
 	{
 		"id": 72,
 		"name": "Feitiço Carioca",
-		"imageUrl": "feitico_carioca.jpg",
+		"imageUrl": "schools/feitico_carioca.jpg",
 		"godmotherSchool": "Unidos da Tijuca",
 		"foundationDate": "2016/2/23",
 		"colors": ["Azul", "Branco"],
@@ -1314,7 +1314,7 @@
 	{
 		"id": 73,
 		"name": "Imperadores Rubro-Negros",
-		"imageUrl": "imperadores_rubro-negros.jpg",
+		"imageUrl": "schools/imperadores_rubro-negros.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2018/6/29",
 		"colors": ["Vermelho", "Preto"],
@@ -1332,7 +1332,7 @@
 	{
 		"id": 74,
 		"name": "Vicente de Carvalho",
-		"imageUrl": "vicente_de_carvalho.jpg",
+		"imageUrl": "schools/vicente_de_carvalho.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "1988/2/7",
 		"colors": ["Verde", "Branco"],
@@ -1350,7 +1350,7 @@
 	{
 		"id": 75,
 		"name": "Mocidade Unida da Cidade de Deus",
-		"imageUrl": "mocidade_unida_da_cidade_de_deus.jpg",
+		"imageUrl": "schools/mocidade_unida_da_cidade_de_deus.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1970/3/29",
 		"colors": ["Azul", "Branco"],
@@ -1368,7 +1368,7 @@
 	{
 		"id": 76,
 		"name": "Unidos do Cabuçu",
-		"imageUrl": "unidos_do_cabucu.jpg",
+		"imageUrl": "schools/unidos_do_cabucu.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1945/12/28",
 		"colors": ["Azul", "Branco"],
@@ -1386,7 +1386,7 @@
 	{
 		"id": 77,
 		"name": "Gato de Bonsucesso",
-		"imageUrl": "gato_de_bonsucesso.jpg",
+		"imageUrl": "schools/gato_de_bonsucesso.jpg",
 		"godmotherSchool": "Portela",
 		"foundationDate": "1999/2/16",
 		"colors": ["Azul", "Branco"],
@@ -1404,7 +1404,7 @@
 	{
 		"id": 78,
 		"name": "Guerreiros Tricolores",
-		"imageUrl": "guerreiros_tricolores.jpg",
+		"imageUrl": "schools/guerreiros_tricolores.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2019/7/29",
 		"colors": ["Verde", "Encarnado", "Branco"],
@@ -1422,7 +1422,7 @@
 	{
 		"id": 79,
 		"name": "Unidos da Vila Kennedy",
-		"imageUrl": "unidos_da_vila_kennedy.jpg",
+		"imageUrl": "schools/unidos_da_vila_kennedy.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1968/11/6",
 		"colors": ["Vermelho", "Branco"],
@@ -1440,7 +1440,7 @@
 	{
 		"id": 80,
 		"name": "Unidos de Manguinhos",
-		"imageUrl": "unidos_de_manguinhos.jpg",
+		"imageUrl": "schools/unidos_de_manguinhos.jpg",
 		"godmotherSchool": "Mangueira",
 		"foundationDate": "1964/4/23",
 		"colors": ["Verde", "Rosa", "Branco"],
@@ -1458,7 +1458,7 @@
 	{
 		"id": 81,
 		"name": "Fla Manguaça",
-		"imageUrl": "fla_manguaca.jpg",
+		"imageUrl": "schools/fla_manguaca.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2020/7/22",
 		"colors": ["Preto", "Vermelho"],
@@ -1476,7 +1476,7 @@
 	{
 		"id": 82,
 		"name": "Concentra Imperial",
-		"imageUrl": "concentra_imperial.jpg",
+		"imageUrl": "schools/concentra_imperial.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2019/10/6",
 		"colors": ["Vermelho", "Dourado", "Branco"],
@@ -1494,7 +1494,7 @@
 	{
 		"id": 83,
 		"name": "Unidos da Villa Rica",
-		"imageUrl": "unidos_da_villa_rica.jpg",
+		"imageUrl": "schools/unidos_da_villa_rica.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1966/3/20",
 		"colors": ["Amarelo", "Azul"],
@@ -1512,7 +1512,7 @@
 	{
 		"id": 84,
 		"name": "Acadêmicos do Jardim Bangu",
-		"imageUrl": "academicos_do_jardim_bangu.jpg",
+		"imageUrl": "schools/academicos_do_jardim_bangu.jpg",
 		"godmotherSchool": "Unidos de Bangu",
 		"foundationDate": "2016/10/1",
 		"colors": ["Verde", "Vermelho", "Branco"],
@@ -1530,7 +1530,7 @@
 	{
 		"id": 85,
 		"name": "Bangay",
-		"imageUrl": "bangay.jpg",
+		"imageUrl": "schools/bangay.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2022/1/1",
 		"colors": ["Rosa", "Preto"],
@@ -1548,7 +1548,7 @@
 	{
 		"id": 86,
 		"name": "Império Ricardense",
-		"imageUrl": "imperio_ricardense.jpg",
+		"imageUrl": "schools/imperio_ricardense.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2015/4/19",
 		"colors": ["Vermelho", "Verde", "Ouro", "Branco"],
@@ -1566,7 +1566,7 @@
 	{
 		"id": 87,
 		"name": "Chatuba de Mesquita",
-		"imageUrl": "chatuba_de_mesquita.jpg",
+		"imageUrl": "schools/chatuba_de_mesquita.jpg",
 		"godmotherSchool": "Rosa de Ouro",
 		"foundationDate": "2003/5/11",
 		"colors": ["Verde", "Branco"],
@@ -1584,7 +1584,7 @@
 	{
 		"id": 88,
 		"name": "Difícil É o Nome",
-		"imageUrl": "dificil_e_o_nome.jpg",
+		"imageUrl": "schools/dificil_e_o_nome.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1973/3/31",
 		"colors": ["Vermelho", "Branco"],
@@ -1602,7 +1602,7 @@
 	{
 		"id": 89,
 		"name": "Boi da Ilha do Governador",
-		"imageUrl": "boi_da_ilha_do_governador.jpg",
+		"imageUrl": "schools/boi_da_ilha_do_governador.jpg",
 		"godmotherSchool": "União da Ilha",
 		"foundationDate": "1965/3/13",
 		"colors": ["Vermelho", "Preto", "Branco"],
@@ -1620,7 +1620,7 @@
 	{
 		"id": 90,
 		"name": "Unidos do Cabral",
-		"imageUrl": "unidos_do_cabral.jpg",
+		"imageUrl": "schools/unidos_do_cabral.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1953/2/22",
 		"colors": ["Vermelho", "Branco", "Azul"],
@@ -1638,7 +1638,7 @@
 	{
 		"id": 91,
 		"name": "Império de Petrópolis",
-		"imageUrl": "imperio_de_petropolis.jpg",
+		"imageUrl": "schools/imperio_de_petropolis.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2015/3/16",
 		"colors": ["Azul", "Verde", "Amarelo"],
@@ -1656,7 +1656,7 @@
 	{
 		"id": 92,
 		"name": "Alegria do Vilar",
-		"imageUrl": "alegria_do_vilar.jpg",
+		"imageUrl": "schools/alegria_do_vilar.jpg",
 		"godmotherSchool": "Unidos da Ponte",
 		"foundationDate": "2015/5/20",
 		"colors": ["Vermelho", "Amarelo", "Azul", "Branco"],
@@ -1674,7 +1674,7 @@
 	{
 		"id": 93,
 		"name": "Império de Brás de Pina",
-		"imageUrl": "imperio_de_bras_de_pina.jpg",
+		"imageUrl": "schools/imperio_de_bras_de_pina.jpg",
 		"godmotherSchool": "Lins Imperial e Império Serrano",
 		"foundationDate": "2021/10/17",
 		"colors": ["Azul", "Amarelo"],
@@ -1692,7 +1692,7 @@
 	{
 		"id": 94,
 		"name": "TPM",
-		"imageUrl": "tpm.jpg",
+		"imageUrl": "schools/tpm.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2013/1/20",
 		"colors": ["Azul", "Amarelo", "Verde", "Branco"],
@@ -1710,7 +1710,7 @@
 	{
 		"id": 95,
 		"name": "Império de Nova Iguaçu",
-		"imageUrl": "imperio_de_nova_iguacu.jpg",
+		"imageUrl": "schools/imperio_de_nova_iguacu.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2020/12/20",
 		"colors": ["Azul", "Branco", "Laranja"],
@@ -1728,7 +1728,7 @@
 	{
 		"id": 96,
 		"name": "Unidos de Cosmos",
-		"imageUrl": "unidos_de_cosmos.jpg",
+		"imageUrl": "schools/unidos_de_cosmos.jpg",
 		"godmotherSchool": "Santa Cruz",
 		"foundationDate": "1948/1/1",
 		"colors": ["Verde", "Branco"],
@@ -1746,7 +1746,7 @@
 	{
 		"id": 97,
 		"name": "Coroado de Jacarepaguá",
-		"imageUrl": "coroado_de_jacarepagua.jpg",
+		"imageUrl": "schools/coroado_de_jacarepagua.jpg",
 		"godmotherSchool": "São Clemente",
 		"foundationDate": "1972/1/20",
 		"colors": ["Preto", "Branco", "Amarelo"],
@@ -1764,7 +1764,7 @@
 	{
 		"id": 98,
 		"name": "Balanço do Irajá",
-		"imageUrl": "balanco_do_iraja.jpg",
+		"imageUrl": "schools/balanco_do_iraja.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "2017/12/22",
 		"colors": ["Verde", "Azul", "Branco"],
@@ -1782,7 +1782,7 @@
 	{
 		"id": 99,
 		"name": "União de Campo Grande",
-		"imageUrl": "uniao_de_campo_grande.jpg",
+		"imageUrl": "schools/uniao_de_campo_grande.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2015/4/20",
 		"colors": ["Vermelho", "Amarelo"],
@@ -1800,7 +1800,7 @@
 	{
 		"id": 100,
 		"name": "Renascer de Nova Iguaçu",
-		"imageUrl": "renascer_de_nova_iguacu.jpg",
+		"imageUrl": "schools/renascer_de_nova_iguacu.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "2022/4/23",
 		"colors": ["Vermelho", "Branco", "Ouro"],
@@ -1818,7 +1818,7 @@
 	{
 		"id": 101,
 		"name": "União do Vilar Carioca",
-		"imageUrl": "uniao_do_vilar_carioca.jpg",
+		"imageUrl": "schools/uniao_do_vilar_carioca.jpg",
 		"godmotherSchool": "Santa Cruz e Vila Kennedy",
 		"foundationDate": "2020/1/5",
 		"colors": ["Vermelho", "Branco", "Ouro"],
@@ -1836,7 +1836,7 @@
 	{
 		"id": 102,
 		"name": "Mocidade do Porto",
-		"imageUrl": "mocidade_do_porto.jpg",
+		"imageUrl": "schools/mocidade_do_porto.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2020/11/20",
 		"colors": ["Verde", "Vermelho", "Prata"],
@@ -1854,7 +1854,7 @@
 	{
 		"id": 103,
 		"name": "Colibri de Mesquita",
-		"imageUrl": "colibri_de_mesquita.jpg",
+		"imageUrl": "schools/colibri_de_mesquita.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2006/7/18",
 		"colors": ["Verde", "Vermelho", "Branco"],
@@ -1872,7 +1872,7 @@
 	{
 		"id": 104,
 		"name": "Acadêmicos do Anil",
-		"imageUrl": "academicos_do_anil.jpg",
+		"imageUrl": "schools/academicos_do_anil.jpg",
 		"godmotherSchool": "Tradição",
 		"foundationDate": "2021/3/11",
 		"colors": ["Azul", "Branco"],
@@ -1890,7 +1890,7 @@
 	{
 		"id": 105,
 		"name": "Império da Rainha",
-		"imageUrl": "imperio_da_rainha.jpg",
+		"imageUrl": "schools/imperio_da_rainha.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2019/4/23",
 		"colors": ["Preto", "Branco", "Dourado"],
@@ -1908,7 +1908,7 @@
 	{
 		"id": 106,
 		"name": "Flor do Jardim Primavera",
-		"imageUrl": "flor_do_jardim_primavera.jpg",
+		"imageUrl": "schools/flor_do_jardim_primavera.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2015/6/2",
 		"colors": ["Azul", "Branco"],
@@ -1926,7 +1926,7 @@
 	{
 		"id": 107,
 		"name": "Guardiões da Capadócia",
-		"imageUrl": "guardioes_da_capadocia.jpg",
+		"imageUrl": "schools/guardioes_da_capadocia.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2021",
 		"colors": ["Vermelho", "Branco"],
@@ -1944,7 +1944,7 @@
 	{
 		"id": 108,
 		"name": "Camisa 10",
-		"imageUrl": "camisa_10.jpg",
+		"imageUrl": "schools/camisa_10.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2020/9/6",
 		"colors": ["Vermelho", "Branco"],
@@ -1962,7 +1962,7 @@
 	{
 		"id": 109,
 		"name": "A Majestade do Samba",
-		"imageUrl": "a_majestade_do_samba.jpg",
+		"imageUrl": "schools/a_majestade_do_samba.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2019/5/3",
 		"colors": ["Azul", "Branco"],
@@ -1980,7 +1980,7 @@
 	{
 		"id": 110,
 		"name": "Miúda da Cabuçu",
-		"imageUrl": "miuda_da_cabucu.jpg",
+		"imageUrl": "schools/miuda_da_cabucu.jpg",
 		"godmotherSchool": "Unidos do Cabuçu",
 		"foundationDate": "1991/7/14",
 		"colors": ["Azul", "Branco"],
@@ -1998,7 +1998,7 @@
 	{
 		"id": 111,
 		"name": "Tijuquinha do Borel",
-		"imageUrl": "tijuquinha_do_borel.jpg",
+		"imageUrl": "schools/tijuquinha_do_borel.jpg",
 		"godmotherSchool": "Unidos da Tijuca",
 		"foundationDate": "2002/6/19",
 		"colors": ["Amarelo Ouro", "Azul Pavão"],
@@ -2016,7 +2016,7 @@
 	{
 		"id": 112,
 		"name": "Ainda Existem Crianças na Vila Kennedy",
-		"imageUrl": "ainda_existem_criancas_na_vila_kennedy.jpg",
+		"imageUrl": "schools/ainda_existem_criancas_na_vila_kennedy.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1991/4/21",
 		"colors": ["Vermelho", "Branco"],
@@ -2034,7 +2034,7 @@
 	{
 		"id": 113,
 		"name": "Império do Futuro",
-		"imageUrl": "imperio_do_futuro.jpg",
+		"imageUrl": "schools/imperio_do_futuro.jpg",
 		"godmotherSchool": "Império Serrano",
 		"foundationDate": "1983/8/5",
 		"colors": ["Verde", "Branco"],
@@ -2059,7 +2059,7 @@
 	{
 		"id": 114,
 		"name": "Golfinhos do Rio de Janeiro",
-		"imageUrl": "golfinhos_do_rio_de_janeiro.jpg",
+		"imageUrl": "schools/golfinhos_do_rio_de_janeiro.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1996/6/6",
 		"colors": ["Amarelo", "Azul"],
@@ -2077,7 +2077,7 @@
 	{
 		"id": 115,
 		"name": "Filhos da Águia",
-		"imageUrl": "filhos_da_aguia.jpg",
+		"imageUrl": "schools/filhos_da_aguia.jpg",
 		"godmotherSchool": "Portela",
 		"foundationDate": "2001/7/31",
 		"colors": ["Azul", "Branco"],
@@ -2095,7 +2095,7 @@
 	{
 		"id": 116,
 		"name": "Corações Unidos do CIEP",
-		"imageUrl": "coracoes_unidos_do_ciep.jpg",
+		"imageUrl": "schools/coracoes_unidos_do_ciep.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1985/8/15",
 		"colors": ["Amarelo", "Branco", "Laranja"],
@@ -2113,7 +2113,7 @@
 	{
 		"id": 117,
 		"name": "Herdeiros da Vila",
-		"imageUrl": "herdeiros_da_vila.jpg",
+		"imageUrl": "schools/herdeiros_da_vila.jpg",
 		"godmotherSchool": "Unidos de Vila Isabel",
 		"foundationDate": "1988/7/23",
 		"colors": ["Azul claro", "Branco"],
@@ -2131,7 +2131,7 @@
 	{
 		"id": 118,
 		"name": "Infantes do Lins",
-		"imageUrl": "infantes_do_lins.jpg",
+		"imageUrl": "schools/infantes_do_lins.jpg",
 		"godmotherSchool": "Lins Imperial",
 		"foundationDate": "1991/5/1",
 		"colors": ["Verde", "Rosa"],
@@ -2149,7 +2149,7 @@
 	{
 		"id": 119,
 		"name": "Mangueira do Amanhã",
-		"imageUrl": "mangueira_do_amanha.jpg",
+		"imageUrl": "schools/mangueira_do_amanha.jpg",
 		"godmotherSchool": "Mangueira",
 		"foundationDate": "1987/8/12",
 		"colors": ["Verde", "Rosa"],
@@ -2167,7 +2167,7 @@
 	{
 		"id": 120,
 		"name": "Estrelinha da Mocidade",
-		"imageUrl": "estrelinha_da_mocidade.jpg",
+		"imageUrl": "schools/estrelinha_da_mocidade.jpg",
 		"godmotherSchool": "Mocidade Independente de Padre Miguel",
 		"foundationDate": "1992/6/2",
 		"colors": ["Verde", "Branco"],
@@ -2185,7 +2185,7 @@
 	{
 		"id": 121,
 		"name": "Nova Geração do Estácio",
-		"imageUrl": "nova_geracao_do_estacio.jpg",
+		"imageUrl": "schools/nova_geracao_do_estacio.jpg",
 		"godmotherSchool": "Estácio de Sá",
 		"foundationDate": "1992/10/12",
 		"colors": ["Vermelho", "Branco"],
@@ -2203,7 +2203,7 @@
 	{
 		"id": 122,
 		"name": "Petizes da Penha",
-		"imageUrl": "petizes_da_penha.jpg",
+		"imageUrl": "schools/petizes_da_penha.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2002/6/26",
 		"colors": ["Verde", "Branco"],
@@ -2221,7 +2221,7 @@
 	{
 		"id": 123,
 		"name": "Inocentes da Caprichosos",
-		"imageUrl": "inocentes_da_caprichosos.jpg",
+		"imageUrl": "schools/inocentes_da_caprichosos.jpg",
 		"godmotherSchool": "Caprichosos de Pilares",
 		"foundationDate": "1991/4/4",
 		"colors": ["Azul Royal", "Azul Turquesa", "Branco"],
@@ -2239,7 +2239,7 @@
 	{
 		"id": 124,
 		"name": "Aprendizes do Salgueiro",
-		"imageUrl": "aprendizes_do_salgueiro.jpg",
+		"imageUrl": "schools/aprendizes_do_salgueiro.jpg",
 		"godmotherSchool": "Salgueiro",
 		"foundationDate": "1989/10/3",
 		"colors": ["Vermelho", "Branco"],
@@ -2257,7 +2257,7 @@
 	{
 		"id": 125,
 		"name": "Pimpolhos da Grande Rio",
-		"imageUrl": "pimpolhos_da_grande_rio.jpg",
+		"imageUrl": "schools/pimpolhos_da_grande_rio.jpg",
 		"godmotherSchool": "Grande Rio",
 		"foundationDate": "2002/8/10",
 		"colors": ["Verde", "Branco", "Vermelho"],
@@ -2275,7 +2275,7 @@
 	{
 		"id": 126,
 		"name": "Unidos do Alto da Boa Vista",
-		"imageUrl": "unidos_do_alto_da_boa_vista.jpg",
+		"imageUrl": "schools/unidos_do_alto_da_boa_vista.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1973/11/1",
 		"colors": ["Azul", "Branco"],
@@ -2293,7 +2293,7 @@
 	{
 		"id": 127,
 		"name": "Bloco do Barriga",
-		"imageUrl": "bloco_do_barriga.jpg",
+		"imageUrl": "schools/bloco_do_barriga.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1944/1/20",
 		"colors": ["Azul", "Branco"],
@@ -2311,7 +2311,7 @@
 	{
 		"id": 128,
 		"name": "Vai Barrar? Nunca!",
-		"imageUrl": "vai_barrar__nunca!.jpg",
+		"imageUrl": "schools/vai_barrar__nunca!.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2010/12/10",
 		"colors": ["Azul", "Vermelho", "Branco"],
@@ -2329,7 +2329,7 @@
 	{
 		"id": 129,
 		"name": "Acadêmicos do Vidigal",
-		"imageUrl": "academicos_do_vidigal.jpg",
+		"imageUrl": "schools/academicos_do_vidigal.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1976/3/28",
 		"colors": ["Verde", "Branco"],
@@ -2347,7 +2347,7 @@
 	{
 		"id": 130,
 		"name": "União da Ponte",
-		"imageUrl": "uniao_da_ponte.jpg",
+		"imageUrl": "schools/uniao_da_ponte.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1975/2/23",
 		"colors": ["Vermelho", "Branco"],
@@ -2365,7 +2365,7 @@
 	{
 		"id": 131,
 		"name": "Império do Gramacho",
-		"imageUrl": "imperio_do_gramacho.jpg",
+		"imageUrl": "schools/imperio_do_gramacho.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1972/3/9",
 		"colors": ["Verde", "Rosa"],
@@ -2383,7 +2383,7 @@
 	{
 		"id": 132,
 		"name": "Mocidade Unida da Mineira",
-		"imageUrl": "mocidade_unida_da_mineira.jpg",
+		"imageUrl": "schools/mocidade_unida_da_mineira.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1990/12/9",
 		"colors": ["Vermelho", "Branco"],
@@ -2401,7 +2401,7 @@
 	{
 		"id": 133,
 		"name": "Novo Horizonte",
-		"imageUrl": "novo_horizonte.jpg",
+		"imageUrl": "schools/novo_horizonte.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1974/1/1",
 		"colors": ["Verde", "Branco"],
@@ -2419,7 +2419,7 @@
 	{
 		"id": 134,
 		"name": "Cometas do Bispo",
-		"imageUrl": "cometas_do_bispo.jpg",
+		"imageUrl": "schools/cometas_do_bispo.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1962/9/29",
 		"colors": ["Verde", "Branco"],
@@ -2437,7 +2437,7 @@
 	{
 		"id": 135,
 		"name": "Bloco do China",
-		"imageUrl": "bloco_do_china.jpg",
+		"imageUrl": "schools/bloco_do_china.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1971/8/25",
 		"colors": ["Vermelho", "Branco"],
@@ -2527,7 +2527,7 @@
 	{
 		"id": 140,
 		"name": "Amigos de Tinguá",
-		"imageUrl": "amigos_de_tingua.jpg",
+		"imageUrl": "schools/amigos_de_tingua.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "2021/10/1",
 		"colors": ["Verde", "Branco"],
@@ -2563,7 +2563,7 @@
 	{
 		"id": 142,
 		"name": "Renascer de Vaz Lobo",
-		"imageUrl": "renascer_de_vaz_lobo.jpg",
+		"imageUrl": "schools/renascer_de_vaz_lobo.jpg",
 		"godmotherSchool": "Madureira",
 		"foundationDate": "2017/3/15",
 		"colors": ["Vermelho", "Branco"],
@@ -2581,7 +2581,7 @@
 	{
 		"id": 143,
 		"name": "Raízes da Tijuca",
-		"imageUrl": "raizes_da_tijuca.jpg",
+		"imageUrl": "schools/raizes_da_tijuca.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1995/5/7",
 		"colors": ["Vermelho", "Branco"],
@@ -2617,7 +2617,7 @@
 	{
 		"id": 145,
 		"name": "Canarinhos das Laranjeiras",
-		"imageUrl": "canarinhos_das_laranjeiras.jpg",
+		"imageUrl": "schools/canarinhos_das_laranjeiras.jpg",
 		"godmotherSchool": "",
 		"foundationDate": "1949/9/6",
 		"colors": ["Amarelo", "Branco"],

@@ -37,15 +37,18 @@ export function translateInstrument(
 	instrument: Instrument,
 	translations: InstrumentTranslation[],
 ): TranslatedInstrument {
-	const imageServer = Deno.env.get("IMAGE_SERVER");
+	const imageServerUrl = Deno.env.get("IMAGE_SERVER");
 	const translation = translations.find(
 		(t) => t.instrumentId === instrument.id,
 	);
+
 	return translatedInstrumentSchema.parse({
 		...translation,
 		...instrument,
-		imageUrl: `${imageServer}${instrument.imageUrl}`,
-		gallery: instrument.gallery.map((item) => `${imageServer}${item}`),
+		imageUrl: instrument.imageUrl?.trim()
+			? `${imageServerUrl}${instrument.imageUrl}`
+			: "",
+		gallery: instrument.gallery.map((item) => `${imageServerUrl}${item}`),
 		translatedName: translation?.name ?? instrument.name,
 		translatedType: translation?.type ?? instrument.type,
 		translatedDescription: translation?.description ?? instrument.description,

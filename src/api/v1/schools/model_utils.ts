@@ -30,10 +30,13 @@ export function translateSchool(
 	translations: SchoolTranslation[],
 ): TranslatedSchool {
 	const translation = translations.find((t) => t.schoolId === school.id);
+	const imageServerUrl = Deno.env.get("IMAGE_SERVER");
 	return translatedSchoolSchema.parse({
 		...translation,
 		...school,
-		imageUrl: `${Deno.env.get("IMAGE_SERVER")}${school.imageUrl}`,
+		imageUrl: school.imageUrl?.trim()
+			? `${imageServerUrl}${school.imageUrl}`
+			: "",
 		translatedName: translation?.name ?? school.name,
 		translatedColors: translation?.colors ?? school.colors,
 		translatedSymbols: translation?.symbols ?? school.symbols,
