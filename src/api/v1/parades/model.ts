@@ -33,8 +33,8 @@ export async function getParades({
 	}
 	const sortedParades = sortDataList(translatedParades, sort, sortOrder);
 
-	const startIndex = (page - 1) * pageSize;
-	const endIndex = startIndex + pageSize;
+	const startIndex: number = (Number(page) - 1) * Number(pageSize);
+	const endIndex: number = startIndex + Number(pageSize);
 	return sortedParades.slice(startIndex, endIndex);
 }
 
@@ -84,7 +84,7 @@ export async function searchParades({
 	}
 	results = sortDataList(results, sort, sortOrder);
 
-	const startIndex = (page - 1) * pageSize;
-	const endIndex = startIndex + pageSize;
+	const startIndex: number = (Number(page) - 1) * Number(pageSize);
+	const endIndex: number = startIndex + Number(pageSize);
 	return results.slice(startIndex, endIndex);
 }
